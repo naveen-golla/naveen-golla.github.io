@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        form {
+            font: 1em sans-serif;
+            max-width: 320px;
+        }
+
+        p>label {
+            display: block;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        textarea,
+        fieldset {
+            width: 100%;
+            border: 1px solid rgb(7, 48, 231);
+            box-sizing: border-box;
+        }
+
+        input:invalid {
+            box-shadow: 0 0 5px 1px rgb(38, 245, 10);
+        }
+
+        input:focus:invalid {
+            box-shadow: none;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <p>
+        <fieldset>
+            <legend>Do you have a driving lisence</legend>
+            <input type="radio" required name="driver" id="r1" value="yes"> <label for="r1">Yes</label>
+            <input type="radio" required name="driver" id="r2" value="no"><label for="r2">NO</label>
+        </fieldset>
+        </p>
+        <p>
+            <label for="n1">How old are you</label for>
+                <input type="number" min="12" max="100" step="1" id="n1" name="age">
+        </p>
+        <p>
+            <label for="t1">What is your favorite fruit?<abbr title="this field is mandatory"
+                    aria-label="required">*</abbr></label>
+            <input type="text" id="t1" name="fruit" list="l1" required
+                pattern="[Bb]anana [Cc]herry [Ss]trawberry [Aa]pple">
+        <div>
+            <label for="number">how many</label>
+            <input type="number" id="nummber" name="amount" min="1" max="10">
+        </div>
+        <datalist id="l1">
+            <option>Banana</option>
+            <option>Cherry</option>
+            <option>Strawberry</option>
+            <option>Apple</option>
+        </datalist>
+        </p>
+        <p>
+            <label for="t2">What is e-mail address</label>
+            <input type="email" id="t2" name="email">
+        </p>
+        <p>
+            <label for="t3">Leave a short message</label>
+            <textarea id="t3" name="msg" maxlength="140" rows="5"></textarea>
+        </p>
+        <p>
+            <button>subbmit</button>
+        </p>
+    </form>
+
+
+</body>
+
+</html>
