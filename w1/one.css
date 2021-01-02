@@ -1,0 +1,48 @@
+body{
+    background-color: turquoise;
+}
+p.what{
+    display: inline-block;
+}
+p.inline{
+    display: inline-flex;
+}
+p.table{
+    display: list-item;
+}
+div{  
+    font-family: Arial, Helvetica, sans-serif;  
+    font-size: 20px;  
+    color: blue;  
+    text-align: center;
+    }  
+    .normal {  
+    font-stretch: normal;  
+    }  
+    .semi-condensed {  
+    font-stretch: semi-condensed;  
+    }  
+    .condensed {  
+    font-stretch: condensed;  
+    }  
+    .extra-condensed {  
+    font-stretch: extra-condensed;  
+    }  
+    .ultra-condensed {  
+    font-stretch: ultra-condensed;  
+    }  
+      
+    .semi-expanded {  
+    font-stretch: semi-expanded;  
+    }  
+      
+    .expanded {  
+    font-stretch: expanded;  
+    }  
+    .extra-expanded {  
+    font-stretch: extra-expanded;  
+    }  
+      
+    .ultra-expanded {  
+    font-stretch: ultra-expanded;  
+    }  
