@@ -1,0 +1,142 @@
+body{
+    background-color: rgb(75, 38, 163);
+    background-size: 100%;
+}
+.h1{
+    color: violet;
+    
+}
+.p{
+    width: auto;
+    line-height: 120%;
+    margin: 23px 5px;
+}
+.wrapper{width: 880px ;
+    height: 950px;
+    overflow: hidden;
+    margin: 30px auto 30px auto;
+    position: relative;
+}
+.header{
+    width: 800px;
+    height: 120px;
+}
+.header-logo{
+    width: 300px;
+    height: 127px;
+    background-image: url("https://www.eoffersindia.com/images/eoffers_india_banner-min.jpg");
+    background-repeat: no-repeat;
+    float: right;
+    background-size: 100% 100%;
+}
+.header-text{
+    width: 100px;
+    height: 12px;
+    margin: 0px 5px;
+    float: left;
+}
+.header-mini-logo{
+    width: 40px;
+    height: 27px;
+    float: right;
+    margin: -21px
+    border-radius: 25%;
+    background-repeat: no-repeat;
+    background-size: contain;
+   
+}
+.navbar{
+    width: 880px;
+    height: 40px;
+    background-image: url("#");
+}
+.navbar ul{
+    width: auto;  
+      float: left;  
+      display: block;  
+      list-style: none;  
+      padding: 2px 0 0 130px;  
+      margin: 0px;  
+      text-align: center;  
+}
+.navbar ul li {
+    display: inline;  
+    padding: 0px;  
+    margin: 0px;  
+    height: 37px;  
+}
+.navbar ul li a {  
+    display: block;  
+    padding: 0px;  
+    padding: 0 17px 0 17px;  
+    float: left;  
+    text-decoration: none;  
+    text-align: center;  
+    color: rgb(243, 219, 8);  
+    font-size: 13px;  
+    line-height: 34px;  
+}  
+  
+.navbar ul li a:hover{
+    color: turquoise;
+}
+.mainbody {  
+    width: 800px;  
+    height: 750px;  
+    margin: 15px 2px 0px 2px;  
+    border-radius: 10px;  
+    background-color: rgb(182, 79, 79);  
+}  
+.mainbody-right{
+    width: 150px;
+    height: 300px;
+    border-radius: 10%;
+    margin: 10px 10px 10px 10px;
+    float: right;
+}
+.mainbody-right a {  
+     
+    color: rgb(23, 182, 161);  
+    text-decoration: none;  
+}  
+  
+.mainbody-right a:hover{
+    color: rgb(231, 209, 8);
+}
+.mainbody-center{
+    width: 600px;
+    float: left;
+    height: auto;
+    margin: 10px 10px 0px 10px;
+    border-radius: 10px;
+}
+.footer{
+    width: 880px;
+    height: 40px;
+    margin: 10px auto 20px auto;
+}
+.footer p{
+    color: rgb(255, 251, 0);
+    margin: 2px;
+    padding: 3px;
+}
+.footer a{
+    color: rgb(0, 128, 128);
+    margin: 2px;
+    padding: 3px;
+    text-decoration: none;
+}
+.footer a:hover {  
+    color: #0C9;  
+    text-decoration: underline;  
+}  
+  
+.footer-right {  
+    width: 80px;  
+    height: 40px;  
+    float: right;  
+}  
+  
+.footer-right a {  
+    color: rgb(57, 223, 93);  
+} 
