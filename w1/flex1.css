@@ -1,0 +1,99 @@
+body{
+    background-color: skyblue;
+}
+h1{
+    text-align: center;
+}
+#flexstart{
+    display: flex;
+    justify-content: flex-start;
+}
+#flexend{
+    display: flex;
+    justify-content: flex-end;
+}
+#cent{
+    display: flex;
+    justify-content:center;
+}
+.flex-item{
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    margin: 5px;
+    padding: 5px;
+    color: white;
+    background-color: rgb(0, 255, 85);
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+}
+#evenly{
+    display: flex;
+    justify-content: space-evenly;
+}
+#around{
+    display: flex;
+    justify-content: space-around;
+}
+#between{
+    display: flex;
+    justify-content: space-between;
+}
+.material-icons{
+    color: red;
+    margin: 10px;
+    font-size: 50px;
+
+}
+.fa{
+    color: red;
+    margin: 10px;
+    font-size: 50px;
+}
+.glyphicon{
+    color: red;
+    margin: 10px;
+    font-size: 50px;
+}
+#p1{
+    font-style: italic;
+    color: rgb(5, 36, 36);
+    font-size: 50px;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: rgb(201, 140, 140) dashed overline underline line-through;
+}
+#p2{
+    color: orange;
+    font-weight: bolder;
+    text-align: center;
+    text-shadow: 5px 5px 5px red;
+    font-size: 50px;
+    text-decoration: green dotted overline underline;
+}
+.num{
+    list-style-type: decimal;
+}
+.alpha{
+    list-style-type: lower-alpha;
+}
+.disc{
+    list-style-type: disc;
+}
+.square{
+    list-style-type: square;
+}
+.pos{
+    list-style-position: inside;
+}
+.pis{  
+    list-style-position: outside;
+}
+.image{
+    width: 200px;
+    background-size: 100px;
+    background-repeat: no-repeat;
+    margin: 50px;
+    list-style-image: url("https://img.freepik.com/free-photo/tulips-bouquet-pink-background-with-copyspace_24972-271.jpg?size=626&ext=jpg");
+}

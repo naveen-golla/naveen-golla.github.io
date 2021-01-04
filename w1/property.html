@@ -1,8 +1,15 @@
 <!DOCTYPE html>
 
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <meta name="viewport" content="width=device-width,initial-scale=1,0">
     <style>
+        body {
+            counter-reset: section;
+        }
+
         table {
             border-radius: 10%/10%;
             border: 2px solid blue;
@@ -21,14 +28,69 @@
         #space {
             border-collapse: initial;
             border-spacing: 20pt 1em;
+            text-shadow: 3px 3px 3px black;
+        }
+        .material-icons{
+            color: green;
+            font-size: 50px;
+            margin: 10px;
+        }
+
+        h1 {
+            counter-reset: subsection;
+        }
+
+        h1::before {
+            counter-increment: section;
+            content: "section"counter(section) ".";
+        }
+
+        h2::before {
+            counter-increment: subsection;
+            content: counter(section) "."counter(subsection) " ";
         }
 
         p {
             display: table;
+            text-shadow: 3px 3px 3px green;
+
+        }
+
+        p::before {
+            counter-increment: section;
+            content: "section"counter(section) ":";
         }
 
         p:hover {
             color: red;
+        }
+
+        .fa {
+            color: red;
+            font-size: 50px;
+            margin: 10px;
+        }
+
+        div {
+            border: 3px solid red;
+            padding: 5px;
+            background-color: pink;
+            font-size: 20px;
+        }
+
+        img {
+            float: right;
+            border: 3px solid blue
+        }
+
+        .jtp {
+            overflow: auto;
+        }
+
+        .jtp::after {
+            content: '.';
+            clear: both;
+            display: table;
         }
 
         button {
@@ -37,9 +99,12 @@
         }
 
         .b1 {
-            background-color: blue;
+            background-color: black;
+            text-align: center;
             border: 10px brown solid;
             border-radius: 10;
+            text-shadow: 0px 0px .2em cyan;
+            width: fit-content;
         }
 
         #b2 {
@@ -50,21 +115,29 @@
             box-shadow: 10px 10px 12px 2px black;
             padding: 10px 20px 30px 40px;
         }
-        *{box-sizing: border-box;}
+
+        * {
+            box-sizing: border-box;
+        }
 
         .image {
             display: block;
-            width: 100%;
-            height:1em;
-           
-        
+            width: 50%;
+            height: 50px;
+        }
+
+        .text {
+            text-transform: capitalize;
+            outline: 3px solid red;
+            border: 3px solid green;
+            outline-style: double;
         }
 
         .container {
             position: relative;
             width: 50%;
             max-width: 300px;
-            border:5px black dotted;
+            border: 5px black dotted;
         }
 
         .overlay {
@@ -78,7 +151,8 @@
             padding: 46px;
 
         }
-        .container:hover .overlay{
+
+        .container:hover .overlay {
             opacity: 1.5;
         }
 
@@ -93,10 +167,19 @@
         a:active {
             color: black;
         }
+
+        .glyphicon {
+            color: blue;
+            font-size: 20px;
+            margin: 20px;
+        
+        }
     </style>
 </head>
 
 <body>
+    <h1>Font Awsome Library</h1>
+    <i class="fa fa-table"></i>
     <table id="space">
         <tr>
             <th>class</th>
@@ -110,18 +193,66 @@
     <p> what</p>
     <p>is </p>
     <p>this</p>
+    <i class="fa fa-mobile"></i>
     <div style="cursor: alias">alias value</div>
+    <div class="b1">
+        <h1>what is the</h1>
+    </div>
+    <i class="fa fa-heart"></i>
     <button class="b1">red in color</button>
     <button id="b2">hai prends</button>
 
-    
+
     <a class="link" href="www.google.com">Css grid</a>
     <center>
         <div class="container">
-    <image
-        src="https://image.freepik.com/free-vector/background-template-with-plain-color-wall-happy-girl_1308-42152.jpg">
-     <div class="overlay">welcome</div>
-        </div></center>
-        <br>
-        <br>
-    </body>
+
+            <image
+                src="https://image.freepik.com/free-vector/background-template-with-plain-color-wall-happy-girl_1308-42152.jpg">
+                <div class="overlay">welcome</div>
+        </div>
+    </center>
+    <br>
+    <br>
+    <p class="text">what the fun ction</p>
+
+    <p>mean</p>
+    <p>while</p>
+    <p>function</p>
+    <i class="glyphicon glyphicon-file"></i>
+    <h1>Java tutorials:</h1>
+    <h2>Core Java tutorial</h2>
+    <h2>Servlet tutorial</h2>
+    <h2>JSP tutorial</h2>
+    <h2>Spring tutorial</h2>
+    <h2>Hibernate tutorial</h2>
+    <i class="glyphicon glyphicon-cloud"></i>
+
+    <h1>Web technology tutorials:</h1>
+    <h2>HTML tutorial</h2>
+    <i class="material-icons">traffic</i>
+    <h2>CSS tutorial</h2>
+    <h2>jQuery tutorial</h2>
+    <h2>Bootstrap tutorial</h2>
+    <i class="glyphicon glyphicon-user"></i>
+
+    <div class="jtp">
+        <image src="https://image.shutterstock.com/image-photo/bright-spring-view-cameo-island-260nw-1048185397.jpg">it
+            is the one of the maost important any aif the flowing of the main paory
+            next →← prev
+            CSS clearfix
+            A clear float (or clearfix) is a way for an element to fix or clear the child elements so that we do not
+            require to add additional markup. It resolves the error which occurs when more than one floated elements are
+            stacked next to each other.
+
+            Suppose if we set the position of a sidebar to the left of the main content block, but we get the elements
+            collapse and overlap on each other. We can understand it as if a child element is floated and taller than
+            its parent element; it will overflow outside of its container.
+
+            To overcome this, we can use the overflow: auto; property to the containing element.
+
+            Let us try to understand it by using an example.
+    </div>
+<i class="material-icons">computer</i>
+<i class="material-icons">attachment</i>
+</body>
