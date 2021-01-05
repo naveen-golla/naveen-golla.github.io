@@ -1,0 +1,206 @@
+body{
+    background-color: white;
+    
+}
+.container{
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 25px;
+    border-radius: 25px;
+}
+.container input{
+    visibility: hidden;
+    cursor: pointer;
+}
+.mark{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: lightgray;
+}
+.container:hover input ~ .mark{
+    background-color: gray;
+}
+.container input:checked ~ .mark{
+    background-color: blue;
+}
+.mark:after{
+    content: "";
+    position: absolute;
+    display: none;
+}
+.container input:checked ~ .mark::after{
+    display: block;
+}
+.container .mark::after{
+    left:9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+.container .mark::before {  
+    position: absolute;  
+    content: "";  
+    border-radius: 10px;  
+    border: 5px solid yellow;  
+    transform: scale(0);      
+}  
+  
+.container input:checked ~ .mark::before {  
+    left: -3px;  
+    top: -3px;  
+    width: 24px;  
+    height: 24px;  
+    border-radius: 5px;  
+    transform: scale(3);  
+    opacity:0;     
+    transition: all 0.3s ease-out;  
+}  
+.check {  
+    width: 500px;  
+    margin: 50px auto;  
+    clear: both;  
+    display: block;  
+    background-color: #a9b7c0;  
+    border-radius: 4px;  
+}  
+.check::after {  
+    clear: both;  
+    display: block;  
+    content: "";  
+}  
+.check .checkbox-container {  
+    float: left;  
+    width: 50%;  
+    box-sizing: border-box;  
+    text-align:center;  
+  padding: 40px 0px;  
+}  
+  
+  
+/* Styling Checkbox Starts */  
+.checkbox-label {  
+color: rgb(112, 17, 17);  
+    display: block;  
+    position: relative;  
+    margin: auto;  
+    cursor: pointer;  
+    font-size: 22px;  
+    line-height: 24px;  
+    height: 50px;  
+    width: 24px;  
+    clear: both;  
+}  
+.checkbox-label input {  
+    position: absolute;  
+    opacity: 0;  
+    cursor: pointer;  
+}  
+  
+.checkbox-label .mark {  
+    top:30px;  
+    position: absolute;  
+    height: 24px;  
+    width: 24px;  
+    background-color: transparent;  
+    border-radius: 5px;  
+    transition: all 0.3s ease-in;  
+    border: 2px solid rgb(184, 34, 34);  
+}  
+.checkbox-label input:checked ~ .mark {  
+    background-color: rgb(125, 192, 105);  
+    border-radius: 5px;  
+    transform: rotate(0deg) scale(1);  
+    opacity:1;  
+    border: 2px solid rgb(244, 248, 10);  
+}  
+.checkbox-label .mark::after {  
+    position: absolute;  
+    content: "";  
+    border-radius: 5px;  
+}  
+.checkbox-label input:checked ~ .mark::after {  
+  transform: rotate(45deg) scale(1);  
+  left: 8px;  
+  top: 3px;  
+  width: 6px;  
+  height: 12px;  
+  border: solid rgb(66, 27, 27);  
+  border-width: 0 2px 2px 0;  
+  border-radius: 0;  
+}  
+/* For Ripple Effect */   
+.checkbox-label .mark::before {  
+    position: absolute;  
+    content: "";  
+    border-radius: 10px;  
+    border: 5px solid yellow;  
+    transform: scale(0);      
+}  
+  
+.checkbox-label input:checked ~ .mark::before {  
+    left: -3px;  
+    top: -3px;  
+    width: 24px;  
+    height: 24px;  
+    border-radius: 5px;  
+    transform: scale(3);  
+    opacity:0;     
+    transition: all 0.3s ease-out;  
+}  
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: gray;
+}
+li{
+    float: left;
+}
+li a, .dropbtn{
+    display: inline-block;
+    color: blue;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+.active{
+    background-color: orange;
+    color: orchid;
+}
+li a:hover, .dropdown:hover .dropbtn{
+    background-color: green;
+    color: white;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: lightblue;
+    min-width:160px;
+    box-shadow: 5px 8px 10px 0px black;
+}
+.dropdown-content a{
+    color: black;
+    padding: 12px 23px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+.dropdown-content a:hover{
+    background-color: skyblue;
+    color: white;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
