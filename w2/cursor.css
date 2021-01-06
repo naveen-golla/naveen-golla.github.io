@@ -161,15 +161,22 @@ ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
+    width: 200px;
+    text-shadow: 2px 2px 3px red;
     overflow: hidden;
     background-color: gray;
 }
 li{
     float: left;
 }
+
+ul:last-child{
+    border-bottom:none;
+}
 li a, .dropbtn{
     display: inline-block;
-    color: blue;
+    border: 1px solid black;
+    color: rgb(231, 3, 3);
     font-size: 20px;
     text-align: center;
     padding: 10px 20px;
@@ -203,4 +210,28 @@ li a:hover, .dropdown:hover .dropbtn{
 }
 .dropdown:hover .dropdown-content{
     display: block;
+}
+.contain img{
+    width: 300px;
+    height: 300px;
+}
+.contain {
+    position: relative;
+    width: 25%;
+    height: auto;
+}
+.contain:hover .overlay{
+    opacity: 1;
+    height: 300px;
+}
+.overlay{
+    position: absolute;
+    transition: 0.7s ease;
+    opacity: 0;
+    width: 300px;
+    height: 0px;
+    top: 0;
+    right: 25px;
+    background-color: blue;
+
 }
