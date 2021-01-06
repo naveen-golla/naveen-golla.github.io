@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #div1 img {
+            width: 400px;
+            height: 400px;
+        }
+        :root{
+            --bg-color: gray;
+            --text-color:black;
+        }
+
+        #example {
+            width: calc(100% - 20%);
+            height: 500px;
+            background-repeat: no-repeat;
+            background-image: url("https://www.deccanherald.com/sites/dh/files/article_images/2020/05/19/temper-609617463-1581534001.jpg"), url("https://images.indianexpress.com/2016/08/jr-ntr.jpg"), url("https://images.desimartini.com/media/versions/main/gallery/2015-12/0d82df57-b988-45e7-988c-9f7802ba49ee_gallery_image_250_250.png");
+            background-blend-mode: lighten;
+         
+        }
+
+        .container {
+            display: block;
+            position: relative;
+            padding-left: 40px;
+            margin-bottom: 20px;
+            cursor: pointer;
+            font-size: 25px;
+        }
+
+        .container input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        .check {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 30px;
+            width: 30px;
+            background-color: var(--text-color);
+            border-radius: 50px;
+        }
+
+        .container:hover input~.check {
+            background-color: gray;
+        }
+
+        .container input:checked~.check {
+            background-color:var(--bg-color);
+        }
+
+        .check::after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+
+        .container input:checked~.check::after {
+            display: block;
+        }
+
+        .container .check::after {
+            top: 8px;
+            left: 8px;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: white;
+        }
+        #sub{
+            vertical-align: sub;
+        }
+        #sup{
+            vertical-align: super;
+        }
+        /* word break */
+        .jtp{
+            width: 200px;
+            border: 2px solid black;
+            word-break: keep-all;
+            text-align: left;
+            font-size: 25px;
+            background-color: var(--bg-color);
+        }
+        .test{
+            width: 200px;
+            border: 2px solid black;
+            word-wrap: break-word;
+            font-size: 20px;
+        }
+        .jtp1{
+            white-space: nowrap;
+            height: 30px;
+            width: 150px;
+            overflow: hidden;
+            border: 2px solid black;
+           
+            font-size: 20px;
+            text-overflow: ellipsis;
+            writing-mode: vertical-lr;
+        }
+        div:hover{
+            overflow: visible;
+        }
+        a::after{
+            content: attr(href);
+        }
+        #space{
+            word-spacing: 40px;
+            text-align: justify;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+        #space:hover{
+            color: red;
+        }
+        #image1{
+            width: 300px;
+            height: 300px;
+            border: 5px solid red;
+        }
+        #obj{
+            width: 500px;
+            height: 500px;
+           object-fit: none;
+            object-position: right top;
+            border: 5px solid red;
+        }
+        #div4{
+            position: absolute;
+            width: 250px;
+            height: 250px;
+            font-size: 30px;
+
+        }
+        #len{
+            left: 200px;
+            border: 5px solid blue;
+        }
+        #par{
+            left: 65px;
+            border: 5px solid green;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+
+        <h2> background-blend-mode: multiply; </h2>
+        <div id="example"></div>
+    </center>
+    <label class="container">green<input type="radio">
+        <span class="check"></span></label>
+    <label class="container">blue<input type="radio">
+        <span class="check"></span></label>
+    <label class="container">yellow<input type="radio">
+        <span class="check"></span></label>
+        <h1>6X<span id="sub">2</span></h1>
+        <h1>8X<span id="sup">4</span></h1>
+        <h3>word-break</h3>
+        <p class="jtp">welcome to the java t point</p>
+        <h3>word-wrap</h3>
+        <p class="test">welcome to the java t point jaaaaaaaaaaaaavaaaaaaaaaaaaaaaaaaaaaaa</p>
+        <h3>writing-mode and text-overflow</h3>
+        <div class="jtp1">welcome to javatpoint</div>
+         <p>(a+b)<sup class="sup">2</sup></p>
+         <a href="www.google.com">click here</a>
+         <p id="space"> large negative or positive value of word-spacing will make the word unreadable. If we apply a very large positive value, then it will cause the appearance of words like a series of unconnected and individual words. A very large negative value will overlap the word to each other, which makes the word unrecognizable.</p>
+        <div>
+            <img id="image1" src="https://www.deccanherald.com/sites/dh/files/article_images/2020/05/19/temper-609617463-1581534001.jpg">
+            <img id="obj" src="https://www.deccanherald.com/sites/dh/files/article_images/2020/05/19/temper-609617463-1581534001.jpg">
+        </div>
+        <div id="div4">
+            <div id="len">left</div>
+            <div id="par">px</div>
+        </div>
+        
+        </body>
+
+</html>

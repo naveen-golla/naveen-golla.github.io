@@ -1,0 +1,134 @@
+body{
+    background-color: gray;
+}
+h1{
+    text-transform: capitalize;
+}
+.container{
+    display: block;
+    padding-left: 35px;
+    position: relative;
+    cursor: pointer;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.container input{
+    visibility: hidden;
+    cursor: pointer;
+}
+.mark{
+    position: absolute;
+    top: 0%;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: white;
+}
+.container:hover input ~ .mark{
+    background-color: green;
+}
+.container input:checked ~ .mark{
+    background-color: blue;
+}
+.mark:after{
+    content: "";
+    position: absolute;
+    display: none;
+}
+.container input:checked ~ .mark::after{
+    display: block;
+}
+.container .mark:after{
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+.container .mark:before{
+position: absolute;
+content: "";
+border-radius: 10px;
+border: 5px solid yellow;
+transform: scale(0);
+}
+.container input:checked ~ .mark:before{
+    left: -3px;
+    top: -3px;
+    width: 24px;
+    height: 24px;
+    border-radius: 5px;
+    transform: scale(3);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+ul{
+    background-color: red;
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0px;
+    overflow: hidden;
+   
+    border-bottom: 1px solid black;
+
+}
+li{
+    float: left;
+    border-right: 1px solid black;
+}
+
+
+li a, .dropbtn{
+    display: inline-block;
+    color: blue;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+   
+}
+li a:hover, .dropdown:hover .dropbtn{
+    color: rgb(211, 14, 211);
+    background-color: orange;
+}
+.dropdown-container{
+    display: none;
+    position: absolute;
+    background-color: rgb(247, 244, 244);
+    min-width: 149px;
+    height: auto;
+    box-shadow: 5px 5px 3px black;
+}
+.dropdown-container a{
+    color: black;
+    padding: 12px 13px;
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    
+}
+.dropdown-container a:hover{
+    background-color: blue;
+    color: white;
+}
+.dropdown:hover .dropdown-container{
+    display: block;
+}
+.content{
+    display: flex;
+    background-color: white;
+    height: 150px;
+    width: auto;
+    flex-wrap: wrap;
+}
+div{
+    background-color: cyan;
+    line-height: 40px;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    width: 100px;
+    margin: 20px;
+}
