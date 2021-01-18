@@ -66,6 +66,15 @@
     }
     input[type="text"], input[type="email"], select, textarea
     {width: 100%;}
+    .footer-nav{width: 110%;
+    font-size: 140%;}
+    .social-links{
+        text-align: center;
+        font-size: 180%;
+        margin-top: 20px;
+        word-spacing: 20px;
+    }
+
 }
 
 
@@ -80,4 +89,13 @@
     h2{font-size: 100%;}
     h1{font-size: 150%;}
     header{height: 70vh;}
+    .footer p{ margin-top: 5px;}
+    .social-links{
+        word-spacing: 16px;
+    margin-right: 20px;
+    font-size: 130%;
+    margin-top: 15px;
+    }
+    .footer-nav{width: 100%;
+    font-size: 100%;}
 }
