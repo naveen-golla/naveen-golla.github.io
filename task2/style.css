@@ -1,0 +1,200 @@
+* {
+    font-family: 'Pacifico', cursive;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 1rem;
+}
+h3{
+    font-size: 1rem;
+}
+.body-wrapper {
+    background-color: #000;
+}
+.nav-wrapper{
+    position: relative;
+background-color:  #000;
+    height: auto;
+    max-width: 1400px;
+   
+}
+.logo{
+  
+  position: absolute;
+    width: 150px;
+    height: auto;
+    margin-top: 21px;
+    margin-left: 200px;
+    color: #e5474b;
+    font-size: 37px;
+}
+ .navbar{
+     
+  
+     padding: 10px 20px;
+    margin: 25px;
+ }
+ .navbar a{
+     color:white;
+     text-decoration: none;
+     padding: 5px 15px;
+     transition: 0.7s ease;
+     border-radius: 2px;
+     margin: 20px;
+ }
+ .navbar a:hover{
+background-color: white;
+color: black;
+ }
+    .container{
+        height: 75vh;
+        width: 100%;
+        display: -webkit-flex;
+        display: flex;
+        background-image: url("./images/banner.jpg");
+       background-size: cover;
+       background-position:  contain;
+        
+    }
+
+.header{
+    position: absolute;
+    top: 33%;
+    left: 11%;
+}
+.header h2{ 
+    color: white;
+    font-size: 40px;
+    width: 62%;
+    line-height: 60px;
+}
+   
+    .button{
+        position: absolute;
+        top: 60%;
+        left: 11%;   
+    }
+    .btn{
+        color: WHITE;
+        padding: 15px 20px;
+        border: 3px solid white;
+        background-color: transparent;
+        border-radius: 3px;
+        transition: 0.6s ease;
+        
+    }
+    .btn:hover{
+        color: black;
+        background-color: white;
+
+    }
+
+
+
+.even{
+    background-color: white;
+    height: 500px;
+    top: 0;
+    width: 100%;
+}
+.lor{
+    color: rgb(240, 57, 87);
+    margin-left: 11%;
+    height: 80px;
+    padding-top: 90px;
+}
+.para{
+    margin-left: 11%;
+    font-size: 16px;
+    padding-right: 271px;
+    line-height: 35px;
+}
+.bttn{
+    margin-left: 11%;
+    color: rgb(245, 62, 93);
+    margin-top: 10px;
+        padding: 17px 20px;
+        border: 3px solid rgb(236, 43, 75);
+        background-color: transparent;
+        border-radius: 3px;
+        
+        
+}
+.cont{
+    background-color: rgb(245, 235, 235);
+   width: 100%;
+   height: 460px;
+   display: -webkit-flex;
+   
+}
+.fat{
+    
+    padding-top: 102px;
+    width: 40%;
+    margin-left: 11%;
+}
+.som{
+    padding-top: 102px;
+    width: 50%;
+    background-color: rgb(248, 230, 230);
+}
+.fab{
+    width: 50%;
+    margin-left: 14%;
+}
+.para1{
+    line-height: 35px;
+    width: 122%;
+    word-spacing: 2px;
+   
+}
+.para2{
+    line-height: 35px;
+    margin-right: 21%;
+    word-spacing: 4px;
+}
+.material-icons{
+    color:gray;
+    margin: 50px;
+}
+.fa{
+    color: gray;
+    margin: 50px;
+}
+.item{
+    background-color: white;
+    width: 100%;
+    height: auto;
+    display: -webkit-flex;
+    display: flex;
+    margin-top: 120px;
+}
+.item2{
+    width: 25%;
+    margin-left: 7%;
+    height: auto;
+
+}
+.item3{
+width: 25%;
+margin: 11%;
+height: auto;
+}
+/* practice*/
+.row{
+    height: 100px;
+    color: red;
+}
+footer{
+    height: 100px;
+    width: 100%;
+    background-color: green;
+}

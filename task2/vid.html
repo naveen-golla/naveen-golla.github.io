@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+         <link rel="stylesheet" type="text/css" href="vendoes/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="vendoes/css/grid.css/">
+         <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+       <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
+        <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+
+        <title>Omnifood</title>
+        <style>
+            /*------------------------------------------ */
+/*-----BASIC*/
+/*------------------------------------------ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato','Arial',sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+/*------------------------------------------ */
+/*-----REUSABLE COMPONENTS----------*/
+/*------------------------------------------ */
+.row{
+    margin: 0 auto;
+    max-width: 1140px;
+}
+section{
+    padding: 80px 0;
+}
+h1,h2{
+     font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+h2{
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+/*------------------------------------------ */
+/*-----HEADER----------*/
+/*------------------------------------------ */
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7) , rgba(0, 0, 0, 0.7)),url(img/hero.jpg);
+    background-size:cover;
+    background-position: center;
+        height: 100vh;
+}
+.hero-text-box{
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/*------------------------------------------ */
+/*-----HEAD-TEXT----------*/
+/*------------------------------------------ */
+h1{
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 4px;
+}
+/*------------------------------------------ */
+/*-----BUTTONS----------*/
+/*------------------------------------------ */
+.btn:link,
+.btn:visited{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+    
+}
+.btn-full:link,
+.btn-full:visited{
+    background-color: #e67e22;
+     border: 1px solid #e67e22;
+    color: #fff;
+    margin-right: 15px;
+}
+.btn-ghost:link,
+.btn-gjost:visited{
+    border: 1px solid #e67e22;
+    color: #e67e22;
+}
+.btn:hover,
+.btn:active{
+    background-color: #cf6d17;
+}
+.btn-full:link,
+.btn-full:visited{
+    
+     border: 1px solid #cf6d17;
+}
+.btn-ghost:link,
+.btn-ghost:visited{
+    border: 1px solid #cf6d17;
+    color: #fff;
+}
+.logo{
+    height: 100px;
+    width: auto;
+    float:left; 
+    margin-top: 20px;
+}
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-right: 40px;
+}
+.main-nav li a:link,
+.main-nav li a:visited{
+    color: #fff;
+    text-decoration: none;
+    font-size: 90%;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+    padding: 8px 0;
+}
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #e67e22;
+}
+
+f
+        </style>
+    </head>
+    <body>
+      <header>
+          <nav>
+          <div class="row">
+              <img src="resources/img/logo-white.png" alt="Omnifood logo" class="logo">
+              <ul class="main-nav">
+              <li><a href="#">Food delivery</a></li>
+                  <li><a href="#">How it works</a></li>
+                  <li><a href="#">Our cities</a></li>
+                  <li><a href="#">Sign up</a></li>
+                  
+              </ul>
+              </div>
+          </nav>
+        <div class="hero-text-box">
+          <h1>Goodbye junk food.<br>Hello super healthy meals.</h1>
+            <a class="btn btn-full" href="#">I’m hungry </a>
+            <a class="btn btn-ghost" href="#">Show me more </a>
+             </div>
+        </header>
+    
+    <section class="section-features">
+        <div class="row">
+        <h2>Get food fast &mdash; not fast food</h2>
+            <p class="long-copy">
+                Hello, we’re Omnifood, your new premium food delivery service. We know you’re always busy. No time for cooking. So let us take care of that, we’re really good at it, we promise!
+            </p>
+        </div>
+        <div class="row">
+           <div class="col span-1-of-4">
+             <ion-icon name="infinite-outline"></ion-icon>
+             <h3>Up to 365 days/year</h3>
+            <p>Never cook again! We really mean that. Our subscription plans include up to 365 days/year coverage. You can also choose to order more flexibly if that's your style.
+             </p>
+        </div>
+         <div class="col span-1-of-4">
+                 <ion-icon name="alarm-outline"></ion-icon>
+            <h3>Ready in 20 minutes</h3>
+            <p>You're only twenty minutes away from your delicious and super healthy meals delivered right to your home. We work with the best chefs in each town to ensure that you're 100% happy.
+             </p>
+            
+         </div>
+         <div class="col span-1-of-4">
+                 <ion-icon name="nutrition-outline"></ion-icon>
+            <h3>100% organic</h3>
+            <p>All our vegetables are fresh, organic and local. Animals are raised without added hormones or antibiotics. Good for your health, the environment, and it also tastes better!
+             </p>
+            
+          </div>
+         <div class="col span-1-of-4">
+                 <ion-icon name="cart-outline"></ion-icon>
+            <h3>Order anything</h3>
+            <p>We don't limit your creativity, which means you can order whatever you feel like. You can also choose from our menu containing over 100 delicious meals. It's up to you!
+             </p>
+           
+            </div>
+        
+        </div>
+        
+        </section>
+    
+    
+    </body>
+
+
+</html>

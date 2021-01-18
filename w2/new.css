@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+body{
+    background-color: green;
+    font-family: 'Josefin Sans', sans-serif;
+ }
+ .container{
+     width: 1500px;
+     height: auto;
+     background-color: url("/home/naveen/Documents/new/naveen-golla.github.io/task1/Assets/h1_hero2.png");
+ }
+ .header-mini-logo{
+     width: 1500px;
+     height: 50px;
+     float: left;
+     background-image: url("/home/naveen/Documents/new/naveen-golla.github.io/task1/Assets/logo.png");
+     background-repeat: no-repeat;
+     background-color: white;
+
+ }
+.navbar{
+    float: right;
+    padding: 10px 10px 0px 0px ;
+    word-spacing: 5px;
+    text-decoration: none;
+}
+.navbar a{
+    color: darkgreen;
+}
