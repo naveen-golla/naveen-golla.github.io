@@ -196,6 +196,14 @@ input[type=submit]:active{
     float:left; 
     margin-top: 20px;
 }
+.logo-black{ display: none;
+    height: 60px;
+    width: auto;
+    float:left; 
+    margin-top: 5px 0;
+}
+
+/* main-nav */
 .main-nav{
     float: right;
     list-style: none;
@@ -209,7 +217,7 @@ input[type=submit]:active{
 .main-nav li a:link,
 .main-nav li a:visited{
     color: #fff;
-    text-decoration: none;
+    text-decoration: none;  
     font-size: 90%;
     text-transform: uppercase;
     border-bottom: 2px solid transparent;
@@ -223,7 +231,25 @@ input[type=submit]:active{
     border-bottom: 2px solid #e67e22;
     border-left: 2px solid #e67e22;
 }
+/* STICKY-NAV */
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  background-color: rgba(255, 255, 255, 0.98); 
+  box-shadow: 0 2px 2px #efefef;
+  z-index: 9999;
 
+}
+.sticky .main-nav{ margin-top: 18px;}
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited{
+    color: #555;
+    padding: 16px 16px;
+}
+.sticky .logo{display: none;}
+.sticky .logo-black{ display: block;}
 /*------------------------------------------ */
 /*-----MEALS---------*/
 /*------------------------------------------ */
@@ -515,8 +541,24 @@ footer p{
     margin-top: 20px;
 }
 
+/*------------------------------------------ */
+/*-----ANIMATIONS---------*/
+/*------------------------------------------ */
+ .js--wp-1,
+ .js--wp-2,
+ .js--wp-3{
+     opacity: 0;
+     animation-duration: 1s;
+ }
 
-
+ .js--wp-4{
+     animation-duration: 1s;
+ }
+ .js--wp-1.animated,
+ .js--wp-2.animated,
+ .js--wp-3.animated{
+     opacity: 1;
+ }
 
 
 
