@@ -64,4 +64,22 @@ $('.js--wp-4').waypoint(function(direction){
 offset: '50%'
 });
 
+
+  /* Mobile navigation */
+  $('.js--nav-icon').click(function() {
+    var nav = $('.js--main-nav');
+    var icon = $('.js--nav-ion- ion-icon');
+    
+    nav.slideToggle(200);
+    
+    if (icon.hasClass('menu-outline')) {
+        icon.addClass('close-outline');
+        icon.removeClass('menu-outline');
+    } else {
+        icon.addClass('menu-outline');
+        icon.removeClass('close-outline');
+    }   
+
 });
+ 
+});/* mobile-nav  <ion-icon name="close-outline"></ion-icon>*/
