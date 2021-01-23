@@ -1,0 +1,31 @@
+header{
+    
+    background-size:cover;
+    background-position: center;
+
+    background-attachment: fixed;
+   object-position: bottom;
+    
+}
+.hero-text-box{
+    position: absolute;
+    width: 1140px;
+    top: 20%;
+    left: 20%;
+    transform: translate(-20%, -20%);
+}
+.banner-tag{
+    width: 1500px;
+}
+.hero-text-box h1{
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+
+}
