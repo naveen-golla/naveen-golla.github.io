@@ -1,0 +1,75 @@
+
+.colored{
+    padding-top: 44px;
+    background: #f3f3f3;
+}
+.ht-header{
+    margin: 0 auto;
+    height: 450px;
+    
+    color: #333;
+    max-width: 1400px;
+    padding-left: 50px;
+    
+}
+.header-text{
+   font-size: 14px;
+    padding-top: 10px;
+    margin-left: 30px;
+}
+.para-text{
+    margin-bottom: 10px;
+    padding-top: 10px;
+    color: #14cdee;
+    font-size: 120%;
+   
+}
+.para-text h3::before,
+.para-text h3::after{
+
+        display: inline-block;
+        height: 1px;
+        background-color: #1bc9e7;
+        content: " ";
+        width: 250px;
+        margin: 0 20px;
+        margin-bottom: 7px;
+}
+.ht-png{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    width: 75%;
+    margin: 0 aut0;
+}
+.ht-box img{
+ 
+    width: 75px;
+    margin-right: 50px;
+  
+}
+.ht-box:last-child{
+    border: none;
+}
+.ht-box {
+    border-right: 1px solid rgb(190, 190, 190);
+    margin-right: 70px;
+
+}
+.text-box{
+    
+    margin-top: 30px;
+    font-size: 130%;
+    width: 62%;
+    margin-left: 20px;
+    letter-spacing: 0.2px;
+
+}
+.ht-box p{
+ font-size: 100%;
+ padding: 3px 0px 0px;
+ margin: 0;
+ margin-left: 5px;
+
+
+}
