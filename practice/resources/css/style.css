@@ -1,0 +1,120 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: red;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    
+    
+}
+
+
+.content {
+    max-width: 1366px;
+    margin: auto;
+    overflow: hidden;
+    height: 300px;
+}
+.hero {
+    color: #FFF;
+    position: relative;
+}
+.hero.internal .img-container {
+    height: 300px;
+    
+}
+.hero .img-container {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 222px;
+    left: 0;
+    right: 0;
+}
+.hero .img-container img {
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    width: 100%;
+}
+/*
+img {
+    border: 0;
+    vertical-align: middle;
+}*/
+
+ /* text on image */
+ /*.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    
+    
+}
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+    
+}*/
+.hero.internal .hero-content {
+    height: 300px;
+    padding-top: 50px;
+    
+    
+}/*
+.hero.internal .headline {
+    padding: 20px 20px;
+    text-align: left;
+    left: 0;
+    
+}*/
+.hero.internal .headline {
+    padding-left: 0;
+    display: inline-block;
+    position: absolute;
+    bottom: initial;
+    padding: 7px 15px;
+    background:#fff;
+    left: 5%;
+    transform: translateY(-50%);
+    width: auto;
+    top: 50%;
+    font-size: 18px;
+    line-height: 21px;
+}
+.hero.internal h1 {
+    text-transform: uppercase;
+    color: #c8102e;
+    text-align: left;
+    padding: 10px;
+    display: inline-block;
+    font-weight: 200;
+    transform: translateZ(0);
+}
+
+/*
+.hero.internal .headline h1 {
+    background: #FFF;
+    font-size: 20px;
+    line-height: 21px;
+   
+}*/
+ /*
+.hero.internal h1 {
+    text-transform: uppercase;
+    /* text-shadow: 0px 0px 38px #000000, 0px 0px 38px #000000, 0px 0px 38px #000000; */
+ /*   transform: translateZ(0);
+    color: #c8102e;
+    display: inline-block;
+    font-weight: 500;
+    text-align: left;
+    padding: 10px;
+    
+    
+}*/
