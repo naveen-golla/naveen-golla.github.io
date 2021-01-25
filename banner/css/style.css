@@ -1,31 +1,57 @@
-header{
-    
-    background-size:cover;
-    background-position: center;
 
-    background-attachment: fixed;
-   object-position: bottom;
-    
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+header{
+    background-color: orangered;
+  
+    height: 300px;
+    object-fit: contain;
+        max-width: 1366px;
+        margin: auto;
+        overflow: hidden;
+   
+  /*   background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+   object-position: bottom;*/
+   margin: 20px 70px;
+}
+.bot{
+   max-width: 1400px;
+   overflow: hidden;
+   position: absolute;
+   
+}
+   
+
 .hero-text-box{
     position: absolute;
     width: 1140px;
     top: 20%;
-    left: 20%;
-    transform: translate(-20%, -20%);
+    left: 30%;
+    transform: translate(-30%, -30%);
 }
+ 
 .banner-tag{
-    width: 1500px;
-}
+   max-width: 1400px;
+    margin: 0 auto;
+    object-fit: contain;
+    height: 300px;
+  
+} /*
 .hero-text-box h1{
     font-weight: 300;
     text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 20px;
-    color: #fff;
+    color: #998ed6;
     font-size: 240%;
     word-spacing: 4px;
     letter-spacing: 1px;
-    font-family: 'Lato', Arial, Helvetica, sans-serif;
+   
 
-}
+} */

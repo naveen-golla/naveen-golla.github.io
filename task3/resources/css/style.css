@@ -1,11 +1,9 @@
-.colored{
-    padding-top: 44px;
-    background: #f3f3f3;
-}
+
 .ht-header{
     margin: 0 auto;
     height: 450px;
-    
+    padding-top: 44px;
+    background: #f3f3f3;
     color: #333;
     max-width: 1400px;
     padding-left: 50px;
