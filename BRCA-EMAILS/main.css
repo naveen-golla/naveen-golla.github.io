@@ -1,0 +1,100 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.brca-main-container{
+    background-color: #78C5D9;
+   
+}
+
+.brca-container{
+    max-width: 900px;
+   min-height: 700px;
+    background-color: #78C5D9;
+    margin: 0 auto;
+    position: relative;
+}
+
+.brca-container h2{
+    padding-left: 50px;
+    padding-top: 50px;
+    width: 380px;
+    height: 23px;
+    color: #FEFEFE;
+    opacity: 1;
+    font-size: 19px;
+    text-align: left;
+}
+.brca-container h1{
+    text-align: center;
+    width: 800px;
+    
+    opacity: 1;
+    color: #FFFFFF;
+    font-size: 36px;
+    padding-top: 70px;
+    padding-left: 29px;
+    text-transform: uppercase;
+}
+
+.brca-order h2{
+    padding: 0;
+    color: #918f8f;
+    opacity: 1;
+    text-align: center;
+   
+    font-size: 35px;
+    font-weight: 100;
+    width: auto;
+    height: 50px;
+}
+.brca-container p{
+    text-align: center;
+   
+    height: 40px;
+    padding-top: 50px;
+    width: auto;
+    color: #FEFEFE;
+    font-size: 19px;
+}
+.brca-btn{
+    text-align: center;
+   
+    width: auto;
+    height: 48px;
+    padding-top: 60px;
+  
+
+}
+.brca-button{
+    color: #FFFFFF;
+    background-color: #FB6485;
+    width: 166px;
+    height: 40px;
+    border-radius: 25px;
+}
+.brca-footer{
+    margin: 0 auto;
+    max-width: 900px;
+    min-height: 200px;
+    background-color: #ffffff;
+    border-radius: 10px 10px 0 0;
+}
+.brca-footer-logo{
+    display: flex;
+    justify-content: space-between;
+    padding: 35px;
+
+}
+.brca-logo{
+    width: 200px;
+    height: 112px;
+}
+.brca-logo1{
+    width: 200px;
+    height: 40px;
+    margin-top: 48px;
+}
+
