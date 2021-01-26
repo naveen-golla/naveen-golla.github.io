@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.shadow{
+  
+    height: 440px;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.border-all{
+    box-shadow: 0 0 20px #8da885 ;
+    max-width: 1400px;
+    margin: 0 auto;
+    height: 400px;
+    background: white;
+    border: 1px solid gray;
+   
+}
+.header-h1{
+    color:  rgb(3, 66, 139);;
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-left: 14px;
+    
+}
+.images{
+    display: flex;
+}
+
+.hero.inner{
+    display: flex;
+    width: 50%;
+  
+}
+.doctor{
+    width: 300px;
+    height: 300px;
+    margin-left: 30px;
+    border-radius: 10px;
+    box-shadow: black;
+}
+.link{
+    color: rgb(115, 115, 238);
+    font-size: 160%;
+    line-height: 25px;
+
+} 
+.form h2{
+    color: rgb(10, 110, 224);
+    line-height: 25px;
+}
+ a:hover{
+    color: rgb(23, 199, 199);
+}
+.form{
+    margin-left: 20px;
+    line-height: 1.2rem;
+
+}
+.form p{
+    margin-top: 40px;
+    color: rgb(128, 123, 123);
+}
+
+.bttn{
+    
+    float: right;
+    margin-top: 32%;
+    padding: 5px;
+    border: 1px solid blue;
+    background-color: transparent;
+    color: blue;
+    border-radius: 5px;
+   
+
+}
+.bttn:hover{
+    color:white;
+    background-color: rgb(27, 213, 238);
+    border: 2px solid white;
+    border-radius: 5px;
+    
+}

@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: red;
+   background-color: #edefec;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     
@@ -79,13 +79,13 @@ img {
     display: inline-block;
     position: absolute;
     bottom: initial;
-    padding: 7px 15px;
+    padding: 7px 5px;
     background:#fff;
-    left: 5%;
+    left: 7%;
     transform: translateY(-50%);
     width: auto;
-    top: 50%;
-    font-size: 18px;
+    top: 48%;
+    font-size: 14px;
     line-height: 21px;
 }
 .hero.internal h1 {
