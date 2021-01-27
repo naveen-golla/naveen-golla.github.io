@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container {
+    background-image: linear-gradient(to right top, rgba(0, 0, 0, 0.623), rgba(255, 255, 255, 0.801)), url('img/background.jpeg');
+    height: 100vh;
+}
+
+
+/*FOR IMAGE*/
