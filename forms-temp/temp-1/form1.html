@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+</head>
+
+<body>
+    <main>
+        <h1>Sign Up</h1>
+        <p>it's quick and easy.</p>
+        <hr>
+        <form>
+            <div class="slide">
+                <input type="text" name="name" placeholder="First name" required>
+                <input type="text" name="name" placeholder="Surname" required>
+            </div>
+            <div>
+                <input id="email-input" type="email" name="email-inputted" placeholder="Mobile number or email address" required>
+            </div>
+            <div>
+                <input type="password" name="pass" id="pass" placeholder=" New password">
+            </div>
+            <div class="dob">
+                <label for="date of birth">Date of birth <ion-icon name="help-circle-outline" class="ion" class="ion"></ion-icon></label>
+
+                <div>
+                    <input type="number" name="date" max="31" min="1" placeholder="1">
+                    <select name="month" id="month" class="month">
+                        <option value="volvo">Jan</option>
+                        <option value="saab">Feb</option>
+                        <option value="opel">March</option>
+                        <option value="audi">Aprl</option>
+                        <option value="volvo">May</option>
+                        <option value="saab">Jun</option>
+                        <option value="opel">Jul</option>
+                        <option value="audi">Aug</option>
+                        <option value="volvo">Sep</option>
+                        <option value="saab">Oct</option>
+                        <option value="opel">Nov</option>
+                        <option value="audi">Dec</option>
+                      </select>
+
+                    <select name="year" id="year" class="month">
+                          <option value="volvo">2020</option>
+                          <option value="saab">2021</option>
+                          <option value="opel">2022</option>
+                          <option value="audi">2023</option>
+                          <option value="volvo">2024</option>
+                          <option value="saab">2025</option>
+                          <option value="opel">2026</option>
+                          <option value="audi">2027</option>
+                          <option value="volvo">2028</option>
+                          <option value="saab">2029</option>
+                          <option value="opel">2030</option>
+                          <option value="audi">2031</option>
+                        </select>
+
+                </div>
+            </div>
+            <div class="dob">
+                <label for="gender">Gender<ion-icon name="help-circle-outline" class="ion"></ion-icon>
+                </label>
+            </div>
+            <div class="gen">
+                <div class="special">
+                    <p>Male</p>
+                    <input type="radio" name="gender" id="male">
+
+                </div>
+                <div class="special">
+                    <p>Fe-male</p>
+                    <input type="radio" name="gender" id="male">
+
+                </div>
+                <div class="special">
+                    <p>Custom</p>
+                    <input type="radio" name="gender" id="male">
+
+                </div>
+            </div>
+            <div class="para">
+                <p>By clicking Sigh up, you agree to our &nbsp;<a href="#">Terms</a>,&nbsp;<a href="#">Data Policy</a> &nbsp;and<a href="#">&nbsp;Cookie Policy</a>.
+                    <br>You may receive SMS notifications from us and can opt out at any time.</p>
+            </div>
+            <div class="sign">
+                <button><a href="#">Sign Up</a></button>
+            </div>
+        </form>
+    </main>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+
+</html>

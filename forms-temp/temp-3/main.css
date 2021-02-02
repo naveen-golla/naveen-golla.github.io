@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin-top: 40px;
+}
+
+main {
+    border: 1px solid black;
+    margin: 0 auto;
+    max-width: 800px;
+    display: flex;
+    flex: 4;
+}
+
+.mar {
+    margin: 0 auto;
+    max-width: 750px;
+    display: flex;
+}
+
+
+/*Section part*/
+
+section {
+    flex: 3;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 23px;
+    margin-left: 25px;
+    font-weight: 400;
+}
+
+.logo {
+    width: 7rem;
+    margin-left: 25px;
+    margin-top: 30px;
+}
+
+.input-name {
+    margin-left: 25px;
+}
+
+input[type=text] {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    margin: 20px 0;
+}
+
+input[type=email] {
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 5px;
+    width: 430px;
+    margin-left: 25px;
+    font-size: 16px;
+}
+
+h4 {
+    margin-top: 6px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 300;
+    margin-left: 35px;
+}
+
+.list a {
+    text-decoration: none;
+    font-size: 17px;
+    margin: 20px 25px;
+    color: #1575E8;
+    font-weight: 400;
+}
+
+input[type=password] {
+    margin-top: 45px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.para {
+    margin-left: 25px;
+}
+
+.para p {
+    margin: 6px 10px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.check {
+    display: flex;
+    padding: 5px;
+    margin-left: 25px;
+    margin-top: 12px
+}
+
+input[type=checkbox] {
+    zoom: 1.5;
+}
+
+label {
+    margin-left: 20px;
+}
+
+.divi {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+
+.divi a {
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+button {
+    /* padding: 10px; */
+    width: 80px;
+    border-radius: 5px;
+    border: 1px solid blue;
+    height: 40px;
+    /* color: white; */
+    background-color: blue;
+    margin-right: 10px;
+}
+
+button a {
+    font-size: 20px;
+    color: white;
+}
+
+
+/*Aside part*/
+
+aside {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    flex: 2;
+    justify-content: center;
+}
+
+.one {
+    margin-bottom: 60px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 18px;
+    color: #585861;
+    font-weight: 100;
+}
+
+aside img {
+    width: 300px;
+}
+
+
+/*footer-part*/
+
+footer {
+    font-family: 'Roboto', sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.lang {
+    border: none;
+    background-color: white;
+}
+
+.links a {
+    font-size: 15px;
+    text-decoration: none;
+    margin-right: 5px;
+    color: black;
+    padding: 10px;
+    font-weight: 300;
+}
+
+
+/*Fun-effect*/
+
+main:hover {
+    box-shadow: 0 0 10px gray;
+    border-radius: 10px;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.ckeditor.com/4.16.0/standard/ckeditor.js"></script>
+</head>
+
+<body>
+    <main>
+        <div>
+            <h1>Ask a public question</h1>
+        </div>
+        <div class="section-for-mar">
+            <div class="section-for-mar1">
+                <form action="#">
+                    <div class="title">
+                        <h2>Title</h2>
+                        <p>Be specific and imagine your's asking a question to another person</p>
+                        <input type="text" name="name" placeholder="What's your Drupal question&#63; Be specific.">
+                    </div>
+                    <div>
+                        <h2>Body</h2>
+                        <p>Include all the information someone would need to answer your question</p>
+                    </div>
+                    <div class="use-ck">
+                        <textarea name="editor1"></textarea>
+                        <script>
+                            CKEDITOR.replace('editor1');
+                        </script>
+                    </div>
+                    <div class="tags">
+                        <div>
+                            <h2>Tags</h2>
+                            <p>Add up to 5 tags to describe what your question is about</p>
+                        </div>
+                        <div class="icon1">
+                            <ion-icon name="help-circle-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="e-g">
+                        <input type="text" name="text" placeholder="e.g. (entities drush 6)">
+                    </div>
+                    <div class="for-flex">
+                        <div class="sign">
+                            <div class="sign-up">
+                                <h2>Sign up or<a href="#"> log in</a></h2>
+                            </div>
+                            <button class="icons">
+                                <img src="./img/google.svg" alt="google-icon">
+                                <p>Sign up using Google</p>
+                            </button>
+                            <button class="icons">
+                                <img src="./img/facebook.svg" alt="google-icon">
+                                <p>Sign up using Facebook</p>
+                            </button>
+                            <button class="icons">
+                                <img src="./img/google.svg" alt="google-icon">
+                                <p>Sign up using Email and Password</p>
+                            </button>
+                        </div>
+                        <div class="post">
+                            <div>
+                                <h2>Post as a guest</h2>
+                            </div>
+                            <div>
+                                <h2>Name</h2>
+                                <input type="text" name="name">
+                            </div>
+                            <div>
+                                <h2>Email</h2>
+                                <p>Required, but never shown</p>
+                                <input type="text" name="name">
+                            </div>
+
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <button>
+            <a href="#">Require your question</a>
+        </button>
+    </main>
+
+
+
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 50px;
+    padding-left: 15px;
+    font-weight: 800;
+}
+
+p {
+    padding-left: 15px;
+    font-size: 21px;
+    color: #58616b;
+    margin-bottom: 17px;
+}
+
+main {
+    padding-top: 30px;
+    background-color: white;
+    width: 650px;
+    margin: 0 auto;
+}
+
+main:hover {
+    box-shadow: 0 0 5px gray;
+}
+
+.slide input {
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-left: 15px;
+    background-color: #fafafb;
+    margin-top: 25px;
+    border: 1px solid gray;
+}
+
+input[type=email],
+input[type=password] {
+    width: 617px;
+    margin-top: 15px;
+    margin-left: 15px;
+    padding: 10px;
+    font-size: 20px;
+    background-color: #fafafb;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+input[type=number],
+input[name=year],
+.month {
+    width: 202px;
+    margin-top: 5px;
+    background-color: white;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.dob {
+    margin-left: 15px;
+    margin-top: 15px;
+    font-size: 20px;
+    color: #80858c;
+}
+
+label {
+    display: flex;
+}
+
+.gen {
+    display: flex;
+}
+
+.special {
+    border: 1px solid black;
+    display: flex;
+    flex: 1;
+    margin: 0 15PX;
+    border-radius: 5px;
+    padding: 3px;
+    justify-content: space-between;
+    border: 1px solid gray;
+}
+
+.special p {
+    font-size: 25px;
+    margin: 8px;
+    color: #000000;
+}
+
+input[type=radio] {
+    width: 20px;
+    height: 20px;
+    margin-top: 12px;
+    margin-right: 15px;
+}
+
+.para p {
+    font-size: 18px;
+    margin-top: 25px;
+    word-spacing: 3px;
+    color: #777777;
+}
+
+.sign {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+button {
+    width: 300px;
+    height: 55px;
+    border-radius: 10px;
+    background-color: #51a51b;
+    border: none;
+    margin-right: 20px;
+}
+
+.sign a {
+    font-size: 30px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.para a {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sign a:hover {
+    color: #ffffff;
+}
+
+.ion {
+    color: white;
+    background-color: #60676f;
+    margin-left: 14px;
+    border-radius: 50%;
+}
