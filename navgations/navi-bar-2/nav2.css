@@ -1,0 +1,155 @@
+/*font-family*/
+
+
+/*-----  font-family: 'Open Sans', sans-serif;    ------*/
+
+nav {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.line {
+    width: 75%;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.line a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    padding: 0 10px;
+    border-right: 1px solid gray;
+}
+
+.line a:last-child {
+    border: none;
+}
+
+
+/*icons*/
+
+.web-logo img {
+    width: 300px;
+}
+
+.arrow img {
+    width: 15px;
+}
+
+.search img {
+    position: absolute;
+    width: 20px;
+    top: 35%;
+    right: 7%;
+}
+
+.icons {
+    display: flex;
+}
+
+.icon {
+    width: 22px;
+    margin-right: 10px;
+}
+
+.source {
+    display: flex;
+    width: 76%;
+    margin: 10px auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.api {
+    display: flex;
+    align-items: center;
+}
+
+.search {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.links {
+    display: flex;
+    margin: 0 110px;
+}
+
+.links a {
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    border-right: 1px solid gray;
+}
+
+.links a:first-child {
+    border-left: 1px solid gray;
+}
+
+.links a:last-child {
+    border-right: none;
+    color: #F24525;
+}
+
+.large {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.lang {
+    font-size: 17px;
+    width: 200px;
+    padding: 14px;
+    background-color: #29A3CE;
+    color: white;
+    border: none;
+    margin-right: 10px;
+}
+
+.search {
+    padding: 10px;
+    margin-left: 40px;
+    position: relative;
+}
+
+input[type=text] {
+    padding: 12px;
+    width: 340px;
+    font-size: 16px;
+}
+
+.arrow {
+    margin-left: 40px;
+}
+
+.arrow a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/*Hover-effects*/
+
+.arrow a:hover {
+    color: gray;
+}
+
+.line a:hover {
+    color: gray;
+}
+
+.icons:hover {
+    color: blue;
+}
+
+.hov:hover {
+    background-color: rgb(192, 186, 186);
+    margin: 0;
+}

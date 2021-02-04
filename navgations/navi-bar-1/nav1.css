@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 10px gray;
+    width: 1525px;
+}
+
+.cloud {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+h1 {
+    font-size: 22px;
+    margin: 0;
+    font-weight: 500;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.profile a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #67A0EF;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.select-lang {
+    display: flex;
+    align-items: center;
+}
+
+.lang {
+    padding: 9px;
+    width: 103px;
+    margin: 0 5px;
+    border-radius: 5px;
+    background: #ffffff;
+}
+
+
+/*for images*/
+
+.cloud img {
+    width: 100px;
+}
+
+.search img {
+    width: 25px;
+    margin-left: 50px;
+    margin-right: 10px;
+}
+
+.profile img {
+    width: 27px;
+    margin-left: 10px;
+}
+
+
+/*Links*/
+
+.links,
+.link {
+    display: flex;
+    align-items: center;
+}
+
+.links li,
+.link li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.links {
+    margin-left: 50px;
+}
+
+.link {
+    margin: 0 20px;
+}
+
+.links li a,
+.link li a {
+    text-decoration: none;
+    color: gray;
+}
+
+a {
+    font-size: 17px;
+}
+
+
+/*Button*/
+
+button {
+    padding: 8px;
+    font-size: 18px;
+    background: #1A73E8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 190px;
+}
+
+.cont a {
+    color: #67A0EF;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+
+/*hover-effect*/
+
+.links a:hover,
+.link a:hover {
+    color: blue;
+    border-bottom: 2px solid gray;
+    padding-bottom: 5px;
+}
+
+.cont a:hover,
+.profile a:hover {
+    color: gray;
+    border-bottom: 1px solid blue;
+    padding-bottom: 5px;
+}
+
+button:hover {
+    color: white;
+    background-color: #125ab9;
+}

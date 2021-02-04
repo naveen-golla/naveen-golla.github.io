@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {}
+
+.mule {
+    margin: 0 auto;
+    background-color: #323031;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+}
+
+h2 {
+    color: #9B9A9C;
+    font-size: 30px;
+}
+
+.mule-soft {
+    display: flex;
+    align-items: center;
+    width: 65%;
+    margin: 0 auto;
+}
+
+.mule img {
+    width: 180px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    height: 70px;
+    align-items: center;
+    background-color: black;
+    position: relative;
+}
+
+.lab img {
+    background-color: #1AA2DF;
+    width: 30px;
+    margin-right: 10px;
+    top: 21px;
+}
+
+.lab {
+    width: 30%;
+    margin: 0 auto;
+}
+
+input[type=text] {
+    margin-left: 42px;
+    background-color: #65646B;
+    width: 320px;
+    height: 27px;
+}
+
+
+/*A-LINKS*/
+
+.mule a {
+    color: #9B9A9C;
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.link {
+    width: 57%;
+    margin: 0 auto;
+}
+
+.link a {
+    color: #D0D0D0;
+    text-decoration: none;
+    margin-left: 50px;
+    font-size: 18px;
+}
+
+.search {
+    position: absolute;
+}
+
+
+/*HOVER-EFFECT*/
+
+.link a:hover {
+    color: #1AA2DF;
+    border-bottom: 2px solid #1AA2DF;
+    padding-bottom: 10px;
+}
+
+.mule a:hover {
+    color: #1AA2DF;
+    border-bottom: 2px solid #1AA2DF;
+    padding-bottom: 10px;
+}

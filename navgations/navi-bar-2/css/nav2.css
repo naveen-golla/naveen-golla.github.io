@@ -1,0 +1,47 @@
+/*font-family*/
+
+
+/*-----  font-family: 'Open Sans', sans-serif;    ------*/
+
+
+/*icons*/
+
+.web-logo img {
+    width: 200px;
+}
+
+.arrow img {
+    width: 15px;
+}
+
+.search img {
+    width: 15px;
+}
+
+.source {
+    display: flex;
+}
+
+.search {
+    display: flex;
+    width: 300px;
+    border: 1px solid black;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+#myinput::-webkit-input-placeholder::before {
+    content: ' ';
+    position: absolute;
+    top: 2px;
+    /* adjust icon position */
+    left: 0px;
+    width: 14px;
+    /* size of a single icon */
+    height: 14px;
+    background-image: url("./img/loupe.svg");
+    /* all icons in a single file */
+    background-repeat: no-repeat;
+    background-position: -48px 0px;
+    /* position of the right icon */
+}
