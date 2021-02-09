@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 1600px;
+    margin: 40px auto;
+}
+
+h2 {
+    margin: 24px 0 40px 0;
+    font-size: 45px;
+    line-height: 50px;
+}
+
+p {
+    font-size: 18px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+article {
+    display: flex;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px gray;
+}
+
+.first {
+    flex: 0 0 70%;
+    max-width: 70%;
+}
+
+article a {
+    text-decoration: none;
+    color: blueviolet;
+    margin: 20px 0;
+}
+
+.get {
+    margin-top: 15px;
+    flex: 0 0 30%;
+    max-width: 30%;
+}
+
+.our {
+    padding: 25px;
+}
+
+.sep {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px 30px 20px;
+}
+
+.prof {
+    display: flex;
+    margin-top: 10px;
+}
+
+.our p {
+    font-size: 23px;
+    line-height: 32px;
+    margin: 40px 0 50px;
+}
+
+
+/*IMAGES*/
+
+.first img {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 100%;
+    max-width: 100%;
+    width: 100%;
+    display: block;
+}
+
+.prof img {
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.container img,
+.container-2 img {
+    width: 100%;
+}
+
+.prof-container img {
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+/*--------------------------------*/
+
+
+/*Section-starts*/
+
+.container-main {
+    width: 100%;
+    display: flex;
+}
+
+.container {
+    margin-top: 30px;
+    flex-grow: 1;
+    max-width: 32%;
+    border-radius: 10px;
+    box-shadow: 0 3px 3px gray;
+}
+
+.container+.container {
+    margin-left: 50px;
+}
+
+.container h2 {
+    margin: 20px 0 30px 0;
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.our-container {
+    padding: 20px 34px;
+    margin-left: 10px;
+}
+
+.container a {
+    font-size: 20px;
+    text-decoration: none;
+    color: violet;
+}
+
+.sep-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px 20px 25px;
+    margin-left: 13px;
+}
+
+.our-container h2 {
+    margin: 25px 0;
+    font-size: 30px;
+    line-height: 33px;
+}
+
+.prof-container {
+    display: flex;
+    margin-top: 10px;
+}
+
+
+/*HOVER-EFFECTS*/
+
+.container:hover {
+    box-shadow: 5px 0 20px gray;
+    transform: rotatex(10deg);
+    transition: 0.4s ease-in;
+}
