@@ -156,7 +156,8 @@ p {
 
 .anchor:hover {
     color: black;
-    background-color: #b9b9b9;
+    opacity: 0.8;
+    background-color: #ffffff;
     border: 1px solid #b9b9b9;
     /*transition: background-color 0.3s;*/
 }
