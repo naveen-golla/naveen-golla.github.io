@@ -194,10 +194,10 @@ p {
 
 .high-com h2,
 .high-com-1 h2 {
-    font-size: 40px;
+    font-size: 36px;
     margin: 27px 0px;
     max-width: 600px;
-    line-height: 50px;
+    line-height: 48px;
 }
 
 h2:before {
@@ -335,11 +335,13 @@ footer {
 .footer-nav p {
     color: #a4a4a4;
     margin-bottom: 20px;
+    font-size: 16px;
 }
 
 .footer-nav li a {
     text-decoration: none;
     color: #ddd;
+    font-size: 14px;
 }
 
 .time-outline {
