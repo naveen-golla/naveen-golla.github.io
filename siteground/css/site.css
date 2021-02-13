@@ -32,7 +32,8 @@ header {
     min-height: 80px;
 }
 
-h1 {
+h1,
+h2 {
     font-family: 'roboto-bold';
 }
 
@@ -77,6 +78,7 @@ p {
 
 .login-link li {
     list-style: none;
+    display: inline-block;
 }
 
 .login-link li a {
@@ -155,10 +157,10 @@ p {
 }
 
 .anchor:hover {
-    color: black;
-    background-color: #b9b9b9;
-    border: 1px solid #b9b9b9;
-    /*transition: background-color 0.3s;*/
+    color: #000000;
+    opacity: 0.8;
+    background-color: #ffffff;
+    transition: background-color 1.5s ease;
 }
 
 .anchor-1:hover {
@@ -194,7 +196,7 @@ p {
 
 .high-com h2,
 .high-com-1 h2 {
-    font-size: 40px;
+    font-size: 36px;
     margin: 27px 0px;
     max-width: 600px;
     line-height: 50px;
@@ -256,22 +258,22 @@ h2:before {
 }
 
 .sales-price li:nth-child(1) {
-    max-width: 55%;
+    max-width: 60%;
     background-color: #E5B22A;
 }
 
 .sales-price li:nth-child(2) {
-    max-width: 65%;
+    max-width: 70%;
     background-color: #EE962A;
 }
 
 .sales-price li:nth-child(3) {
-    max-width: 75%;
+    max-width: 80%;
     background-color: #F47B44;
 }
 
 .sales-price li:nth-child(4) {
-    max-width: 85%;
+    max-width: 90%;
     background-color: #B35327;
 }
 
@@ -282,7 +284,7 @@ h2:before {
 }
 
 .hero-banner-2 {
-    background-image: url('./img/banner.jpg');
+    background-image: url('./img/backgroundimg.png'), url('./img/banner.jpg');
 }
 
 .hero-text-2 {
@@ -335,11 +337,13 @@ footer {
 .footer-nav p {
     color: #a4a4a4;
     margin-bottom: 20px;
+    font-size: 16px;
 }
 
 .footer-nav li a {
     text-decoration: none;
     color: #ddd;
+    font-size: 14px;
 }
 
 .time-outline {
@@ -618,6 +622,10 @@ label {
     .selects {
         padding-top: 15px;
     }
+    .login-link {
+        margin-top: 14px;
+        margin-right: 20px;
+    }
 }
 
 @media only screen and (max-width: 424px) {
@@ -640,8 +648,11 @@ label {
     .log {
         display: none;
     }
+    .login-link {
+        margin-right: 7px;
+    }
     .user-icon {
-        height: 40px;
-        width: 40px;
+        height: 25px;
+        width: 25px;
     }
 }
