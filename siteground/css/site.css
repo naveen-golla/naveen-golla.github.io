@@ -486,6 +486,10 @@ select {
     background-color: initial;
 }
 
+.icon-logo a span {
+    font-size: 0;
+}
+
 
 /* ---------------------------------------------------------------- */
 
