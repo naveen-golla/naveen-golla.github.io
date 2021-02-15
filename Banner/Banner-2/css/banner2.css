@@ -1,0 +1,81 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    main {
+        background-image: url(./img/header.0.webp);
+        background-position: top;
+        background-repeat: no-repeat;
+        padding: 20px;
+    }
+    
+    section {
+        background: linear-gradient(to top right, #101010b5, #711010);
+        display: flex;
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 71px;
+        max-width: 530px;
+        margin-top: 20px;
+    }
+    
+    h3 {
+        font-size: 25px;
+    }
+    
+    h2 {
+        font-size: 30px;
+        padding: 10px;
+        margin-top: 23px;
+        margin-bottom: 20px;
+        margin-left: 27px;
+    }
+    
+    .hero-text {
+        width: 30%;
+        color: white;
+        margin: auto;
+        padding: 10px;
+    }
+    
+    .inner-text {
+        background-color: white;
+        display: flex;
+        flex-flow: column;
+        width: 30%;
+        border-radius: 10px;
+        margin: auto;
+        padding: 10px;
+    }
+    
+    input[type=text],
+    input[type=email],
+    input[type=password] {
+        width: 78%;
+        padding: 18px;
+        margin: 13px auto;
+        border-radius: 5px;
+        font-size: 20px;
+        border: 1px solid #E3E6F0;
+    }
+    
+    button {
+        width: 86%;
+        padding: 15px;
+        background-color: #27C87A;
+        margin: 10px auto 30px auto;
+        color: #ffffff;
+        font-size: 18px;
+        border-radius: 5px;
+        border: none;
+    }
+    
+    @media screen and (max-width: 767px) {
+        h1 {
+            color: red;
+            font-size: 30px;
+        }
+    }

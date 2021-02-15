@@ -157,10 +157,11 @@ p {
 }
 
 .anchor:hover {
-    color: #000000;
+    color: black;
     opacity: 0.8;
     background-color: #ffffff;
-    transition: background-color 1.5s ease;
+    border: 1px solid #b9b9b9;
+    /*transition: background-color 0.3s;*/
 }
 
 .anchor-1:hover {
@@ -199,7 +200,7 @@ p {
     font-size: 36px;
     margin: 27px 0px;
     max-width: 600px;
-    line-height: 50px;
+    line-height: 48px;
 }
 
 h2:before {
@@ -334,10 +335,11 @@ footer {
     margin: 5px 0;
 }
 
-.footer-nav p {
+.footer-nav h4 {
     color: #a4a4a4;
     margin-bottom: 20px;
     font-size: 16px;
+    text-transform: uppercase;
 }
 
 .footer-nav li a {
@@ -355,6 +357,7 @@ footer {
 
 .time-outline p {
     font-size: 12px;
+    color: #a4a4a4;
 }
 
 .outline {
@@ -390,7 +393,9 @@ label {
     border: none;
     color: white;
     background-color: #333230;
-    padding: 5px;
+    padding: 0 22px 0 25px;
+    font-size: 12px;
+    line-height: 25px;
 }
 
 .selects:hover {
@@ -469,6 +474,18 @@ label {
     border: 2px solid #c0bdbd;
 }
 
+select {
+    background-image: url('./img/flags-footer_ee9a939-964b5cf.png');
+    background-position-x: 6px;
+    background-position-y: -91px;
+    background-size: initial;
+    background-repeat: no-repeat;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+}
+
 
 /* ---------------------------------------------------------------- */
 
@@ -482,7 +499,6 @@ label {
     .high-com {
         margin-left: 25px;
     }
-    .high-com-1 h2 {}
     .laptop img {
         width: 400px;
         margin-top: 30px;
@@ -619,13 +635,6 @@ label {
         font-size: 20px;
         line-height: 30px;
     }
-    .selects {
-        padding-top: 15px;
-    }
-    .login-link {
-        margin-top: 14px;
-        margin-right: 20px;
-    }
 }
 
 @media only screen and (max-width: 424px) {
@@ -652,7 +661,7 @@ label {
         margin-right: 7px;
     }
     .user-icon {
-        height: 25px;
-        width: 25px;
+        height: 20px;
+        width: 20px;
     }
 }

@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.section-flexible {
+    display: flex;
+    width: 75%;
+    margin: auto;
+    height: 500px;
+    border-bottom: 2px solid gray;
+}
+
+h1 {
+    font-size: 65px;
+    padding: 10px;
+    margin: 5px 0 40px 0;
+}
+
+h2 {
+    font-size: 25px;
+    padding: 10px;
+}
+
+.hero-text {
+    margin-top: 60px;
+}
+
+.banner {
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.div-icons {
+    display: flex;
+    flex-flow: column;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px;
+    margin-left: 10px;
+    width: 200px;
+    height: 60px;
+    margin-top: 20px;
+    background-color: #000000;
+    border: none;
+}
+
+button p {
+    font-size: 25px;
+    color: white;
+}
+
+
+/*FOR-ICONS*/
+
+.div-icons img {
+    width: 25px;
+    margin: 10px 0;
+}
+
+.banner-1 img {
+    width: 600px;
+    margin-right: 40px;
+}
+
+
+/*HOVER-EFFECT*/
+
+button:hover {
+    background-color: #424242;
+}
