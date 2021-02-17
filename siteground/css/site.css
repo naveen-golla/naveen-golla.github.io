@@ -486,11 +486,7 @@ select {
     background-color: initial;
 }
 
-<<<<<<< HEAD
-.icon-logo a span {
-=======
 .icon-logo a span span {
->>>>>>> 2gud
     font-size: 0;
 }
 
