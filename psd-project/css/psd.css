@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* HEADER-SECTION */
+
+header {
+    display: flex;
+    justify-content: space-around;
+    max-width: 80%;
+    margin: auto;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.nav-bar {
+    list-style: none;
+    display: inline;
+    padding: 10px;
+}
+
+.nav-bar a {
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+.link a {
+    border-radius: 25px;
+    padding: 10px 20px;
+    box-shadow: 0 0 0.5rem #d3d3d3;
+    background: #ffffff;
+    border: 1px solid #ffffff;
+    color: #43CB83;
+}
+
+.nav-bar a:hover {
+    color: green;
+    text-decoration: underline;
+}
+
+.link a:hover {
+    text-decoration: none;
+}
+
+.logo-img {
+    width: 4.3rem;
+    padding: 0.5rem;
+}
+
+
+/* MAIN-SECTION STARTS */
+
+.section-container {
+    background: url(./img/bg\ shape\ Kopie\ 3@1X.png);
+    background-repeat: no-repeat;
+    background-position: top 0rem right -10rem;
+    background-size: 45%;
+}
+
+.section-banner {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 7rem;
+    align-items: center;
+}
+
+.layer-1 {
+    width: 22rem;
+    padding: 4rem 2rem 0 0;
+}
+
+.layer-2 {
+    width: 40rem;
+}
+
+.section-content h1 {
+    font-size: 44px;
+    color: #43CB83;
+    max-width: 30rem;
+    line-height: 3rem;
+}
+
+.section-content p {
+    font-size: 18px;
+    color: #5A6E79;
+    max-width: 27rem;
+    padding-top: 1rem;
+    line-height: 2rem;
+    padding-bottom: 4rem;
+}
+
+.section-content li {
+    list-style: none;
+}
+
+.section-content li a {
+    text-decoration: none;
+    border-radius: 2rem;
+    padding: 20px 30px;
+    background: #43CB83;
+    color: #ffffff;
+}
+
+.section-box {
+    display: flex;
+    justify-content: center;
+    max-width: 60%;
+    margin: auto;
+    padding-top: 3rem;
+}
+
+.box-1 {
+    padding: 10px;
+    width: 20rem;
+    vertical-align: center;
+    height: 15rem;
+    text-align: center;
+    margin-left: 1.5rem;
+    background: #F1E3FC;
+    flex-direction: column;
+}
+
+.box-color {
+    background: #E3FCFA;
+}
+
+.box-color-1 {
+    background: #FCF0E3;
+}
+
+.box-color-2 {
+    background: #E0BFB6;
+}
+
+.box-color-3 {
+    background: #F3FCE3;
+}
+
+.box-color-4 {
+    background: #E3F3FD;
+}
+
+.box-1 p {
+    color: #252C3A;
+    font-size: 30px;
+    padding: 0.5rem;
+}
+
+.box-image {
+    padding-top: 3rem;
+    width: 5rem;
+}
+
+
+/* SECTION-2 */
+
+.section-container-1 {
+    background-image: url('./img/bg\ shape\ Kopie\ 3@1X.png'), url('./img/Group\ 10@1X.png');
+    background-position: top 9rem left -10rem, top 21rem left 15rem;
+    background-size: 50%, 20%;
+    background-repeat: no-repeat;
+}
+
+.section-box-2 {
+    display: flex;
+    max-width: 56%;
+    margin: auto;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.vadim {
+    background-repeat: no-repeat;
+    flex: 0 0 40%;
+    background-image: url(./img/Ellipse\ 2@1X.png);
+    background-size: 97%;
+}
+
+.section-content-1 {
+    flex: 0 0 60%;
+    padding-left: 2rem;
+}
+
+.flower-img {
+    width: 20rem;
+}
+
+.flower {
+    width: 10rem;
+}
+
+.vadim-image {
+    width: 22rem;
+    height: 22rem;
+    border-radius: 50%;
+    padding: 1rem;
+    border: 1rem solid #DDF1FA;
+}
+
+.section-content-1 h2 {
+    font-size: 40px;
+    color: #43CB83;
+    max-width: 27rem;
+    padding: 1rem;
+}
+
+.section-content-1 p {
+    font-size: 18px;
+    max-width: 29rem;
+    padding: 1rem;
+    line-height: 1.5rem;
+}
+
+.information {
+    max-width: 60%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.information h3 {
+    font-size: 40px;
+}
+
+.information p {
+    padding: 0;
+    font-size: 18px;
+}
+
+.students {
+    color: #FFBA00;
+}
+
+.courses {
+    color: #FF5F72;
+}
+
+.videos {
+    color: #43CB83;
+}
+
+
+/* SIGN-IN FORM  */
+
+.signin-form {
+    display: flex;
+    justify-content: space-around;
+    background: #F1E3FC;
+}
+
+.vector-1 {
+    display: flex;
+    align-items: center;
+}
+
+.vector-content {
+    padding: 2rem;
+}
+
+.vector-2 {
+    display: flex;
+}
+
+.sign-up h2 {
+    text-align: center;
+    padding: 1rem;
+}
+
+.sign {
+    padding: 2rem;
+    max-width: 300px;
+    height: 500px;
+    background-image: url('./img/bg\ shape\ Kopie\ 3@1X.png');
+    background-repeat: no-repeat;
+    background-size: 30rem;
+    background-color: #ffffff;
+    background-position: top -2rem right -4rem;
+}
+
+input {
+    width: 100%;
+    max-width: 270px;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+
+.vehicle1 {
+    width: auto;
+    padding-top: 1rem;
+}
+
+.anchor {
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+}
+
+.anchor p {
+    max-width: 8rem;
+    text-align: left;
+    padding-left: 1rem;
+    color: #5A6E79;
+}
+
+.anchor a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background: #43CB83;
+    color: #ffffff;
+    border-radius: 25px;
+}
+
+.form-link {
+    color: #87959C;
+    text-align: left;
+}
