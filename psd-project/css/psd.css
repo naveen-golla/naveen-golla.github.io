@@ -56,7 +56,7 @@ header {
 .section-container {
     background: url(./img/bg\ shape\ Kopie\ 3@1X.png);
     background-repeat: no-repeat;
-    background-position: top 0rem right -10rem;
+    background-position: top 0rem right -20rem;
     background-size: 45%;
 }
 
@@ -68,12 +68,12 @@ header {
 }
 
 .layer-1 {
-    width: 22rem;
+    width: 100%;
     padding: 4rem 2rem 0 0;
 }
 
 .layer-2 {
-    width: 40rem;
+    width: 100%;
 }
 
 .section-content h1 {
@@ -159,14 +159,14 @@ header {
 
 .section-container-1 {
     background-image: url('./img/bg\ shape\ Kopie\ 3@1X.png'), url('./img/Group\ 10@1X.png');
-    background-position: top 9rem left -10rem, top 21rem left 15rem;
-    background-size: 50%, 20%;
+    background-position: top 7rem left -17rem, top 23rem left 12rem;
+    background-size: 52%, 22%;
     background-repeat: no-repeat;
 }
 
 .section-box-2 {
     display: flex;
-    max-width: 56%;
+    max-width: 60%;
     margin: auto;
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -176,7 +176,7 @@ header {
     background-repeat: no-repeat;
     flex: 0 0 40%;
     background-image: url(./img/Ellipse\ 2@1X.png);
-    background-size: 97%;
+    background-size: 94%;
 }
 
 .section-content-1 {
@@ -271,20 +271,26 @@ header {
 
 .sign {
     padding: 2rem;
-    max-width: 300px;
+    max-width: 400px;
     height: 500px;
-    background-image: url('./img/bg\ shape\ Kopie\ 3@1X.png');
+    background-image: url(./img/bg\ shape\ Kopie\ 3@1X.png);
     background-repeat: no-repeat;
-    background-size: 30rem;
+    background-size: 38rem;
+    margin: -4.5rem 0;
     background-color: #ffffff;
-    background-position: top -2rem right -4rem;
+    background-position: top -9rem right -14rem;
+    box-shadow: 0 0 0.5rem #bfbebe;
+    border-radius: 0.4rem;
 }
 
 input {
+    background: transparent;
     width: 100%;
-    max-width: 270px;
+    max-width: 370px;
+    outline: none;
     padding: 1rem;
     margin-top: 0.5rem;
+    font-size: 18px;
     border: none;
     border-bottom: 1px solid gray;
 }
@@ -296,20 +302,20 @@ input {
 
 .anchor {
     display: flex;
-    padding: 1rem;
+    padding: 2rem 0.5rem;
     align-items: center;
 }
 
 .anchor p {
     max-width: 8rem;
     text-align: left;
-    padding-left: 1rem;
+    padding-left: 4rem;
     color: #5A6E79;
 }
 
 .anchor a {
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 15px 40px;
     background: #43CB83;
     color: #ffffff;
     border-radius: 25px;
@@ -319,3 +325,244 @@ input {
     color: #87959C;
     text-align: left;
 }
+
+.vector-male {
+    padding-top: 2rem;
+}
+
+.vector-content h2 {
+    font-size: 35px;
+    line-height: 2rem;
+    color: #252C3A;
+}
+
+.vector-content p {
+    font-size: 16px;
+    line-height: 2rem;
+    color: #252C3A;
+    text-transform: uppercase;
+}
+
+.vector-content span a {
+    color: #FF5F72;
+    text-decoration: none;
+}
+
+
+/* CONTENT-SECTION */
+
+.section-3 {
+    max-width: 60%;
+    margin: auto;
+    padding: 5rem 0;
+}
+
+.content-section {
+    padding: 5rem 0;
+    border-bottom: 1px solid #000;
+}
+
+.content-section h2 {
+    font-size: 40px;
+    color: #43CB83;
+    line-height: 5rem;
+}
+
+.inner-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inner-text p {
+    font-size: 16px;
+    line-height: 1.5rem;
+    max-width: 611px;
+}
+
+.inner-text a {
+    text-decoration: none;
+    background-color: #43CB83;
+    padding: 15px 30px;
+    border-radius: 25px;
+    color: #ffffff;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4rem;
+    padding: 4rem 0;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.2rem 0;
+    max-width: 455px;
+    align-items: center;
+}
+
+.icons p {
+    text-transform: uppercase;
+    color: #5A6E79;
+}
+
+.grid h3 {
+    font-size: 30px;
+    line-height: 2rem;
+    color: #252C3A;
+    max-width: 400px;
+}
+
+.grid p {
+    max-width: 446px;
+    font-size: 16px;
+    color: #5A6E79;
+    padding: 0.5rem 0;
+}
+
+.icons .fa {
+    padding-right: 0.4rem;
+}
+
+.icons span {
+    padding-right: 1.5rem;
+}
+
+.heart {
+    color: #43CB83;
+}
+
+.fafa {
+    padding-left: 0.4rem;
+}
+
+
+/* FOOTER-SECTION */
+
+footer {
+    background-color: #252C3A;
+}
+
+.section-footer {
+    max-width: 70%;
+    margin: auto;
+    display: flex;
+    padding: 3rem 0 4rem;
+}
+
+.information-section {
+    flex: 0 0 24%;
+}
+
+.information-section p {
+    max-width: 283px;
+    font-size: 16px;
+    line-height: 1.3rem;
+    color: #dbd5d5;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #7c7c7cc7;
+}
+
+.information-section h4 {
+    padding: 1rem 0 2rem;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.fixes h4 {
+    padding: 1.5rem 0 3rem;
+}
+
+.list-icons {
+    padding: 1rem 0;
+}
+
+.fa-facebook-official {
+    color: #1962A8;
+}
+
+.list-icons li {
+    display: inline;
+    list-style: none;
+    padding: 0.6rem;
+}
+
+.list-icons li a {
+    color: #999898;
+}
+
+.fixes li {
+    display: block;
+    list-style: none;
+    padding: 0.5rem 0;
+}
+
+.fixes li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.fixes input {
+    width: 100%;
+    max-width: 100px;
+}
+
+.get-help {
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+.get-help input {
+    width: 100%;
+    max-width: 173px;
+    padding: 0.5rem;
+    border: none;
+}
+
+.get-help a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 0.9rem;
+    background-color: #43CB83;
+    text-transform: uppercase;
+}
+
+.footer-lastpart {
+    background-color: #1D232E;
+}
+
+.footer-last {
+    display: flex;
+    justify-content: space-between;
+    max-width: 70%;
+    margin: auto;
+    padding: 2rem 0;
+    align-items: center;
+    color: #6B6B6B;
+    font-size: 14px;
+}
+
+.footer-last li {
+    display: inline;
+}
+
+.footer-last li a {
+    color: #6B6B6B;
+    padding: 0 1rem;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+
+/* ---------------------------------- */
+
+
+/* MOBILE FIRST RESPONSIVE */
+
+
+/* ---------------------------------- */
