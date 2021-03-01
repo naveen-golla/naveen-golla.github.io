@@ -311,15 +311,15 @@
     }
     
     .content-section h2 {
-        font-size: 35px;
+        font-size: 30px;
         color: #43CB83;
-        line-height: 5rem;
+        line-height: 2.5rem;
     }
     
     .inner-text p {
-        line-height: 1.5rem;
+        line-height: 1.3rem;
         padding-bottom: 2rem;
-        font-size: 16px;
+        font-size: 14px;
     }
     
     .inner-text a {
@@ -335,7 +335,7 @@
     }
     
     .grid h3 {
-        font-size: 30px;
+        font-size: 25px;
         line-height: 2rem;
         color: #252C3A;
         max-width: 400px;
@@ -343,6 +343,7 @@
     
     .grid p {
         max-width: 446px;
+        line-height: 1.3rem;
         font-size: 16px;
         color: #5A6E79;
         padding: 0.5rem 0;
@@ -428,6 +429,7 @@
     .fixes li a {
         text-decoration: none;
         color: #ffffff;
+        font-size: 14px;
     }
     
     .get-help {
@@ -445,7 +447,6 @@
         padding: 0.9rem;
         background-color: #43CB83;
         text-transform: uppercase;
-        font-size: 14px;
     }
     
     .get-help input {
@@ -748,12 +749,6 @@
             background-position: top 0rem right -10rem;
             background-size: 60%;
         }
-        /* .section-container-1 {
-            background-image: url(./img/bg\ shape\ Kopie\ 3@1X.png), url(./img/Group\ 10@1X.png);
-            background-position: top 12rem left -17rem, top 23rem left 12rem;
-            background-size: 83%, 22%;
-            background-repeat: no-repeat;
-        } */
         .vadim {
             flex: 0 0 40%;
             display: block;
@@ -808,6 +803,7 @@
         .section-3 {
             max-width: 80%;
             margin: auto;
+            padding: 5rem 0;
         }
         .section-footer {
             max-width: 80%;
@@ -836,10 +832,19 @@
         h1 {
             font-size: 44px !important;
         }
-        h2 {
-            font-size: 35px !important;
+        .section-content h2 {
+            font-size: 35px;
+        }
+        .vector-content h2 {
+            font-size: 27px;
         }
         .vector-content p {
-            font-size: 17px;
+            font-size: 15px;
+        }
+        .section-container-1 {
+            background-image: url(./img/bg\ shape\ Kopie\ 3@1X.png), url(./img/Group\ 10@1X.png);
+            background-position: top 12rem left -17rem, top 22rem left 3rem;
+            background-size: 51%, 20%;
+            background-repeat: no-repeat;
         }
     }
