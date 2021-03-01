@@ -53,8 +53,8 @@
     header {
         display: flex;
         align-items: center;
-        justify-content: space-around;
-        padding: 2rem 0;
+        justify-content: space-between;
+        padding: 1.5rem;
     }
     
     .main-nav nav {
@@ -62,7 +62,7 @@
     }
     
     .main-nav span {
-        padding-right: 1rem;
+        padding-left: 1rem;
     }
     
     .layer-2 {
@@ -154,6 +154,12 @@
         background: #E3F3FD;
     }
     
+    .vadim {
+        display: flex;
+        justify-content: center;
+        padding-top: 2rem;
+    }
+    
     .vadim-image {
         height: 15rem;
         width: 15rem;
@@ -186,12 +192,12 @@
     }
     
     .information h3 {
-        font-size: 40px;
+        font-size: 25px;
     }
     
     .information p {
         padding: 0;
-        font-size: 18px;
+        font-size: 13px;
     }
     
     .courses {
@@ -609,8 +615,15 @@
         }
         .vadim {
             flex: 0 0 40%;
-            display: flex;
             align-items: center;
+            padding-top: 0;
+        }
+        .information h3 {
+            font-size: 30px;
+        }
+        .information p {
+            padding: 0;
+            font-size: 15px;
         }
         .signin-form {
             display: flex;
@@ -757,6 +770,9 @@
         .anchor {
             padding: 2rem 0;
         }
+        .anchor a {
+            padding: 15px 30px;
+        }
         .anchor-1 {
             width: 80%;
             text-align: left;
@@ -777,7 +793,7 @@
             padding: 1rem;
         }
         .list-icons li {
-            padding: 0.2rem;
+            padding: 0.5rem;
         }
         .get-help input {
             width: 100%;
