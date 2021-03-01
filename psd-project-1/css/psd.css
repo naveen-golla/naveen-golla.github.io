@@ -55,7 +55,47 @@
         align-items: center;
         justify-content: space-between;
         padding: 1.5rem;
+        position: relative;
     }
+    /* practice */
+    
+    .dropdown {
+        position: static;
+        display: inline-block;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 100%;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        top: 5rem;
+        left: 0;
+        text-align: center;
+    }
+    
+    .dropdown-content li {
+        list-style: none;
+        padding: 1rem;
+    }
+    
+    .dropdown-content li a {
+        text-decoration: none;
+        padding: 1rem;
+        color: #6B6B6B;
+    }
+    
+    .dropdown-content li a:hover {
+        text-decoration: underline #268a55;
+        color: #268a55;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    /* ------ */
     
     .main-nav nav {
         display: none;
@@ -450,10 +490,9 @@
     }
     
     .get-help input {
-        display: block;
         border: none;
         width: 100%;
-        max-width: 150px;
+        max-width: calc(100% - 126px);
     }
     
     .footer-lastpart {
@@ -492,7 +531,7 @@
         text-decoration: none;
     }
     
-    .main-nav span:hover {
+    .main-nav .fa:hover {
         color: #a37a7a;
     }
     
@@ -695,13 +734,6 @@
             margin-top: 1.5rem;
             width: 100%;
         }
-        .get-help input {
-            width: 100%;
-            max-width: 173px;
-            padding: 0.5rem;
-            border: none;
-            display: block;
-        }
         .get-help a {
             text-decoration: none;
             color: #ffffff;
@@ -767,13 +799,14 @@
         }
         .anchor a {
             padding: 15px 30px;
+            font-size: 14px;
         }
         .anchor-1 {
-            width: 80%;
+            flex: 0 0 65%;
             text-align: left;
         }
         .anchor-2 {
-            width: 50%;
+            flex: 0 0 34%;
         }
         .information-1 {
             display: flex;
@@ -789,10 +822,6 @@
         }
         .list-icons li {
             padding: 0.5rem;
-        }
-        .get-help input {
-            width: 100%;
-            max-width: 135px;
         }
     }
     
@@ -818,10 +847,6 @@
         .sign {
             margin: -3rem;
         }
-        .get-help input {
-            width: 100%;
-            max-width: 150px;
-        }
         .fixes {
             flex: 0 0 50%;
         }
@@ -841,10 +866,18 @@
         .vector-content p {
             font-size: 15px;
         }
+        .section-box-2 {
+            padding: 9rem 0;
+            max-width: 70%;
+        }
+        .vadim-image {
+            width: 25rem;
+            height: 25rem;
+        }
         .section-container-1 {
             background-image: url(./img/bg\ shape\ Kopie\ 3@1X.png), url(./img/Group\ 10@1X.png);
-            background-position: top 12rem left -17rem, top 22rem left 3rem;
-            background-size: 51%, 20%;
+            background-position: top 10rem left -21rem, top 27rem left 8rem;
+            background-size: 52%, 20%;
             background-repeat: no-repeat;
         }
     }
