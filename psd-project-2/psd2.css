@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    font-size: 0.75rem;
+}
+
+.nav-pills li a {
+    padding: 1.5rem;
+}
