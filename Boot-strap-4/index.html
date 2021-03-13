@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./custom.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />
+
+
 </head>
 
 <body>
@@ -14,7 +18,7 @@
         <!-- TYPOGRAPHY-UTILITIES -->
         <h1 class="text-center text-success">"TYPOGRAPHY-UTILITIES"</h1>
         <div>
-            <h1 class="text-primary bg-secondary">headings</h1>
+            <h1 class="text-primary bg-secondary">headings h1</h1>
             <h2>headings</h2>
             <h3>headings</h3>
             <h4 class="h1">headings</h4>
@@ -115,7 +119,7 @@
 
         <h1 class="fixed-top">fixed top</h1>
         <h1 class="sticky-top">sticky</h1>
-        <h1 class="fixed-bottom">fixed-bottom</h1>
+        <h1>fixed-bottom</h1>
 
         <h1 class="text-center text-success">"MARGINS-BOTTOM"</h1>
         <h2 class="bg-success mb-0">MARGINS-BOTTOM-0</h2>
@@ -181,6 +185,8 @@
         <h2 class="bg-success pr-4">PADDING-BOTTOM-4</h2>
         <h2 class="bg-success pr-5">PADDING-BOTTOM-5</h2>
 
+        <h1 class="text-center text-success">"Sizing"</h1>
+
         <h1 class="text-center text-success">"WIDTH CLASSES"</h1>
         <div class="bg-success p-3 w-25">width 25%</div>
         <div class="bg-success p-3 w-50">width 50%</div>
@@ -205,15 +211,517 @@
         <div class="p-3 mb-2 bg-light border-left">border-property</div>
         <div class="p-3 mb-2 bg-light border-right">border-property</div>
 
+        <h1 class="text-center text-success ">"march 13 2021 "</h1>
 
 
-    </div>
+        <h1 class="text-center text-success ">"Over-riding-concept in bootstrap-4 "</h1>
+
+        <h2 class="text-info">Over-riding-properties in bootstrap-4 </h2>
+
+        <h1 class="text-center text-success ">"Over-riding-properties in specific "</h1>
+        <div class="bg-light">
+            <h2 class="text-primary">This is before over-riding</h2>
+            <div class="bg-primary">
+
+                <h3 class="text-primary">As we already over-ride the text-primary class we don't want that here that's why again over-riding here again</h3>
+            </div>
+
+
+            <h1 class="text-center text-success ">"BUTTONS "</h1>
+            <button class="btn btn-primary" type="button">Primary</button>
+            <button class="btn btn-success" type="button">success</button>
+            <button class="btn btn-info" type="button">info</button>
+            <button class="btn btn-danger" type="button">danger</button>
+
+            <h1 class="text-center text-success ">"BUTTONS Tags/types "</h1>
+            <a href="#" class="btn btn-warning" role="button">link</a>
+            <button class="btn btn-success" type="submit">button</button>
+            <input class="btn btn-danger" type="button" value="Input">
+            <input class="btn btn-info" type="submit" value="Submit">
+            <input class="btn btn-dark" type="reset" value="Reset">
+
+            <h1 class="text-center text-success ">"Outline BUTTONS "</h1>
+            <button class="btn btn-outline-danger" type="button">Danger</button>
+            <button class="btn btn-outline-success" type="button">Success</button>
+            <button class="btn btn-outline-primary" type="button">Primary</button>
+            <button class="btn btn-outline-info" type="button">Info</button>
+
+
+            <h1 class="text-center text-success ">" BUTTONS Sizes "</h1>
+
+            <button class="btn btn-success btn-lg" type="button"><span class="fa fa-user"
+                    aria-hidden="true"></span></span>Large-button</button>
+            <button class="btn btn-success btn-sm" type="button"><span class="fa fa-user"
+                    aria-hidden="true"></span></span>Small-button</button>
+            <button class="btn btn-dark btn-block" type="button">Block level-button</button>
+            <button class="btn btn-success" type="button" data-toggle="button">toggle-button</button>
+            <button class="btn btn-success active" type="button">active-button</button>
+            <button class="btn btn-success disabled" type="button">disabled-button</button>
+
+            <h1 class="text-center text-success ">" BUTTONS group "</h1>
+            <div class="btn-group">
+                <button class="btn btn-primary" type="button">first</button>
+                <button class="btn btn-dark" type="button">second</button>
+                <button class="btn btn-primary" type="button">third</button>
+            </div>
+
+            <h1 class="text-center text-success ">" BUTTONS droup-down "</h1>
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" type="button">my
+                    dropdown</button>
+
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">limk1</a>
+                    <a class="dropdown-item" href="#">link2</a>
+                    <a class="dropdown-item" href="#">link3</a>
+                </div>
+            </div>
+            <div class="btn-group">
+                <button class="btn btn-primary " type="button">my dropdown</button>
+
+                <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" type="button">my
+                    dropdown</button>
+                <button class="btn btn-primary " type="button">my dropdown</button>
+
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">limk1</a>
+                    <a class="dropdown-item" href="#">link2</a>
+                    <a class="dropdown-item" href="#">link3</a>
+                </div>
+            </div>
+
+            <h1 class="text-center text-success ">" Simple Nav-bar "</h1>
+            <nav class="navbar navbar-expand-sm navbar-light bg-light">
+                <div class="container">
+                    <a class="navbar-brand" href="#">navbar</a>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Content</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">About Us</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+            <h1 class="text-center text-success ">" Simple Nav-bar responsive-toggler "</h1>
+
+            <nav class="navbar navbar-expand-md navbar-light bg-light">
+                <div class="container">
+                    <a class="navbar-brand" href="#">navbar</a>
+                    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar-nav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbar-nav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">Content</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">About Us</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <h1 class="text-center text-success ">" Simple Nav-bar with Form "</h1>
+
+
+            <nav class="navbar navbar-expand-md navbar-light bg-light">
+                <div class="container">
+                    <a class="navbar-brand" href="#">navbar</a>
+                    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar-nav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbar-nav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">Content</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">About Us</a>
+                            </li>
+
+                        </ul>
+                        <form class="form-inline ml-auto">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <button class="btn btn-outline-success">search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+
+
+            <h1 class="text-center text-success ">" Simple Nav-bar with dropdown "</h1>
+
+            <nav class="navbar navbar-expand-sm navbar-light bg-light">
+                <div class="container">
+                    <a class="navbar-brand" href="#">navbar</a>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Content</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dropdown</a>
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">link-1</a>
+                                <a href="#" class="dropdown-item">link-2</a>
+                                <a href="#" class="dropdown-item">link-3</a>
+                                <a href="#" class="dropdown-item">link-4</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">About Us</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+            <h1 class="text-center text-success ">" Simple Nav-bar colors "</h1>
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+                <div class="container">
+                    <a class="navbar-brand" href="#">navbar</a>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Content</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dropdown</a>
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">link-1</a>
+                                <a href="#" class="dropdown-item">link-2</a>
+                                <a href="#" class="dropdown-item">link-3</a>
+                                <a href="#" class="dropdown-item">link-4</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">About Us</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+            <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+                <div class="container">
+                    <a class="navbar-brand" href="#">navbar</a>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Content</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dropdown</a>
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">link-1</a>
+                                <a href="#" class="dropdown-item">link-2</a>
+                                <a href="#" class="dropdown-item">link-3</a>
+                                <a href="#" class="dropdown-item">link-4</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">About Us</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+            <nav class="navbar navbar-expand-sm navbar-dark bg-success">
+                <div class="container">
+                    <a class="navbar-brand" href="#">navbar</a>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Content</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dropdown</a>
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">link-1</a>
+                                <a href="#" class="dropdown-item">link-2</a>
+                                <a href="#" class="dropdown-item">link-3</a>
+                                <a href="#" class="dropdown-item">link-4</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">About Us</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+            <h1 class="text-center text-success ">" Simple Nav-bar fixed-top "</h1>
+            <nav class="navbar fixed-top navbar-dark bg-dark">
+                <a href="#" class="navbar-brand">navbar-fixed</a>
+            </nav>
+            <nav class="navbar sticky-top navbar-dark bg-dark">
+                <a href="#" class="navbar-brand">navbar-sticky</a>
+            </nav>
+
+            <h1 class="text-center text-success ">" Simple Nav-bar fill-justify "</h1>
+            <ul class="nav nav-pills nav-fill">
+                <li class="nav-item">
+                    <a class="nav-link" href="">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="">Content</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">About Us</a>
+                </li>
+
+            </ul>
+            <h1 class="text-center text-success ">" Simple Nav-bar fill-vertically "</h1>
+            <ul class="nav nav-pills flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="">Content</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">About Us</a>
+                </li>
+
+            </ul>
+
+            <h1 class="text-center text-success ">" List-groups"</h1>
+            <ul class="list-group mb-5">
+                <li class="list-group-item"> Item one</li>
+                <li class="list-group-item"> Item two</li>
+                <li class="list-group-item"> Item three</li>
+                <li class="list-group-item"> Item four</li>
+
+            </ul>
+            <h1 class="text-center text-success ">" List-groups links"</h1>
+
+            <ul class="list-group mb-5">
+                <a href="#" class="list-group-item">link 1</a>
+                <a href="#" class="list-group-item">link 2</a>
+                <a href="#" class="list-group-item active">link 3</a>
+                <a href="#" class="list-group-item">link 4</a>
+                <a href="#" class="list-group-item">link 5</a>
+            </ul>
+            <h1 class="text-center text-success ">" CONTEXTUAL CLASS"</h1>
+            <ul class="list-group mb-5">
+                <li class="list-group-item list-group-item-primary"> Item one primary</li>
+                <li class="list-group-item list-group-item-secondary"> Item two secondary</li>
+                <li class="list-group-item list-group-item-success"> Item three success</li>
+                <li class="list-group-item list-group-item-danger"> Item four danger</li>
+
+            </ul>
+            <h1 class="text-center text-success ">" FLUSH LIST GROUP"</h1>
+            <ul class="list-group list-group-flush mb-5">
+                <li class="list-group-item">my list one</li>
+                <li class="list-group-item active"> my list two</li>
+                <li class="list-group-item"> my list three</li>
+                <li class="list-group-item"> my list four</li>
+            </ul>
+
+            <h1 class="text-center text-success ">" FLUSH LIST GROUP badge"</h1>
+
+            <ul class="list-group mb-5">
+                <li class="list-group-item"> Item one</li>
+                <li class="list-group-item d-flex justify-content-between align-items-center"> Item two
+                    <span class="badge badge-primary">30</span>
+                </li>
+                <li class="list-group-item"> Item three</li>
+                <li class="list-group-item"> Item four</li>
+
+            </ul>
+            <h1 class="text-center text-success ">" BREADCRUMB"</h1>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active">Home</li>
+            </ol>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item">user</li>
+            </ol>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">User</a></li>
+                <li class="breadcrumb-item active">Brand</li>
+            </ol>
 
 
 
-    <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js "></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js "></script>
+
+            <h1 class="text-center text-success ">" FORM INPUTS"</h1>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input class="form-control" type="text" placeholder="First Name">
+                </div>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input class="form-control" type="email" placeholder="Enter email-address">
+                    <small class="form-text text-muted"> Your email will not be shared</small>
+                </div>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input class="form-control" type="text" placeholder="Companey Name">
+                </div>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input class="form-control" type="password" placeholder="Enter password">
+                </div>
+
+                <h1 class="text-center text-success ">" FORM selects"</h1>
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <select class="form-control" name="gender" id="gender">
+                        <option value="male">male</option>
+                        <option value="female">female</option>
+                    </select>
+                </div>
+                <h1 class="text-center text-success ">" TEXT-AREA"</h1>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" cols="30" rows="03"></textarea>
+                </div>
+                <h1 class="text-center text-success ">" file input"</h1>
+                <div class="form-group">
+                    <label for="file"> File Input</label>
+                    <input type="file" id="file" class="form-control-file">
+                    <small class="form-text-muted" id="fileHelp">Max 3mb size</small>
+                </div>
+                <h1 class="text-center text-success ">" CUSTOM INPUT"</h1>
+                <div class="custom-file">
+                    <input type="file" id="myFile" class="custom-file-input">
+                    <label class="custom-file-label" for="myfile"></label>
+                </div>
+                <h1 class="text-center text-success ">" Range"</h1>
+                <div class="form-grooup mb-5">
+                    <label for="membership">membership</label>
+                    <input class="custom-range" type="range" min="1" max="5" step="1" value="1">
+                </div>
+                <button class="btn btn-primary btn-block">submit</button>
+
+            </form>
+            <h1 class="text-center text-success ">" FORM inline"</h1>
+
+            <form class="form-group form-inline">
+                <input type="text" placeholder="Enter user name" class="form-control mr-2">
+                <input type="password" placeholder="Password" class="form-control mr-2">
+                <div>
+                    <label class="form-check mr-2">
+                            <input class="form-check-input" type="checkbox">Remind me
+                        </label>
+                </div>
+                <button class="btn btn-primary" type="submit">submit</button>
+            </form>
+            <h1 class="text-center text-success ">" FORM row"</h1>
+            <form>
+                <div class="form-row">
+                    <div class="col"><input type="text" class="form-control" placeholder="First-name"></div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Second-name">
+                    </div>
+                </div>
+            </form>
+
+
+            <h1 class="text-center text-success ">" validation"</h1>
+            <div class="form-group">
+                <label for="username">User name</label>
+                <input class="form-control is-valid" type="text">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input class="form-control is-invalid" type="password" id="password1">
+            </div>
+            <div class="invalid-feedback">password not strong enough</div>
+            <div class="form-group">
+                <label for="password2">Confirm password</label>
+                <input class="form-control is-invalid" type="password" id="password2">
+            </div>
+            <div class="invalid-feedback">password does not matched</div>
+
+            <h1 class="text-center text-success ">" Basic input groups"</h1>
+            <div class="input-group">
+                <div class="input-group-prepend"><span class="input-group-text">@</span></div>
+                <input type="text" class="form-control" placeholder="User name">
+            </div>
+            <div class="input-group">
+                <input class="form-control" type="text" placeholder="User name">
+                <div class="input-group-append"><span class="input-group-text">@Somthing.com</span></div>
+            </div>
+            <label for="basicurl">Custom url</label>
+            <div class="input-group">
+                <div class="input-group-prepend"><span class="input-group-text">http://somthing/com</span></div>
+                <input type="text" class="form-control">
+            </div>
+            <div class="input-group">
+                <div class="input-group-prepend"><span class="input-group-text">$</span></div>
+                <input type="text" class="form-control">
+                <div class="input-group-append"><span class="input-group-text">.00</span></div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+        <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js "></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js "></script>
 </body>
 
 </html>

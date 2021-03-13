@@ -1,0 +1,47 @@
+.text-primary {
+    color: #e67e22 !important;
+}
+
+.text-info {
+    color: #e68e88 !important;
+}
+
+.bg-primary .text-primary {
+    color: #000000 !important;
+}
+
+
+/* Break-points */
+
+@media(min-width: 576px) {
+    body {
+        background-color: #e68e88;
+    }
+}
+
+@media(min-width: 768px) {
+    body {
+        background-color: #324cdf;
+    }
+}
+
+@media(min-width: 992px) {
+    body {
+        background-color: #008f8f;
+    }
+}
+
+@media(min-width: 1200px) {
+    body {
+        background-color: #ffffff;
+    }
+}
+
+
+/* extra-small devices */
+
+@media(max-width: 575px) {
+    body {
+        background-color: #dcdf32;
+    }
+}
