@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./custom.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />
+
+
+</head>
+
+<body>
+    <div class="container bg-light">
+        <h2 class="text-center text-success">GRID & FLEXBOX</h2>
+        <h2 class="text-center text-success">GRID SYSTEM</h2>
+
+        <div class="row">
+            <div class="col-sm-6 col-md-8 col-lg-9 col-xl-10" style="border: 1px solid #000;">
+                <ul>
+                    <li>6 column on small screens</li>
+                    <li>8 column on medium screens</li>
+                    <li>9 column on large screens</li>
+                    <li>10 column on extra-large screens</li>
+                </ul>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2" style="border: 1px solid #000;">
+                <ul>
+                    <li>6 columns on small screens</li>
+                    <li>4 columns on medium screens</li>
+                    <li>3 columns on large screens</li>
+                    <li>2 columns on extra-large screens</li>
+                </ul>
+            </div>
+        </div>
+        <h2 class="text-center text-success">EQUAL WIDTH</h2>
+        <div class="row">
+            <div class="col" style="border: 1px solid #000;">Equal width</div>
+            <div class="col" style="border: 1px solid #000;">Equal width</div>
+            <div class="col" style="border: 1px solid #000;">Equal width</div>
+            <div class="col" style="border: 1px solid #000;">Equal width</div>
+
+        </div>
+        <h2 class="text-center text-success">EQUAL WIDTH MULTI ROW</h2>
+        <div class="row">
+            <div class="col" style="border: 1px solid #000;">Equal width MUTLI</div>
+            <div class="col" style="border: 1px solid #000;">Equal width MULTI</div>
+            <div class="w-100" style="border: 1px solid #000;"></div>
+
+            <div class="col" style="border: 1px solid #000;">Equal width MULTI</div>
+            <div class="col" style="border: 1px solid #000;">Equal width MULTI</div>
+
+        </div>
+        <h2 class="text-center text-success">AUTO LAYOUT</h2>
+        <div class="row">
+            <div class="col" style="border: 1px solid #000;">Equal width</div>
+            <div class="col-6" style="border: 1px solid #000;">Equal width</div>
+            <div class="col-4" style="border: 1px solid #000;">Equal width</div>
+
+        </div>
+        <h2 class="text-center text-success">EQUAL WIDTH STACKED</h2>
+        <div class="row">
+            <div class="col-sm" style="border: 1px solid #000;">Equal width</div>
+            <div class="col-sm" style="border: 1px solid #000;">Equal width</div>
+            <div class="col-sm" style="border: 1px solid #000;">Equal width</div>
+
+        </div>
+        <h2 class="text-center text-success">ORDERED</h2>
+        <div class="row">
+            <div class="col order-3" style="border: 1px solid #000;">First</div>
+            <div class="col order-2" style="border: 1px solid #000;">Second</div>
+            <div class="col order-1" style="border: 1px solid #000;">Third</div>
+
+        </div>
+        <h2 class="text-center text-success">OFFSETTING</h2>
+        <h2 class="text-center text-success">6 COLUMN DIV OFFSET BY 3</h2>
+        <div class="row">
+            <div class="col-md-6 offset-md-3" style="border: 1px solid #000;">First</div>
+
+
+        </div>
+        <h2 class="text-center text-success">2 4 COLUMN DIVs the second OFFSET BY 4</h2>
+        <div class="row">
+            <div class="col-md-4" style="border: 1px solid #000;">First</div>
+            <div class="col-md-4 offset-md-4" style="border: 1px solid #000;">First</div>
+        </div>
+        <h2 class="text-center text-success">2 3 COLUMN DIVs both OFFSET BY 3</h2>
+        <div class="row">
+            <div class="col-md-3 offset-md-3" style="border: 1px solid #000;">First</div>
+            <div class="col-md-3 offset-md-3" style="border: 1px solid #000;">First</div>
+        </div>
+
+        <h2 class="text-center text-success">NESTING</h2>
+        <div class="row">
+            <div class="col-sm-9" style="border: 1px solid #170cbd;">Level 1: .col-sm-9
+                <div class="row">
+                    <div class="col-8 col-sm-6" style="border: 1px solid #ad0d0d;">Level 2: .col-8 .col-sm-6
+                    </div>
+                    <div class="col-4 col-sm-6" style="border: 1px solid #a11616;">Level 3: .col-4 .col-sm-6
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="text-center text-success">GRID ALIGNMENT</h2>
+        <div class="row align-items-start" style="height: 200px;border: 1px solid #000000;">
+            <div class="col">top-aligned</div>
+            <div class="col">top-aligned</div>
+            <div class="col">top-aligned</div>
+
+        </div>
+        <div class="row align-items-center" style="height: 200px;border: 1px solid #000000;">
+            <div class="col">middle-aligned</div>
+            <div class="col">middle-aligned</div>
+            <div class="col">middle-aligned</div>
+        </div>
+        <div class="row align-items-end" style="height: 200px; border: 1px solid #000000;">
+            <div class="col">bottom-aligned</div>
+            <div class="col">bottom-aligned</div>
+            <div class="col">bottom-aligned</div>
+
+        </div>
+        <div class="row" style="height: 200px; border: 1px solid #000000;">
+            <div class="col align-self-start">bottom-aligned</div>
+            <div class="col align-self-center">bottom-aligned</div>
+            <div class="col align-self-end">bottom-aligned</div>
+
+        </div>
+    </div>
+
+    </div>
+
+
+    <!-- ----------------------- -->
+
+    <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js "></script>
+</body>
+
+</html>

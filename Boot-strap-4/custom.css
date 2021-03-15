@@ -11,6 +11,13 @@
 }
 
 
+/* FOR-INDEX-2 */
+
+.index-2 {
+    background-color: #ebb2ae;
+}
+
+
 /* Break-points */
 
 @media(min-width: 576px) {
