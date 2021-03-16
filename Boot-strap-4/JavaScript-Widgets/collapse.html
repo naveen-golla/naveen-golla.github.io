@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="container">
+        <button class="btn btn-primary d-block mb-3" data-toggle="collapse" data-target="#collapsebtn-1" type="button">Read more</button>
+        <div class="collapse mb-5" id="collapsebtn-1">
+            <div class="card">
+                <div class="card-body">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, libero, tempore, nulla nesciunt rerum voluptatibus dolore architecto nemo in consectetur nobis? Expedita vitae harum nihil rem neque quidem doloribus eius. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Eius quibusdam ea nostrum sapiente incidunt quo iure libero laboriosam magnam ex tempore cumque, labore quis, debitis eligendi velit hic repellendus! Beatae.
+                </div>
+            </div>
+        </div>
+        <div id="accordian">
+            <div class="card">
+                <div class="card-header">
+                    <h5>
+                        <a class="d-block" href="#collapse1" data-parent="#accordian" data-toggle="collapse">collapse 1</a>
+                    </h5>
+                </div>
+            </div>
+            <div id="collapse1" class="collapse show">
+                <div class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ad voluptatibus fugiat nemo totam nesciunt accusamus, tempore obcaecati placeat quaerat voluptates est eligendi molestiae quae perspiciatis recusandae animi esse sapiente. </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h5>
+                        <a class="d-block" href="#collapse2" data-parent="#accordian" data-toggle="collapse">collapse 2</a>
+                    </h5>
+                </div>
+            </div>
+            <div id="collapse2" class="collapse fade">
+                <div class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ad voluptatibus fugiat nemo totam nesciunt accusamus, tempore obcaecati placeat quaerat voluptates est eligendi molestiae quae perspiciatis recusandae animi esse sapiente. </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h5>
+                        <a class="d-block" href="#collapse3" data-parent="#accordian" data-toggle="collapse">collapse 3</a>
+                    </h5>
+                </div>
+            </div>
+            <div id="collapse3" class="collapse fade">
+                <div class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ad voluptatibus fugiat nemo totam nesciunt accusamus, tempore obcaecati placeat quaerat voluptates est eligendi molestiae quae perspiciatis recusandae animi esse sapiente. </div>
+            </div>
+
+        </div>
+        <div class="bg-light mb-5">
+            <h2 class="text-center text-success">TOOLTIPS</h2>
+            <button class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="tooltip on top">Tool tip
+                on top</button>
+            <button class="btn btn-success" data-toggle="tooltip" data-placement="right" title="tooltip on right">Tool
+                tip on right</button>
+            <button class="btn btn-danger" data-toggle="tooltip" data-placement="bottom" title="tooltip on bottom">Tool
+                tip on bottom</button>
+            <button class="btn btn-warning" data-toggle="tooltip" data-placement="left" title="tooltip on left">Tool tip
+                on left</button>
+        </div>
+
+        <div class="bg-light">
+            <h2 class="text-center text-success">TOOLTIPS with Html</h2>
+
+            <button id="hello" class="btn btn-danger" data-toggle="tooltip" data-placement="left" data-html="true" title="<h3>Hello!</h3><p>Hello World</p>">Tool tip on with html</button>
+
+            <h2 class="text-center text-success">TRIGERS with JS</h2>
+            <button class="btn btn-secondary" onclick="showTooltip()">Show tooltip</button>
+            <button class="btn btn-secondary" onclick="hideTooltip()">Hide tooltip</button>
+            <button class="btn btn-secondary" onclick="toggleTooltip()">Toggle tooltip</button>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js "></script>
+
+    <script>
+        $('[data-toggle="tooltip"]').tooltip();
+
+
+        function showTooltip() {
+            $('#hello').tooltip('show');
+        }
+
+        function hideTooltip() {
+            $('#hello').tooltip('hide');
+        }
+
+        function toggleTooltip() {
+            $('#hello').tooltip('toggle');
+        }
+
+        //Tooltip events
+        $('#hello').on('show.bs.tooltip', function() {
+            console.log('Tooltip Show')
+        })
+        $('#hello').on('shown.bs.tooltip', function() {
+            console.log('Tooltip Shown')
+        })
+        $('#hello').on('hide.bs.tooltip', function() {
+            console.log('Tooltip Hide')
+        })
+        $('#hello').on('hiden.bs.tooltip', function() {
+            console.log('Tooltip Hiden')
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="text-center text-success mt-5">POPOVER</h2>
+        <button class="btn btn-danger" data-toggle="popover" data-placement="top" data-content="Lorem ipsum dolor  exercitationem dignissimos, itaque quidem sed vitae? Quisquam necessitatibus explicabo hic.">Toggle
+            popover</button>
+        <button class="btn btn-warning" data-toggle="popover" data-placement="right" data-content="Lorem ipsum dolor  exercitationem dignissimos, itaque quidem sed vitae? Quisquam necessitatibus explicabo hic.">Toggle
+            popover</button>
+        <button class="btn btn-success" data-toggle="popover" data-placement="bottom" data-content="Lorem ipsum dolor  exercitationem dignissimos, itaque quidem sed vitae? Quisquam necessitatibus explicabo hic.">Toggle
+            popover</button>
+        <button class="btn btn-info" data-toggle="popover" data-placement="left" data-content="Lorem ipsum dolor  exercitationem dignissimos, itaque quidem sed vitae? Quisquam necessitatibus explicabo hic.">Toggle
+            popover</button>
+
+        <h2 class="text-center text-success mt-5">DISMISSIBLE POPOVER</h2>
+        <button id="hello" class="btn btn-danger" data-toggle="popover" data-placement="left" data-content="Lorem ipsum dolor  exercitationem dignissimos, itaque quidem sed vitae? Quisquam necessitatibus explicabo hic." data-trigger="focus">Toggle popover</button>
+
+        <h2 class="text-center text-success mt-5">CONTROL WITH JS</h2>
+        <button class="btn btn-primary" onclick="showPopover()">popover</button>
+        <button class="btn btn-success" onclick="hidePopover()">popover</button>
+        <button class="btn btn-secondary" onclick="togglePopover()">popover</button>
+
+
+        <div class="bg-light">
+            <h2 class="text-center text-success mt-5">MODAL TRIGGER</h2>
+            <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Launch</button>
+
+            <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Model Title</h5>
+                            <button class="close" data-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem, est! Suscipit delectus nesciunt asperiores nisi. Nihil quidem ab, doloribus quasi placeat a excepturi repudiandae dicta maxime veritatis enim repellendus id.
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="text-center text-success mt-5">LOGIN MODAL TRIGGER</h2>
+            <button class="btn btn-dark" data-toggle="modal" data-target="#loginModal">LOGIN</button>
+
+            <div class="modal" id="loginModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Login</h5>
+                            <button class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="username">Username</label>
+                                    <input type="text" class="form-control" placeholder="username">
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Password</label>
+                                    <input type="password" class="form-control" placeholder="Password">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-primary" data-dismiss="modal">Login</button>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+    <h2 class="text-center text-success mt-5">SCROOLSPY & SMOOTH SCROLLING</h2>
+    <div class="container">
+        <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light mb-3" id="main-nav">
+            <div class="container">
+                <a href="#" class="navbar-brand">Navbar</a>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#welcome" class="nav-link">Welcome</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services" class="nav-link">Services</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <section id="welcome">
+            <h3>Welcome</h3>
+            <p> Quos, fugit illo. Animi temporibus nostrum, eius inventore quia id cumque non maxime soluta voluptatem, ducimus quam fuga. Similique autem at perspiciatis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi beatae temporibus ut
+                magni possimus illum id doloribus et dolor velit, eligendi provident quos quis soluta vitae reprehenderit quibusdam expedita autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore odio iusto, quos assumenda accusantium,
+                perspiciatis molestiae explicabo porro, deleniti ab atque placeat dignissimos. Odit iusto alias corrupti non est reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem pariatur perferendis fugit accusamus. Ut repudiandae
+                laudantium asperiores quod omnis, non perferendis voluptate, doloribus saepe amet facere explicabo fugit magnam libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, fugit illo. Animi temporibus nostrum, eius inventore
+                quia id cumque non maxime soluta voluptatem, ducimus quam fuga. Similique autem at perspiciatis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi beatae temporibus ut magni possimus illum id dolo Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Labore odio iusto, quos assumenda accusantium, perspiciatis molestiae explicabo porro, deleniti ab atque placeat dignissimos. Odit iusto alias corrupti non est reprehenderit. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Autem pariatur perferendis fugit accusamus. Ut repudiandae laudantium asperiores quod omnis, non perferendis voluptate, doloribus saepe amet facere explicabo fugit magnam libero. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Quos, fugit illo. Animi temporibus nostrum, eius inventore quia id cumque non maxime soluta voluptatem, ducimus quam fuga. Similique autem at perspiciatis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                beatae temporibus ut magni possimus illum id doloribus et dolor velit, eligendi provident quos quis soluta vitae reprehenderit quibusdam expedita autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore odio iusto, quos assumenda
+                accusantium, perspiciatis molestiae explicabo porro, deleniti ab atque placeat dignissimos. Odit iusto alias corrupti non est reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem pariatur perferendis fugit accusamus.
+                Ut repudiandae laudantium asperiores quod omnis, non perferendis voluptate, doloribus saepe amet facere explicabo fugit magnam libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, fugit illo. Animi temporibus nostrum,
+                eius inventore quia id cumque non maxime soluta voluptatem, ducimus quam fuga. Similique autem at perspiciatis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi beatae temporibus ut magni possLorem ipsum dolor sit amet consectetur
+                adipisicing elit. Labore odio iusto, quos assumenda accusantium, perspiciatis molestiae explicabo porro, deleniti ab atque placeat dignissimos. Odit iusto alias corrupti non est reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Autem pariatur perferendis fugit accusamus. Ut repudiandae laudantium asperiores quod omnis, non perferendis voluptate, doloribus saepe amet facere explicabo fugit magnam libero. Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Quos, fugit illo. Animi temporibus nostrum, eius inventore quia id cumque non maxime soluta voluptatem, ducimus quam fuga. Similique autem at perspiciatis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi beatae temporibus
+                ut magni possimus illum id doloribus et dolor velit, eligendi provident quos quis soluta vitae reprehenderit quibusdam expedita autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore odio iusto, quos assumenda accusantium,
+                perspiciatis molestiae explicabo porro, deleniti ab atque placeat dignissimos. Odit iusto alias corrupti non est reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem pariatur perferendis fugit accusamus. Ut repudiandae
+                laudantium asperiores quod omnis, non perferendis voluptate, doloribus saepe amet facere explicabo fugit magnam libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, fugit illo. Animi temporibus nostrum, eius inventore
+                quia id cumque non maxime soluta voluptatem, ducimus quam fuga. Similique autem at perspiciatis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi beatae temporibus ut magni possimus illum id dolorimus illum id dolorribus
+                et dolor velit, eligendi provident quos quis soluta vitae reprehenderit quibusdam expedita autem.
+            </p>
+        </section>
+        <section id="about">
+            <h3>About</h3>
+            <p>adipisicing elit. Quos, fugit illo. Animi temporibus nostrum, eius inventore quia id cumque non maxime soluta voluptatem, ducimus quam fuga. Similique autem at perspiciatis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Labore odio iusto, quos assumenda accusantium, perspiciatis molestiae explicabo porro, deleniti ab atque placeat dignissimos. Odit iusto alias corrupti non est reprehenderit. Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Autem pariatur perferendis fugit accusamus. Ut repudiandae laudantium asperiores quod omnis, non perferendis voluptate, doloribus saepe amet facere explicabo fugit magnam libero. Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Quos, fugit illo. Animi temporibus nostrum, eius inventore quia id cumque non maxime soluta voluptatem, ducimus quam fuga. Similique autem at perspiciatis? Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Sequi beatae temporibus ut magni possimus illum id doloribus et dolor velit, eligendi provident quos quis soluta vitae reprehenderit quibusdam expedita autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore odio iusto,
+                quos assumenda accusantium, perspiciatis molestiae explicabo porro, deleniti ab atque placeat dignissimos. Odit iusto alias corrupti non est reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem pariatur perferendis
+                fugit accusamus. Ut repudiandae laudantium asperiores quod omnis, non perferendis voluptate, doloribus saepe amet facere explicabo fugit magnam libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, fugit illo. Animi temporibus
+                nostrum, eius inventore quia id cumque non maxime soluta voluptatem, ducimus quam fuga. Similique autem at perspiciatis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi beatae temporibus ut magni possimus illum id dolorLorem
+                ipsum dolor sit amet consectetur adipisicing elit. Labore odio iusto, quos assumenda accusantium, perspiciatis molestiae explicabo porro, deleniti ab atque placeat dignissimos. Odit iusto alias corrupti non est reprehenderit. Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Autem pariatur perferendis fugit accusamus. Ut repudiandae laudantium asperiores quod omnis, non perferendis voluptate, doloribus saepe amet facere explicabo fugit magnam libero. Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Quos, fugit illo. Animi temporibus nostrum, eius inventore quia id cumque non maxime soluta voluptatem, ducimus quam fuga. Similique autem at perspiciatis? Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Sequi beatae temporibus ut magni possimus illum id doloribus et dolor velit, eligendi provident quos quis soluta vitae reprehenderit quibusdam expedita autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+                odio iusto, quos assumenda accusantium, perspiciatis molestiae explicabo porro, deleniti ab atque placeat dignissimos. Odit iusto alias corrupti non est reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem pariatur
+                perferendis fugit accusamus. Ut repudiandae laudantium asperiores quod omnis, non perferendis voluptate, doloribus saepe amet facere explicabo fugit magnam libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, fugit illo.
+                Animi temporibus nostrum, eius inventore quia id cumque non maxime soluta voluptatem, ducimus quam fuga. Similique autem at perspiciatis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi beatae temporibus ut magni possimus
+                illum id dolorLorem ipsum dolor sit amet consectetur adipisicing elit. Labore odio iusto, quos assumenda accusantium, perspiciatis molestiae explicabo porro, deleniti ab atque placeat dignissimos. Odit iusto alias corrupti non est reprehenderit.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem pariatur perferendis fugit accusamus. Ut repudiandae laudantium asperiores quod omnis, non perferendis voluptate, doloribus saepe amet facere explicabo fugit magnam libero.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, fugit illo. Animi temporibus nostrum, eius inventore quia id cumque non maxime soluta voluptatem, ducimus quam fuga. Similique autem at perspiciatis? Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Sequi beatae temporibus ut magni possimus illum id doloribus et dolor velit, eligendi provident quos quis soluta vitae reprehenderit quibusdam expedita autem. Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Labore odio iusto, quos assumenda accusantium, perspiciatis molestiae explicabo porro, deleniti ab atque placeat dignissimos. Odit iusto alias corrupti non est reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Autem pariatur perferendis fugit accusamus. Ut repudiandae laudantium asperiores quod omnis, non perferendis voluptate, doloribus saepe amet facere explicabo fugit magnam libero. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quos, fugit illo. Animi temporibus nostrum, eius inventore quia id cumque non maxime soluta voluptatem, ducimus quam fuga. Similique autem at perspiciatis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi beatae temporibus
+                ut magni possimus illum id dolor Sequi beatae temporibus ut magni possimus illum id doloribus et dolor velit, eligendi provident quos quis soluta vitae reprehenderit quibusdam expedita autem.
+            </p>
+        </section>
+        <section id="services">
+            <h3>Services</h3>
+            <p> Quos, fugit illo. Animi temporibus nostrum, eius inventore quia id cumque non maxime soluta voluptatem, ducimus quam fuga. Similique autem at perspiciatis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Labore odio iusto, quos assumenda accusantium, perspiciatis molestiae explicabo porro, deleniti ab atque placeat dignissimos. Odit iusto alias corrupti non est reprehenderit. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Autem pariatur perferendis fugit accusamus. Ut repudiandae laudantium asperiores quod omnis, non perferendis voluptate, doloribus saepe amet facere explicabo fugit magnam libero. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Quos, fugit illo. Animi temporibus nostrum, eius inventore quia id cumque non maxime soluta voluptatem, ducimus quam fuga. Similique autem at perspiciatis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                beatae temporibus ut magni possimus illum id doloribus et dolor velit, eligendi provident quos quis soluta vitae reprehenderit quibusdam expedita autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore odio iusto, quos assumenda
+                accusantium, perspiciatis molestiae explicabo porro, deleniti ab atque placeat dignissimos. Odit iusto alias corrupti non est reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem pariatur perferendis fugit accusamus.
+                Ut repudiandae laudantium asperiores quod omnis, non perferendis voluptate, doloribus saepe amet facere explicabo fugit magnam libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, fugit illo. Animi temporibus nostrum,
+                eius inventore quia id cumque non maxime soluta voluptatem, ducimus quam fuga. Similique autem at perspiciatis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi beatae temporibus ut magni possimus illum id dolorLorem ipsum
+                dolor sit amet consectetur adipisicing elit. Labore odio iusto, quos assumenda accusantium, perspiciatis molestiae explicabo porro, deleniti ab atque placeat dignissimos. Odit iusto alias corrupti non est reprehenderit. Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Autem pariatur perferendis fugit accusamus. Ut repudiandae laudantium asperiores quod omnis, non perferendis voluptate, doloribus saepe amet facere explicabo fugit magnam libero. Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Quos, fugit illo. Animi temporibus nostrum, eius inventore quia id cumque non maxime soluta voluptatem, ducimus quam fuga. Similique autem at perspiciatis? Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Sequi beatae temporibus ut magni possimus illum id doloribus et dolor velit, eligendi provident quos quis soluta vitae reprehenderit quibusdam expedita autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore odio iusto,
+                quos assumenda accusantium, perspiciatis molestiae explicabo porro, deleniti ab atque placeat dignissimos. Odit iusto alias corrupti non est reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem pariatur perferendis
+                fugit accusamus. Ut repudiandae laudantium asperiores quod omnis, non perferendis voluptate, doloribus saepe amet facere explicabo fugit magnam libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, fugit illo. Animi temporibus
+                nostrum, eius inventore quia id cumque non maxime soluta voluptatem, ducimus quam fuga. Similique autem at perspiciatis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi beatae temporibus ut magni possimus illum id dolorLorem
+                ipsum dolor sit amet consectetur adipisicing elit. Labore odio iusto, quos assumenda accusantium, perspiciatis molestiae explicabo porro, deleniti ab atque placeat dignissimos. Odit iusto alias corrupti non est reprehenderit. Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Autem pariatur perferendis fugit accusamus. Ut repudiandae laudantium asperiores quod omnis, non perferendis voluptate, doloribus saepe amet facere explicabo fugit magnam libero. Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Quos, fugit illo. Animi temporibus nostrum, eius inventore quia id cumque non maxime soluta voluptatem, ducimus quam fuga. Similique autem at perspiciatis? Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Sequi beatae temporibus ut magni possimus illum id doloribus et dolor velit, eligendi provident quos quis soluta vitae reprehenderit quibusdam expedita autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+                odio iusto, quos assumenda accusantium, perspiciatis molestiae explicabo porro, deleniti ab atque placeat dignissimos. Odit iusto alias corrupti non est reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem pariatur
+                perferendis fugit accusamus. Ut repudiandae laudantium asperiores quod omnis, non perferendis voluptate, doloribus saepe amet facere explicabo fugit magnam libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, fugit illo.
+                Animi temporibus nostrum, eius inventore quia id cumque non maxime soluta voluptatem, ducimus quam fuga. Similique autem at perspiciatis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi beatae temporibus ut magni possimus
+                illum id dolorSequi beatae temporibus ut magni possimus illum id doloribus et dolor velit, eligendi provident quos quis soluta vitae reprehenderit quibusdam expedita autem.
+            </p>
+        </section>
+    </div>
+
+
+
+
+
+    <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js "></script>
+    <script>
+        //init popovers
+        $('[data-toggle="popover"]').popover();
+
+
+        function showPopover() {
+            $('#hello').popover('show');
+        }
+
+        function hidePopover() {
+            $('#hello').popover('hide');
+        }
+
+        function togglePopover() {
+            $('#hello').popover('toggle');
+        }
+        // popover events
+        $('#hello').on('show.bs.popover', function() {
+            console.log("Popover Show");
+        });
+        $('#hello').on('shown.bs.popover', function() {
+            console.log("Popover Shown");
+        });
+        $('#hello').on('hide.bs.popover', function() {
+            console.log("Popover Hide");
+        });
+        $('#hello').on('hidden.bs.popover', function() {
+            console.log("Popover Hidden");
+        });
+        // scroll
+
+        $('body').scrollspy({
+            target: '#main-nav'
+        });
+        // add smooth scrolling
+        $('#main-nav a').on('click', function(e) {
+            if (this.hash !== '') {
+                e.preventDefault();
+                const hash = this.hash;
+                $('html,body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 900,
+                    function() {
+                        window.location.hash = hash;
+                    });
+
+            }
+        });
+    </script>
+</body>
+
+</html>
