@@ -17,17 +17,17 @@ body {
 }
 
 .carousel-image-1 {
-    background: url('../css/img/image1.jpg');
+    background: url('../img/image1.jpg');
     background-size: cover;
 }
 
 .carousel-image-2 {
-    background: url('../css/img/image2.jpg');
+    background: url('../img/image2.jpg');
     background-size: cover;
 }
 
 .carousel-image-3 {
-    background: url('../css/img/image3.jpg');
+    background: url('../img/image3.jpg');
     background-size: cover;
 }
 
@@ -63,6 +63,34 @@ body {
 
 #video-play a {
     color: #fff;
+}
+
+#page-header {
+    height: 200px;
+    background: url('../img/image1.jpg');
+    background-position: 0 -360px;
+    background-attachment: fixed;
+    color: #fff;
+    border-bottom: 1px #eee solid;
+    padding-top: 50px;
+}
+
+.about-img {
+    margin-top: -50px;
+}
+
+#faq .card {
+    border: #444;
+}
+
+#faq a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#faq .card-body,
+#faq .card-header {
+    background: #333;
 }
 
 @media(min-width: 500px) {
