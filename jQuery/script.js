@@ -49,6 +49,11 @@ console.log(x);
 
 var y = (0.2 * 20 + 23 * 5) / 10;
 console.log(y);
+// 
+
+var z = 119 / 10;
+console.log(z);
+// 
 
 // addition
 var x = 10;
@@ -325,3 +330,7 @@ console.log(x);
 var b = ["banana", 'apple', 'graps', 'orange', 'name', 'fest'];
 console.log(b.splice(2, 2, "water", 'lemon'));
 console.log(b);
+
+// accessing element by array
+var cars = ["sab", "volvo", "bmw"];
+console.log(cars[0]);
