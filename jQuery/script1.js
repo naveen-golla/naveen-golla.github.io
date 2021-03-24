@@ -194,7 +194,7 @@ point.sort(function(a, b) {
 });
 console.log(point);
 
-// fisher yates method
+// fisher yates method //i dont under stand
 var fisher = [1, 2, 3, "4", "6", 5];
 var i, j, k;
 for (i = fisher.length - 1; i > 0; i--) {
