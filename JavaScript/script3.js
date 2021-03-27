@@ -375,6 +375,7 @@ function Car(make, model, year, owner) {
     function displayCar() {
         var result = `A Beautiful ${this.year} ${this.make} ${this.model}`;
         pretty_print(result);
+
     }
 }
 var displayCar = new Car('ford', 'tesla tri', 102 - 1, 'naveen');
