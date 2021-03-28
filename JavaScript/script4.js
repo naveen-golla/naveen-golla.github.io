@@ -5,6 +5,17 @@ function displayCar1(make, model, year) {
     console.log(result);
 }
 displayCar1("BMW", "BMW 456", "1999");
+// 
+function displayCar2(make, model, year) {
+    this.make = make;
+    this.model = model;
+    this.year = year;
+
+    var result = `A Beautiful ${this.make} ${this.model} ${this.year}`;
+    console.log(result);
+}
+
+displayCar2("hundai", "vernaa", 2000);
 
 // method definitions
 
@@ -16,17 +27,7 @@ const obj = {
 };
 console.log(obj.foo());
 
-//
 
-function displayCar1(make, model, year) {
-    this.make = make;
-    this.model = model;
-    this.year = year;
-
-    var result = `A Beautiful ${this.make} ${this.model} ${this.year}`;
-
-}
-displayCar1("hundai", "vernaa", 2000);
 
 // 
 
@@ -201,3 +202,35 @@ myCar.year = 2020;
 console.log(myCar.make);
 
 // declaration in array formate
+
+var mycar1 = new Object();
+mycar1['make'] = 'ford';
+mycar1['model'] = 'tata';
+mycar1['year'] = '1969';
+
+console.log(mycar1['make']);
+
+// four variables are created and assigned in a single
+
+var myObj = new Object(),
+    str = 'myString',
+    rand = Math.random(),
+    Obj = new Object;
+
+myObj.type = 'Dot syntax';
+myObj['date created'] = 'String with space';
+myObj['str'] = 'string value';
+
+Obj.make = 'ford';
+Obj['model'] = 'tata';
+
+console.log(myObj.type);
+console.log(Obj.make);
+console.log(str);
+console.log(rand);
+
+// 
+
+var myHonda = { color: 'red', wheel: 4, engine: { cylinder: 4, size: 2.2 } };
+console.log(myHonda.engine);
+console.log(myHonda);
