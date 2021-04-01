@@ -130,21 +130,19 @@ console.log(result);
 
 // 
 
-// function checkAge(age) {
-//     if (age >= 18) {
-//         return;
-//     } else if (age <= 70) {
-//         return false;
-//     } else {
-//         return confirm("Do You Have Permission From Your Parents");
-//     }
-// }
-// var age = prompt("How Old Are You?", 18);
-// if (checkAge(age)) {
-//     console.log("Access Granted");
-// } else {
-//     console.log("Access Denied");
-// }
+function checkAge(age) {
+    if (age >= 18 && age <= 70) {
+        return true;
+    } else {
+        return false;
+    }
+}
+var age = prompt("How Old Are You?", 18);
+if (checkAge(age)) {
+    console.log("Access Granted");
+} else {
+    console.log("Access Denied");
+}
 
 // function checkAge(age) {
 //     if (age >= 18) {
