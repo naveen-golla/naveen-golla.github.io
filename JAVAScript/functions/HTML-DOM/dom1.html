@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-DOM</title>
+
+    <style>
+        .bg-dark {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+        }
+        /*.,.,.,.,.,..,.,.  */
+        
+        #container {
+            width: 400px;
+            height: 400px;
+            position: relative;
+            background: yellow;
+        }
+        
+        #animate {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            background: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="bg-dark">Finding HTML Elements document.anchors</h1>
+
+    <div>
+
+        <a href="#" name="Html">HTML</a>
+        <a name="css" href="#">CSS</a>
+        <a name="boot-strap" href="#">BOOT_STRAP_4</a>
+        <a name="js" href="#">JS</a>
+        <p id="demo"></p>
+    </div>
+    <h1 class="bg-dark">Finding HTML Elements document.body</h1>
+
+
+    <p id="demo1"></p>
+
+
+    <p>This body part will print in console log</p>
+
+    <script>
+        console.log(document.body.innerHTML);
+    </script>
+    <!--  -->
+    <h1 class="bg-dark">Finding HTML Elements document.Element</h1>
+    <p id="demo2"></p>
+    <p>This One print whole document</p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="title"></p>
+
+    <div>
+        <h1 class="bg-dark">Finding HTML Elements document.write method</h1>
+
+        <p>My First Prargraph</p>
+        <button onclick="myFunction()">Click me!</button>
+
+
+        <!-- Changing Html Content -->
+        <h2>Changing the Html Content</h2>
+        <p id="change">This is Old Text</p>
+
+        <h2 id="change1">Old Heading</h2>
+
+    </div>
+    <div>
+        <h2>changing The Value of an Attribute</h2>
+        <img id="image" src="./img/download1.jpeg" alt="old-image">
+        <p>Changing Anchor Tag href attribute value</p>
+        <p><a href="https://www.google.com/search?q=images%20pubg&tbm=isch&hl=en-GB&tbs=isz:m&sa=X&ved=0CAIQpwVqFwoTCIi8hb_N5u8CFQAAAAAdAAAAABAI&biw=1905&bih=947#imgrc=8ewCAD6Aj6VDyM" id="image1">Face-book</a></p>
+
+        <!--  -->
+        <h2>Changing the HTML Style</h2>
+
+        <p id="style">Hello "JOHN".</p>
+
+        <!--  -->
+        <h2 id="my">My Heading!</h2>
+        <button onclick="document.getElementById('my').style.color='green'">Click Me!</button>
+
+    </div>
+    <div>
+
+    </div>
+    <h2>Element visibility</h2>
+    <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nostrum cupiditate deleniti totam ipsa ducimus, est culpa. Consectetur corrupti, dolor perferendis deserunt amet asperiores quis illum, quidem facere neque a.</p>
+    <input type="button" value="Hide text" onclick="document.getElementById('p1').style.visibility='hidden'">
+    <input type="button" value="Show text" onclick="document.getElementById('p1').style.visibility='visible'">
+    <!-- Animation -->
+    <h2>My First JavaScript Animation</h2>
+
+    <div id="container">
+        <div id="animate"></div>
+    </div>
+    <p>
+        <button onclick="myMove()">Click Me!</button>
+    </p>
+
+    <h2 onclick="this.innerHTML='Ooops'">Click om Me!</h2>
+
+    <h2 onclick="changeText(this)">Click on me</h2>
+
+    <p>click the button to display the date.</p>
+    <button onclick="displayDate()">try This </button>
+    <p id="mydemo"></p>
+
+    <h1 class="bg-dark">input onchage Event</h1>
+    Enter Your Name: <input type="text" id="fname" onchange="myFunction()">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore veniam ex magnam consequuntur deleniti omnis quas atque laudantium nisi, nobis doloremque blanditiis dolorem eos asperiores praesentium, pariatur aliquam quis itaque!</p>
+    <!--  -->
+
+    <h1 class="bg-dark">input onmouseover Event</h1>
+
+    <div onmouseover="mOver(this)" onmouseout="mOut(this)" style="background-color:#D94A38;width:120px;height:10px;padding:30px;">
+        Rain Over Me
+    </div>
+    <h1 class="bg-dark">input onmousedown and onouseup Event</h1>
+    <div onmousedown="mDown(this)" onmouseup="mUp(this)" style="background-color:#D94A38;width:90px;height:20px;padding:40px; margin-top: 10px;">
+        Click Me
+    </div>
+
+    <!-- practice -->
+    <div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiq0dITUbJn8PdyNJjOg9vy1T9nUK7jTvYIcCcCvaUqWn9Gh2h3H_6ssH69YfGnrZzJEI&usqp=CAU" onmousedown="lightOn()" onmouseup="lightOff()" id="myimage" style="height: 200px; width: 200px;">
+
+    </div>
+
+    <h1 class="bg-dark">Event listener method</h1>
+    <button id="myBtn">Try It</button>
+    <p id="myP"></p>
+
+    <!-- us -->
+    <a href="#" id="myAnchor">TRY IT</a>
+    <p id="myP1"></p>
+
+    <h2>Add many event handlers to the same element without over raiding the existing events</h2>
+    <button href="#" id="myAnchor1">PLZ TRY THIS</button>
+    <button id="myBtn1">Try it</button>
+
+    <p id="dem1"></p>
+    <script>
+    </script>
+
+    <h2>JavaScript addEventListener()</h2>
+
+    <p>This example uses the addEventListener() method on the window object.</p>
+
+    <p>Try resizing this browser window to trigger the "resize" event handler.</p>
+
+    <p id="demo12"></p>
+
+    <script>
+        window.addEventListener("resize", function() {
+            document.getElementById("demo12").innerHTML = Math.random();
+        });
+    </script>
+    <hr>
+    <h2>Navigation</h2>
+    <h1 id="id01">My First Page</h1>
+    <p id="id02"></p>
+
+    <h2>Accessing data from first-child</h2>
+
+    <h1 id="id03">My First Page1</h1>
+    <p id="id04"></p>
+
+    <h2>Accessing data from child </h2>
+
+    <h1 id="id05">My First Page2</h1>
+    <p id="id06"></p>
+
+    <h1 id="h1">my first heading</h1>
+    <p id="p2"></p>
+    <h1 class="bg-dark">node</h1>
+    <div id="div1">
+        <p id="p1x">This is a paragraph.</p>
+        <p id="p2x">This is another paragraph.</p>
+    </div>
+
+    <script>
+        var para = document.createElement("p");
+        var node = document.createTextNode("This is new.");
+        para.appendChild(node);
+        var element = document.getElementById("div1");
+        element.appendChild(para);
+    </script>
+
+    <div id="div2">
+        <p id="px">This is a paragraph1.</p>
+        <p id="px1">This is another paragraph2.</p>
+    </div>
+
+    <script>
+        var para = document.createElement("p");
+        var node = document.createTextNode("This is new3.");
+        para.appendChild(node);
+
+        var element = document.getElementById("div2");
+        var child = document.getElementById("p2");
+        element.insertBefore(para, child);
+    </script>
+
+
+    <div>
+        <p id="p1a">This is a paragraph4.</p>
+        <p id="p2a">This is another paragraph4.</p>
+    </div>
+
+
+    <button onclick="myFunction()">Remove Element</button>
+
+    <script>
+        function myFunction() {
+            var elmnt = document.getElementById("p1");
+            elmnt.remove();
+        }
+    </script>
+
+    <div id="div11">
+        <p id="p11">This is a paragraph.</p>
+        <p id="p22">This is another paragraph.</p>
+    </div>
+
+    <script>
+        var parent = document.getElementById("div11");
+        var child = document.getElementById("p12");
+        var para = document.createElement("p");
+        var node = document.createTextNode("This is new4.");
+        para.appendChild(node);
+        parent.replaceChild(para, child);
+    </script>
+
+
+
+
+    <script src="../HTML-DOM/dom1.js"></script>
+</body>
+
+</html>
