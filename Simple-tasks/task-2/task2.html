@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-2</title>
+</head>
+
+<body>
+
+    <h1>Task-2</h1>
+    input: <textarea type="text" name="value" id="user-input" cols="100" rows="5"></textarea>
+
+    <input type="button" value="Find" onclick="finding()">
+
+    <p>Results :</p>
+    <p id="result"></p>
+    <p id="result1"></p>
+
+
+
+
+    <script>
+        function finding() {
+
+            var userInput = document.getElementById('user-input').value;
+            var userInputArray = userInput.split(',');
+
+            var biggestNumber = Math.max(...userInputArray);
+            var smallestNumber = Math.min(...userInputArray);
+            var evenNumbers = findEvens(userInputArray);
+            var oddNumbers = findOdd(userInputArray);
+            var positiveNumbers = findPos(userInputArray);
+            // var negativeNumbers = findNeg(userInputArray);
+
+            console.log(biggestNumber);
+            console.log(smallestNumber);
+            console.log(evenNumbers);
+            console.log(oddNumbers);
+            console.log(positiveNumbers);
+            // console.log(negativeNumbers);
+
+            function findEvens(a) {
+                var ar = [];
+                for (var i = 0; i < a.length; i++) {
+                    if (i % 2 == 0) { // index is even
+                        ar.push(a[i]);
+                    }
+                }
+
+                return ar;
+            }
+
+            function findOdd(a) {
+                var ar = [];
+                for (var i = 0; i < a.length; i++) {
+                    if (i % 2 !== 0) { // index is even
+                        ar.push(a[i]);
+                    }
+                }
+
+                return ar;
+            }
+
+            document.getElementById('result').innerHTML = "This is evennumbers" + evenNumbers;
+            document.getElementById('result1').innerHTML = "This is oddNumbers" + oddNumbers;
+        }
+
+
+
+        function findPos(v) {
+            res = res.filter(function(v) {
+                return v < 0;
+            }).concat(res.filter(function(v) {
+                return v == 0;
+            }), res.filter(function(v) {
+                return v > 0;
+            }));
+        }
+    </script>
+
+
+
+
+
+    <!-- // var num1 = parseInt(document.getElementById('user-input').value); // var result; // var x1; // if (num1 > 0) { // result = "Positive number"; // if (num1 % 2 == 0) { // x1 = "this is even number"; // } else { // x1 = "This is odd number"; // } // }
+    else if (num1 == 0) { // result = "The Number is Zero" // } else { // result = "The Given Number Is Negative" // } // document.getElementById("result").innerHTML = "This Is :" + result; // document.getElementById("result1").innerHTML = "This Is :"
+    + x1; // } -->
+    <!--    function findPos(p) {
+                var ps = [];
+                for (var i = 0; i < p.length; i++) {
+                    if (ps >= 0) {
+                        ps.push(p[i]);
+                    }
+                }
+                return ps;
+            }
+
+            function findNeg(p) {
+                var ps = [];
+                for (var i = 0; i < p.length; i++) {
+                    if (ps <= 0) {
+                        ps.push(p[i]);
+                    }
+                }
+                return ps;
+            } -->
+</body>
+
+</html>

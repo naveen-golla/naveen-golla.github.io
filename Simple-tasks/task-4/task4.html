@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-4</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: 'Open Sans', Arial, sans-serif;
+        }
+        
+        h2 {
+            font-size: 20px;
+            margin: 15px 0 30px;
+            text-align: center;
+        }
+        
+        input[type='text'] {
+            font-size: 15px;
+            height: 36px;
+            padding: 0 5px;
+            text-align: center;
+            width: 50px;
+        }
+        
+        input[type='submit'] {
+            background-color: #2980b9;
+            border: 0 none;
+            color: #fff;
+            padding: 10px;
+        }
+        
+        input[type='submit']:hover {
+            background-color: #3498db;
+            cursor: pointer;
+        }
+        
+        input {
+            margin-right: 15px;
+        }
+        
+        .mainContainer {
+            margin: 0 auto;
+            width: 600px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mainContainer">
+        <h2>Calculate your Age in Seconds, Minutes, Hours , Days and Months!</h2>
+        <p class="inputFields"><label>Enter your age:</label> <input type="text" id="age" /> <input type='submit' value="Click me!" id="submit" onclick="calculateMyAge()"></p>
+        <div class="resultBlock">
+            <p>Months: <span id="months"></span></p>
+            <p>Days: <span id="days"></span></p>
+            <p>Hours:<span id="hours"></span></p>
+            <p>Minutes:<span id="minutes"></span></p>
+            <p>Seconds:<span id="seconds"></span></p>
+        </div>
+        <h5 class="error hide" id="error"></h5>
+        <p>Your age: <span id="test">?</span> year(s) old!</p>
+    </div>
+
+    <script>
+        var secondsInAMinute = 60,
+            minutesInAnHour = 60,
+            hoursInADay = 24,
+            monthInAyear = 12,
+            daysInAYear = 364.25;
+        var months, days, hours, minutes, seconds, age;
+        var userInput = document.getElementById('age').value;
+        var userInputArray = userInput.split('/');
+
+        function calculateMyAge() {
+
+            age = document.getElementById('age').value;
+            // var validateAge = isNumber(age);
+            if (age == null || age == '') {
+                document.getElementById('error').style.opacity = '1';
+                document.getElementById('error').innerHTML = 'Please enter your age!';
+
+                setTimeout(function() {
+                    document.getElementById('error').style.opacity = '0';
+                }, 3000);
+
+            }
+
+            days = age * monthInAyear;
+            document.getElementById('months').innerHTML = days;
+
+            days = age * daysInAYear * monthInAyear;
+            document.getElementById('days').innerHTML = days;
+
+            hours = age * hoursInADay * daysInAYear * monthInAyear;
+            document.getElementById('hours').innerHTML = hours;
+
+            minutes = age * minutesInAnHour * hoursInADay * daysInAYear * monthInAyear;
+            document.getElementById('minutes').innerHTML = minutes;
+
+            seconds = age * secondsInAMinute * minutesInAnHour * hoursInADay * daysInAYear * monthInAyear;
+            document.getElementById('seconds').innerHTML = seconds;
+
+            document.getElementById('test').innerHTML = age;
+
+        }
+    </script>
+
+
+</body>
+
+</html>
