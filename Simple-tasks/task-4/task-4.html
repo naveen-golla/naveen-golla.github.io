@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-4</title>
+</head>
+
+<body>
+    <h1>Task 4</h1>
+    <form>
+
+        <p>Date of birth(DD/MM/YYYY)</p>
+        <input type="date" id="age">
+        <input type="button" value="Find" onclick="findAge()">
+    </form>
+
+    <p>Results :</p>
+    <p id="result"></p>
+    <p id="result1"></p>
+
+    <h3 id="error"></h3>
+
+    <script>
+        var secondsInAMinute = 60;
+        var minutesInAnHour = 60;
+        var hoursInADay = 24;
+        var monthInAyear = 12;
+        var daysInAYear = 364.5;
+        var months, days, years, minutes, seconds, age, age_dt;
+        var userInput = document.getElementById('age').value;
+        var userInputDate = userInput.split('/');
+
+        function calcAge(dateString) {
+            var birthday = +new Date(dateString);
+
+            return ~~((Date.now() - birthday) / (31557600000));
+        }
+
+        function findAge() {
+
+            age = document.getElementById('age').value;
+            var ageInYears = calcAge(age);
+            var date = userInput.split("/");
+            debugger;
+            var dte = new Date(parseInt(date[2], 10),
+                parseInt(date[1], 10) - 1,
+                parseInt(date[0], 10));
+            console.log(age)
+
+
+
+            if (age == null || age == '') {
+                document.getElementById('error').style.color = "blue";
+                document.getElementById('error').innerHTML = "Please enter your Age";
+            }
+
+            minutes = age * hoursInADay * minutesInAnHour * daysInAYear * monthInAyear;
+            document.getElementById('result').innerHTML = "Age in minutes" + minutes;
+
+
+
+        }
+    </script>
+
+</body>
+
+</html>

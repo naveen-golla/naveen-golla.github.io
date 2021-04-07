@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Task 3</h1>
+    <form>
+        <p>Input :</p>
+        <textarea id="user-input" cols="50" rows="3"></textarea>
+        <input type="button" onclick="findWords()" value="Find">
+
+        <p>Results :</p>
+        <p id="result"></p>
+        <p id="result1"></p>
+        <p id="result2"></p>
+    </form>
+
+
+    <script>
+        function findWords() {
+            var userInput = document.getElementById('user-input').value;
+            // var noWords = userInput.split(' ').length;
+            var noWords = countWords(userInput);
+            var noChars = userInput.length;
+            var spaceCount = userInput.split(" ").length - 1;
+
+
+            document.getElementById('result').innerHTML = "Number of Words : " + noWords;
+            document.getElementById('result1').innerHTML = "Number of chars : " + noChars;
+            document.getElementById('result2').innerHTML = "Number of spaces : " + spaceCount;
+
+        }
+
+        function countWords(str) {
+            str = str.replace(/(^\s*)|(\s*$)/gi, "");
+            str = str.replace(/[ ]{2,}/gi, " ");
+            str = str.replace(/\n /, "\n");
+            return str.split(' ').length;
+        }
+    </script>
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-2</title>
+
+    <style>
+        form {
+            display: flex;
+            align-items: flex-start;
+            flex-flow: column;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Task-2</h1>
+    <form>
+        <label for="Input">Input:</label>
+        <textarea id="user-input" cols="50" rows="3"></textarea>
+        <input type="button" value="Find" onclick="finding()">
+    </form>
+
+    <p id="result"></p>
+    <p id="result1"></p>
+    <p id="result2"></p>
+    <p id="result3"></p>
+    <p id="result4"></p>
+    <p id="result5"></p>
+
+
+    <script>
+        function finding() {
+
+            var userInput = document.getElementById('user-input').value;
+            var userInputArray = userInput.split(',');
+            // Finding the Biggest number and Smallest number in given input
+            var bigNumber = Math.max(...userInputArray);
+            var smallNumber = Math.min(...userInputArray);
+
+            //Finding the Even number and Odd number 
+            var evenNumbers = findEvensNum(userInputArray);
+            var oddNumbers = findOddNum(userInputArray);
+
+            // Finding Positive numbers - negative numbers
+            var positiveNumber = findPos(userInputArray);
+            var negativeNumber = findNeg(userInputArray);
+
+
+            function findEvensNum(a) {
+                var x = [];
+                for (var i = 0; i < a.length; i++) {
+                    if (a[i] % 2 == 0) {
+                        x.push(a[i]);
+                    }
+                }
+                return x;
+            }
+
+            function findOddNum(a) {
+                var x1 = [];
+                for (var i = 0; i < a.length; i++) {
+                    if (a[i] % 2 !== 0) {
+                        x1.push(a[i]);
+                    }
+                }
+                return x1;
+            }
+
+            function findPos(a) {
+                var x2 = [];
+                for (var i = 0; i < a.length; i++) {
+                    if (a[i] > 0) {
+                        x2.push(a[i]);
+
+                    }
+
+                }
+                return x2;
+            }
+
+            function findNeg(a) {
+                var x3 = [];
+                for (var i = 0; i < a.length; i++) {
+                    if (a[i] < 0) {
+
+                        x3.push(a[i]);
+                    }
+                }
+                return x3;
+            }
+
+
+            document.getElementById('result').innerHTML = "Largest number is : " + bigNumber;
+            document.getElementById('result1').innerHTML = "Smallest number is : " + smallNumber;
+            document.getElementById('result2').innerHTML = "Even numbers : " + evenNumbers;
+            document.getElementById('result3').innerHTML = "Odd numbers : " + oddNumbers;
+            document.getElementById('result4').innerHTML = "+ve numbers : " + positiveNumber;
+            document.getElementById('result5').innerHTML = "-ve numbers : " + negativeNumber;
+        }
+    </script>
+
+</body>
+
+</html>

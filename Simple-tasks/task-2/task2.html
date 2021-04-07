@@ -32,14 +32,14 @@
             var smallestNumber = Math.min(...userInputArray);
             var evenNumbers = findEvens(userInputArray);
             var oddNumbers = findOdd(userInputArray);
-            var positiveNumbers = findPos(userInputArray);
+            // var positiveNumbers = findPos(userInputArray);
             // var negativeNumbers = findNeg(userInputArray);
 
             console.log(biggestNumber);
             console.log(smallestNumber);
             console.log(evenNumbers);
             console.log(oddNumbers);
-            console.log(positiveNumbers);
+            // console.log(positiveNumbers);
             // console.log(negativeNumbers);
 
             function findEvens(a) {
@@ -66,18 +66,6 @@
 
             document.getElementById('result').innerHTML = "This is evennumbers" + evenNumbers;
             document.getElementById('result1').innerHTML = "This is oddNumbers" + oddNumbers;
-        }
-
-
-
-        function findPos(v) {
-            res = res.filter(function(v) {
-                return v < 0;
-            }).concat(res.filter(function(v) {
-                return v == 0;
-            }), res.filter(function(v) {
-                return v > 0;
-            }));
         }
     </script>
 
