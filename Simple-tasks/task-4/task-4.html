@@ -24,44 +24,36 @@
     <h3 id="error"></h3>
 
     <script>
-        var secondsInAMinute = 60;
-        var minutesInAnHour = 60;
-        var hoursInADay = 24;
-        var monthInAyear = 12;
-        var daysInAYear = 364.5;
-        var months, days, years, minutes, seconds, age, age_dt;
-        var userInput = document.getElementById('age').value;
-        var userInputDate = userInput.split('/');
+        // var secondsInAMinute = 60;
+        // var minutesInAnHour = 60;
+        // var hoursInADay = 24;
+        // var monthInAyear = 12;
+        // var daysInAYear = 364.5;
+        // var months, days, years, minutes, seconds, age;
+        // var userInput = document.getElementById('age').value;
+        // var userInputDate = userInput.split('/');
 
-        function calcAge(dateString) {
-            var birthday = +new Date(dateString);
 
-            return ~~((Date.now() - birthday) / (31557600000));
-        }
+
 
         function findAge() {
 
             age = document.getElementById('age').value;
-            var ageInYears = calcAge(age);
-            var date = userInput.split("/");
-            debugger;
-            var dte = new Date(parseInt(date[2], 10),
-                parseInt(date[1], 10) - 1,
-                parseInt(date[0], 10));
-            console.log(age)
-
-
+            var userDob = new Date(age);
+            var today = new Date();
+            var ageInDays = msDiff / (24 * 60 * 60 * 1000);
+            var ageInMinutes = msDiff / (60 * 60 * 1000);
+            var ageInSeconds = msDiff / (60 * 1000);
+            var msDiff = today - userDob;
 
             if (age == null || age == '') {
                 document.getElementById('error').style.color = "blue";
                 document.getElementById('error').innerHTML = "Please enter your Age";
             }
-
-            minutes = age * hoursInADay * minutesInAnHour * daysInAYear * monthInAyear;
-            document.getElementById('result').innerHTML = "Age in minutes" + minutes;
-
-
-
+            document.getElementById('result').innerHTML = "Age in Minutes : " + (msDiff / (60 * 1000));
+            document.getElementById('result1').innerHTML = "Age in seconds : " + (msDiff / (1000));
+            // document.getElementById('result1')
+            return;
         }
     </script>
 

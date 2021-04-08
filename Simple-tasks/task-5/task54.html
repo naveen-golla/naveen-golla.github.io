@@ -61,7 +61,8 @@
     <div class="row">
         <div class="columns large-8 large-offset-2">
             <div class="columns medium-8">
-                <input id="todo-input" type="text" />
+                <input id="todo-input" type="text" placeholder="Item No">
+                <input id="todo-input-1" type="text" placeholder="New text Here">
             </div>
             <div class="columns">
                 <button onclick="addItem()" class="button expanded">Submit</button>
@@ -80,40 +81,40 @@
     <p id="para"></p>
 
     <script>
-        // items array that contains all todo items
-        // JSON.parse is used to parse the stringified items from localStorage
-        // if localStorage is empty, make the items variable an empty array
+        // 1
         var items = JSON.parse(localStorage.getItem('todo-list')) || [];
 
-        // function to add item to the items array
+        //   2
         function addItem() {
-            // get the value of the input box with querySelector
+            // 3
             var inputBox = document.querySelector('#todo-input');
             var item = inputBox.value
 
-            // If input box is empty, return and alert the user
-            // You can also do some more validation if here if you want
+            var inputBox1 = document.getElementById('todo-input-1');
+            var name = inputBox1.value
+
+            // 4
             if (item === "")
                 return document.getElementById('para').innerHTML = "You need to put in a number";
 
-            // If input is valid, add item to items array
+            // 5
             items.push({
                 value: item,
-                time: (new Date()).toLocaleDateString("en-US")
+                time: (new Date()).toLocaleDateString("en-US"),
+                name: name
             })
 
-            // then convert to a string with JSON.stringify and save to localStorage
+            // 6
             localStorage.setItem('todo-list', JSON.stringify(items));
 
-            // call function to list all items
+            // 7
             listItems();
 
-            // clear input box
+            //    8
             inputBox.value = "";
         }
 
-        // function to remove item from array with Array.splice()
-        // removes item, then saves new items array to localStorage
+        // 9
         function deleteItem(index) {
             items.splice(index, 1);
             localStorage.setItem('todo-list', JSON.stringify(items))
@@ -127,7 +128,7 @@
         }
 
 
-        // function that generates list of items and populates the html
+        //    10
         function listItems() {
             var list = "";
             for (var i = 0; i < items.length; i++) {
