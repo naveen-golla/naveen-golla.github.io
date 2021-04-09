@@ -61,8 +61,7 @@
     <div class="row">
         <div class="columns large-8 large-offset-2">
             <div class="columns medium-8">
-                <input id="todo-input" type="text" placeholder="Item No">
-                <input id="todo-input-1" type="text" placeholder="New text Here">
+                <input id="todo-input" type="text" />
             </div>
             <div class="columns">
                 <button onclick="addItem()" class="button expanded">Submit</button>
@@ -90,9 +89,6 @@
             var inputBox = document.querySelector('#todo-input');
             var item = inputBox.value
 
-            var inputBox1 = document.getElementById('todo-input-1');
-            var name = inputBox1.value
-
             // 4
             if (item === "")
                 return document.getElementById('para').innerHTML = "You need to put in a number";
@@ -100,8 +96,7 @@
             // 5
             items.push({
                 value: item,
-                time: (new Date()).toLocaleDateString("en-US"),
-                name: name
+                time: (new Date()).toLocaleDateString("en-US")
             })
 
             // 6
@@ -110,11 +105,11 @@
             // 7
             listItems();
 
-            //    8
+
             inputBox.value = "";
         }
 
-        // 9
+
         function deleteItem(index) {
             items.splice(index, 1);
             localStorage.setItem('todo-list', JSON.stringify(items))
@@ -128,7 +123,7 @@
         }
 
 
-        //    10
+        // function that generates list of items and populates the html
         function listItems() {
             var list = "";
             for (var i = 0; i < items.length; i++) {
