@@ -6,20 +6,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            max-width: 80%;
+            margin: auto;
+        }
+        
+        form {
+            display: flex;
+            flex-flow: column;
+        }
+        
+        textarea {
+            max-width: 50%;
+            padding: 10px;
+        }
+        
+        input {
+            max-width: 200px;
+            padding: 10px 30px;
+            margin: 10px 0 0 0;
+            background: #555252;
+            color: #ffffff;
+            font-size: 30px;
+            font-weight: 600;
+        }
+        
+        .para {
+            font-size: 25px;
+            font-weight: 600;
+        }
+        
+        .para1 {
+            font-size: 20px;
+            font-weight: 600;
+        }
+    </style>
 </head>
 
 <body>
 
     <h1>Task 3</h1>
     <form>
-        <p>Input :</p>
+        <p class="para">Input :</p>
         <textarea id="user-input" cols="50" rows="3"></textarea>
         <input type="button" onclick="findWords()" value="Find">
 
-        <p>Results :</p>
-        <p id="result"></p>
-        <p id="result1"></p>
-        <p id="result2"></p>
+        <p class="para">Results :</p>
+        <p id="result" class="para1"></p>
+        <p id="result1" class="para1"></p>
+        <p id="result2" class="para1"></p>
     </form>
 
 

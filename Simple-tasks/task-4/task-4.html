@@ -6,6 +6,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task-4</title>
+    <style>
+        body {
+            max-width: 80%;
+            margin: auto;
+        }
+        
+        form {
+            display: flex;
+            flex-flow: column;
+        }
+        
+        input[type=date] {
+            padding: 10px;
+            font-size: 18px;
+            max-width: 300px;
+            text-transform: uppercase;
+            text-indent: 10px;
+            background: #EDEDED;
+        }
+        
+        input[type=button] {
+            padding: 10px 30px;
+            font-size: 20px;
+            margin: 10px 0 0 0;
+            max-width: 200px;
+            background: #555252;
+            color: #ffffff;
+        }
+        
+        form p {
+            font-size: 20px;
+            font-weight: 600;
+        }
+        
+        .para {
+            font-size: 25px;
+            font-weight: 600;
+        }
+    </style>
 </head>
 
 <body>
@@ -17,11 +56,11 @@
         <input type="button" value="Find" onclick="findAge()">
     </form>
 
-    <p>Results :</p>
-    <p id="result"></p>
-    <p id="result1"></p>
+    <p class="para">Results :</p>
+    <p id="result" class="para"></p>
+    <p id="result1" class="para"></p>
 
-    <h3 id="error"></h3>
+    <h3 id="error" class="para"></h3>
 
     <script>
         // var secondsInAMinute = 60;
@@ -41,17 +80,19 @@
             age = document.getElementById('age').value;
             var userDob = new Date(age);
             var today = new Date();
-            var ageInDays = msDiff / (24 * 60 * 60 * 1000);
-            var ageInMinutes = msDiff / (60 * 60 * 1000);
-            var ageInSeconds = msDiff / (60 * 1000);
             var msDiff = today - userDob;
+            var ageInDays = msDiff / (24 * 60 * 60 * 1000);
+            var ageInHours = msDiff / (60 * 60 * 1000);
+            var ageInMinutes = msDiff / (60 * 1000);
+            var ageInSeconds = msDiff / (1000);
+
 
             if (age == null || age == '') {
                 document.getElementById('error').style.color = "blue";
                 document.getElementById('error').innerHTML = "Please enter your Age";
             }
-            document.getElementById('result').innerHTML = "Age in Minutes : " + (msDiff / (60 * 1000));
-            document.getElementById('result1').innerHTML = "Age in seconds : " + (msDiff / (1000));
+            document.getElementById('result').innerHTML = "Age in Minutes : " + ageInMinutes;
+            document.getElementById('result1').innerHTML = "Age in seconds : " + ageInSeconds;
             // document.getElementById('result1')
             return;
         }

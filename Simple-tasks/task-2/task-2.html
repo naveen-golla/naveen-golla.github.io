@@ -8,10 +8,39 @@
     <title>Task-2</title>
 
     <style>
+        body {
+            max-width: 80%;
+            margin: auto;
+        }
+        
         form {
             display: flex;
-            align-items: flex-start;
             flex-flow: column;
+        }
+        
+        textarea {
+            max-width: 50%;
+            padding: 10px;
+        }
+        
+        input {
+            max-width: 200px;
+            padding: 10px 30px;
+            margin: 10px 0 0 0;
+            background: #555252;
+            color: #ffffff;
+            font-size: 30px;
+            font-weight: 600;
+        }
+        
+        .para {
+            font-size: 25px;
+            font-weight: 600;
+        }
+        
+        .para1 {
+            font-size: 20px;
+            font-weight: 600;
         }
     </style>
 </head>
@@ -19,17 +48,17 @@
 <body>
     <h1>Task-2</h1>
     <form>
-        <label for="Input">Input:</label>
+        <label class="para" for="Input">Input:</label>
         <textarea id="user-input" cols="50" rows="3"></textarea>
         <input type="button" value="Find" onclick="finding()">
     </form>
 
-    <p id="result"></p>
-    <p id="result1"></p>
-    <p id="result2"></p>
-    <p id="result3"></p>
-    <p id="result4"></p>
-    <p id="result5"></p>
+    <p class="para1" id="result"></p>
+    <p class="para1" id="result1"></p>
+    <p class="para1" id="result2"></p>
+    <p class="para1" id="result3"></p>
+    <p class="para1" id="result4"></p>
+    <p class="para1" id="result5"></p>
 
 
     <script>
