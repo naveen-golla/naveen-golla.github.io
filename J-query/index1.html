@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#button").click(function() {
+                $("#div").animate({
+                    left: '450px'
+                });
+            });
+        });
+        // 
+
+        $(function() {
+            $("#hide").click(function() {
+                $(".para").hide(1000);
+            });
+        });
+        // 
+        function hideContent() {
+            document.getElementById("para").style.visibility = "hidden";
+        };
+
+        // animation
+        $(function() {
+            $("#btn1").click(function() {
+                $("#div1").animate({
+                    left: '250px',
+                    opacity: '0.2',
+                    height: '200px',
+                    width: '200px'
+                });
+            });
+        });
+        // 
+        $(function() {
+            $("#btn2").click(function() {
+                $("#div2").animate({
+                    left: '250px',
+                    opacity: '0.2',
+                    height: '+=150px',
+                    width: '+=150px'
+                });
+            });
+        });
+    </script>
+    <style>
+        #para {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="button">Start Animation</button>
+    <p>A simple animation example:</p>
+    <div id="div" style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+
+    <div style="margin-top: 150px;"></div>
+
+    <button onclick="hideContent()">On click</button>
+
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, laudantium!</p>
+    <div></div>
+    <button id="btn1">Start Animation</button>
+    <div id="div1" style="background-color: green; height: 100px; position: absolute; width: 100px;"></div>
+
+    <div style="margin-top: 120px;">
+        <button id="btn2">Start Animation</button>
+        <div id="div2" style="background-color: red; height: 100px; position: absolute; width: 100px;"></div>
+    </div>
+
+</body>
+
+</html>

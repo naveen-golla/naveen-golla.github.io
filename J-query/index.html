@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>First jQuery Example</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+    </script>
+    <!--  -->
+    <script>
+        $(function() {
+            $("p").css("background-color", "cyan");
+        });
+        // Hide and Show Effects
+        $(function() {
+            $("#hide").click(function() {
+                $(".para").hide(1000);
+            });
+            $("#show").click(function() {
+                $(".para").show(1500);
+            });
+        });
+
+        // Toggle with speed parameter
+        $(function() {
+            $("#btn").click(function() {
+                $(".div1").toggle(1500);
+            });
+        });
+        // 
+        $(function() {
+            $(".p").css("background-color", "green")
+        });
+
+        // FadeIn
+        $(function() {
+            $("#btn1").click(function() {
+                $("#div2").fadeIn();
+                $("#div3").fadeIn("slow");
+                $("#div4").fadeIn(3000);
+
+            });
+        });
+        // FadeOut
+        $(function() {
+            $("#btn2").click(function() {
+                $("#div5").fadeOut();
+                $("#div6").fadeOut("slow");
+                $("#div7").fadeOut(3000);
+            });
+        });
+        // FadeToggle
+        $(function() {
+            $("#btnz").click(function() {
+                $("#divx").fadeToggle();
+                $("#divy").fadeToggle("slow");
+                $("#divz").fadeToggle(3000);
+            });
+        });
+        // FadeTo
+        $(function() {
+            $("#btn-1").click(function() {
+                $("#div-5").fadeTo('slow', 0.3);
+                $("#div-6").fadeTo("slow", 0.4);
+                $("#div-7").fadeTo('slow', 0.5);
+            });
+        });
+        // Slide-Down
+        $(function() {
+            $("#flip").click(function() {
+                $('#panel').slideDown("slow");
+
+            });
+        });
+        // Slide-Down
+        $(function() {
+            $("#flip-1").click(function() {
+                $('#panel-1').slideUp("slow");
+
+            });
+        });
+
+        // Slide-Toggle
+        $(function() {
+            $("#flip-2").click(function() {
+                $('#panel-2').slideToggle("slow");
+
+            });
+        });
+        // // animation
+        // $(function() {
+        //     $("#btn-4").click(function() {
+        //         $("#move").animate({
+        //             left: '450px'
+        //         });
+        //     });
+        // });
+    </script>
+    <style>
+        #panel,
+        #flip,
+        #panel-1,
+        #flip-1,
+        #panel-2,
+        #flip-2 {
+            padding: 5px;
+            text-align: center;
+            background-color: cyan;
+            border: 1px solid Black;
+        }
+        
+        #panel,
+        #panel-2 {
+            padding: 50px;
+            display: none;
+        }
+        
+        #panel-1 {
+            padding: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>This is first paragraph.</p>
+        <p>This is second paragraph.</p>
+        <p>This is third paragraph.</p>
+    </div>
+
+    <!--  -->
+
+    <div>
+        <h1>Heading</h1>
+        <p class="para">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis debitis, dicta consequatur maxime sed facere.</p>
+        <button id="hide">Hide</button>
+        <button id="show">Show</button>
+    </div>
+
+    <div class="div1" style="background-color: green; padding: 10px; width: 300px;">
+        <p class="p" style="color: aliceblue;"><b>This is a Little Poem.</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, tempora! Beatae quae corporis quaerat aliquid, labore voluptates? Fuga, quaerat hic!
+        </p>
+
+    </div>
+    <button id="btn">Toggle</button>
+
+    <div style="margin-top: 40px; display: flex;">
+
+        <!--  -->
+        <div id="div2" style="background-color: gray; width: 100px; height: 100px; display: none; margin: 10px;"></div>
+        <div id="div3" style="background-color: rgb(80, 45, 45); width: 100px; height: 100px; display: none; margin: 10px;"></div>
+        <div id="div4" style="background-color: rgb(219, 9, 9); width: 100px; height: 100px; display: none; margin: 10px;"></div>
+        <button id="btn1" style="background-color: gray; color: aliceblue; padding: 10px 30px; border-radius: 5px; border: none;">Click Me! To FadeIn?</button>
+    </div>
+    <div style="margin-top: 40px; display: flex;">
+
+        <!--  -->
+        <div id="div5" style="background-color: gray; width: 100px; height: 100px; margin: 10px;"></div>
+        <div id="div6" style="background-color: rgb(80, 45, 45); width: 100px; height: 100px; margin: 10px;"></div>
+        <div id="div7" style="background-color: rgb(219, 9, 9); width: 100px; height: 100px; margin: 10px;"></div>
+        <button id="btn2" style="background-color: gray; color: aliceblue; padding: 10px 30px; border-radius: 5px; border: none;">Click Me! To FadeOut?</button>
+    </div>
+    <div style="margin-top: 40px; display: flex;">
+
+        <!--  -->
+        <div id="divx" style="background-color: gray; width: 100px; height: 100px; margin: 10px;"></div>
+        <div id="divy" style="background-color: rgb(80, 45, 45); width: 100px; height: 100px; margin: 10px;"></div>
+        <div id="divz" style="background-color: rgb(219, 9, 9); width: 100px; height: 100px; margin: 10px;"></div>
+        <button id="btnz" style="background-color: gray; color: aliceblue; padding: 10px 30px; border-radius: 5px; border: none;">Click Me! To FadeToggle?</button>
+    </div>
+    <div style="margin-top: 40px; display: flex;">
+
+        <!--  -->
+        <div id="div-5" style="background-color: red; width: 100px; height: 100px; margin: 10px;"></div>
+        <div id="div-6" style="background-color: green; width: 100px; height: 100px; margin: 10px;"></div>
+        <div id="div-7" style="background-color: blue; width: 100px; height: 100px; margin: 10px;"></div>
+        <button id="btn-1" style="background-color: gray; color: aliceblue; padding: 10px 30px; border-radius: 5px; border: none;">Click Me! To FadeTo?</button>
+    </div>
+    <div id="flip" style="margin-top: 10px;">click Here To Slide-Down</div>
+    <div id="panel">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, dolorum?</div>
+
+    <div id="flip-1" style="margin-top: 10px;">click Here To Slide-Down</div>
+    <div id="panel-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, dolorum?</div>
+
+    <div id="flip-2" style="margin-top: 10px;">click Here To Slide-Down</div>
+    <div id="panel-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, dolorum?</div>
+    <!-- Animation-Part -->
+    <button id="button">Start Animation</button>
+    <div id="div" style="width: 100px; height: 100px; border-radius: 5px; background-color: red; opacity: 0.5;"></div>
+    <script>
+        // animation
+        $(document).ready(function() {
+            $("#button").click(function() {
+                $("#div").animate({
+                    left: '450px'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
