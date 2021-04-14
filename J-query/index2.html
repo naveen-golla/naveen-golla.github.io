@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <title>Document</title>
+    <script>
+        $(function() {
+            $('#btn1').click(function() {
+                $('#para').html("Hello <b> Naveen</b>");
+            });
+
+            // html
+            $('#btn1').click(function() {
+                alert($('#para').html());
+            });
+
+        });
+        // change the html to text
+        $(function() {
+            $('#para1').click(function() {
+                var htmlString = $(this).html();
+                $(this).text(htmlString);
+            });
+        });
+        // Text method
+        $(function() {
+            var str = $("#div1 p:first").text();
+            $("#div1 p:last").html(str)
+        });
+
+        // 
+        $(function() {
+                $("#btn2").click(function() {
+                    $("#method,#method-1").text("welcome to the javaTpoint")
+                })
+            })
+            //
+
+        $(document).ready(function() {
+            function displayVals() {
+                var singleValues = $("#single").val();
+                $("#value").html("<b> Value: </b> " + singleValues);
+            }
+            $("select").change(displayVals);
+            displayVals();
+            // 
+            function displayValues() {
+                var singleValue = $('#single-1').val();
+                var multipleValues = $('#single-2').val() || [];
+                $("#value-1").html("<b>Single :</b>" + singleValue);
+                $("#value-2").html("<b>Multiple :</b>" + multipleValues);
+
+            }
+            $("select").change(displayValues);
+            displayValues();
+            // 
+
+
+        });
+        // 
+        $(document).ready(function() {
+            $("#btn4").click(function() {
+                $("input:text").val("JavaTpoint");
+            });
+        });
+
+        $(function() {
+            $("#btn5").click(function() {
+                console.log("Background color = " + $("#css-property").css("background-color"));
+                console.log(" Color = " + $("#css-property").css("color"));
+                console.log("Font-size = " + $("#css-property").css("font-size"));
+                $('#css-property').css("background-color", "gray")
+                $('.css-property').css({
+                    "background-color": "yellow",
+                    "font-size": "40px"
+                })
+            });
+            $("#btn6").click(function() {
+                $('#before').before("<p><b>Hello!</b>Prends</p>")
+                $('#before-1').prepend("<p><b>Prepend Text</b></p>")
+                $('#before-2').append("<p><b>Append Text</b></p>")
+            });
+            $('#btn7').click(function() {
+                $('ol').prepend("<li>Prepend Item</li>")
+            });
+            $('#after').click(function() {
+                $('.after').after("<p>After Method</p>")
+            });
+            $('#insert').click(function() {
+                $("<span>Insert method </span>").insertAfter(".insert")
+            });
+
+        });
+    </script>
+    <style>
+        #para1 {
+            cursor: pointer;
+        }
+        
+        #div1 p,
+        #div2 p {
+            color: blue;
+        }
+        
+        #div1 p b,
+        #div2 p b {
+            color: red;
+        }
+        
+        #css-property {
+            background-color: red;
+            font-size: 20px;
+            width: 80%;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn1">Click here to change the content of p element</button>
+    <p id="para">Hello Welcome</p>
+    <div style="margin-top: 30px;">
+        <p id="para1"><b>Click</b>Here to change the <span id="tag">html to text</span></p>
+
+    </div>
+    <div id="div1">
+        <p id="para2"><b>Hello!</b> J-Qurey</p>
+        <p id="para3"></p>
+    </div>
+
+    <div>
+        <button id="btn2">Click here to set text Content for all p elements</button>
+        <p id="method">Whatv is fsuys s7erbfs</p>
+        <p id="method-1"> this is the what</p>
+    </div>
+    <div id="div1">
+        <p id="value"></p>
+        <select id="single">
+            <option>Single</option>
+            <option>Double</option>
+            <option>Third</option>
+        </select>
+    </div>
+    <div id="div2">
+        <p id="value-1"></p>
+        <p id="value-2"></p>
+        <select id="single-1">
+            <option></option>
+            <option>Single</option>
+            <option>Double</option>
+            <option>Third</option>
+        </select>
+        <select id="single-2" multiple="multiple">
+            <option>multiple</option>
+            <option>multiple-1</option>
+            <option>multiple-2</option>
+        </select>
+
+    </div>
+    <div>
+        <p>Name : <input type="text" name="user"></p>
+        <button id="btn4">Set the value of Input Field</button>
+    </div>
+
+    <div>
+        <h2>This is Heading</h2>
+        <p id="css-property">This background color is red</p>
+        <p id="css-property">This font size is </p>
+        <p id="css-property" class="css-property">This background color is red</p>
+        <button id="btn5">Click here to know</button>
+    </div>
+    <div>
+
+        <button id="btn6">Click Here</button>
+        <p id="before">This is a tutorial</p>
+        <p id="before-1">This is a tutorial</p>
+        <p id="before-2">This is a tutorial</p>
+        <button id="btn7">Click here</button>
+        <ol>
+            <li>item-1</li>
+            <li>item-2</li>
+            <li>item-3</li>
+        </ol>
+    </div>
+    <div>
+        <button id="after">Click Here</button>
+        <p class="after">After Method just lie append</p>
+        <button id="insert">Click Here</button>
+        <p class="insert">First method and insert target</p>
+    </div>
+
+</body>
+
+</html>

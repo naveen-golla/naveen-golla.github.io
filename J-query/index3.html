@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>val demo</title>
+    <style>
+        p {
+            color: red;
+            margin: 4px;
+        }
+        
+        b {
+            color: blue;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+
+
+    <p>Name: <input type="text" name="user"></p>
+    <button>Set the value of the input field</button>
+    <script>
+        $(document).ready(function() {
+            $("button").click(function() {
+                $("input:text").val("JavaTpoint");
+            });
+        });
+    </script>
+</body>
+
+</html>

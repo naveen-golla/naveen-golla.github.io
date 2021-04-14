@@ -21,6 +21,8 @@
         // 
         function hideContent() {
             document.getElementById("para").style.visibility = "hidden";
+            document.getElementById("para1").style.visibility = "visible";
+
         };
 
         // animation
@@ -45,6 +47,25 @@
                 });
             });
         });
+
+        // delay
+
+        $(function() {
+            $('#btn3').click(function() {
+                $('#div3').delay(4000).fadeIn();
+
+            });
+        });
+
+        // different delay methods
+        $(function() {
+            $('#btn4').click(function() {
+                $('#div4').delay('fast').fadeIn();
+                $('#div5').delay('slow').fadeIn();
+                $('#div6').delay(1500).fadeIn();
+                $('#div7').delay(4000).fadeIn();
+            })
+        })
     </script>
     <style>
         #para {
@@ -63,6 +84,7 @@
     <button onclick="hideContent()">On click</button>
 
     <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, laudantium!</p>
+    <p id="para1" style="visibility: hidden;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, laudantium! 123</p>
     <div></div>
     <button id="btn1">Start Animation</button>
     <div id="div1" style="background-color: green; height: 100px; position: absolute; width: 100px;"></div>
@@ -70,6 +92,28 @@
     <div style="margin-top: 120px;">
         <button id="btn2">Start Animation</button>
         <div id="div2" style="background-color: red; height: 100px; position: absolute; width: 100px;"></div>
+    </div>
+
+    <!-- delay() -->
+
+    <div style="margin-top: 120px;">
+        <button id="btn3">Click On Me!</button>
+        <p>Delay</p>
+        <div id="div3" style="background-color: red; height: 100px; position: absolute; width: 100px; display: none;"></div>
+    </div>
+    <!--  -->
+    <div style="margin-top: 120px;">
+        <button id="btn4">Click On Me!</button>
+        <p>Delay</p>
+        <div id="div4" style="background-color: red; height: 100px;  width: 100px; display: none;">hai</div>
+        <br>
+        <div id="div5" style="background-color: green; height: 100px;  width: 100px; display: none;">hello</div>
+        <br>
+        <div id="div6" style="background-color: blue; height: 100px;  width: 100px; display: none;">Namastae</div>
+        <br>
+        <div id="div7" style="background-color: yellow; height: 100px;  width: 100px; display: none;">Vanakam</div>
+
+
     </div>
 
 </body>
