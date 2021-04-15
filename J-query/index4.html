@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>outerHeight demo</title>
+    <style>
+        /* div {
+            width: 60px;
+            padding: 10px;
+            height: 100px;
+            float: left;
+            margin: 5px;
+            background: Orange;
+            cursor: pointer;
+        }
+        
+        .mod {
+            background: green;
+            cursor: default;
+        } */
+    </style>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+    <!-- <div id="div">A</div>
+    <div id="div">B</div>
+    <div id="div">C</div>
+    <div id="div">D</div>
+    <div id="div">E</div> -->
+
+    <div>
+        <p id="append">This is Paragraph</p>
+        <ol>
+            <li>Item-1</li>
+            <li>Item-2</li>
+            <li>Item-3</li>
+        </ol>
+        <button id="btn1">append Text</button>
+        <button id="btn2">Append Item</button>
+
+        <button id="btn3">Add new content at the end of each p element</button>
+        <p id="appendTo">I am a new reader.</p>
+
+        <div>
+            <p id="clone"><b> javatpoint.com is a popular tutorial website.</b></p>
+            <p id="clone"><b>javatpoint.com is a training institute also.</b></p>
+            <button id="btn4">Click here, to clone all p elements, and append them to the body element</button>
+        </div>
+
+        <div>
+
+            <p id="remove">A place for all technology.</p>
+            <button id="btn5">Execute remove() method on paragraphs</button>
+        </div>
+
+        <div id="empty" style="height:150px;background-color:yellow">
+            Twinkle, twinkle, little star,<br/> How I wonder what you are!</br>
+            Up above the world so high,<br/> Like a diamond in the sky.<br/> Twinkle, twinkle, little star,<br/> How I wonder what you are!<br/>
+            <p><b>This poem is written inside the div.</b></p>
+        </div>
+        <p>This paragraph is written outside the div.</p>
+        <button id="btn6">Execute empty() method to remove the content of div </button>
+        <div>
+            <p>Hello Guys!</p>
+            <p id="detach">This is javatpoint.com</p>
+            <button class="detach">Click here to detach all p elements</button>
+        </div>
+
+        <div>
+            <p class="detach-1">This is javatpoint.com</p>
+            <button id="detach-1">Click here to Attach/detach all p elements. </button>
+        </div>
+        <div>
+            <p id="p1"><b>This paragraph will keep its click event even after it is moved.</b></p>
+            <p id="p2">This paragraph will not keep its click event after it is moved.</p>
+            <button id="btn-1">Detach and append p element</button>
+            <button id="btn-2">Remove and append p element</button>
+        </div>
+
+        <div>
+            <div id="scroll" style="border:1px solid black;width:150px;height:100px;overflow:auto">
+                Twinkle, twinkle, little star,How I wonder what you are! Up above the world so high, Like a diamond in the sky. Up above the world so high, Like a diamond in the sky. Up above the world so high, Like a diamond in the sky. Up above the world so high, Like
+                a diamond in the sky. Twinkle, twinkle, little star, How I wonder what you are!</div><br>
+            <button class="scroll">Return the vertical position of the scrollbar</button>
+            <p>Move the scrollbar down and click the button again.</p>
+        </div>
+
+        <!-- <a href="javascript:void(0)">Change color to red</a>
+        <button class="attr">click here to change color of h1</button> -->
+
+    </div>
+
+
+
+    <script>
+        // var modHeight = 80;
+        // $("#div").one("click", function() {
+        //     $(this).outerHeight(modHeight).addClass("mod");
+        //     modHeight -= 8;
+        // });
+        $(document).ready(function() {
+
+            $('#btn1').click(function() {
+                $('#append').append("<b>Newly added appended text</b>")
+            });
+            $('#btn2').click(function() {
+                $('ol').append("<b>Newly added appended text</b>")
+            });
+            $('#btn3').click(function() {
+                $("<span><b>Hello javatpoint.com</b></span>").appendTo("#appendTo");
+            });
+
+            $("#btn4").click(function() {
+                $("#clone").clone().appendTo("body");
+            });
+            $("#btn5").click(function() {
+                $("#remove").remove();
+            });
+            $("#btn6").click(function() {
+                $("#empty").empty();
+            });
+
+            $(".detach").click(function() {
+                $("#detach").detach();
+            });
+
+            // detach
+            var p;
+            $("#detach-1").click(function() {
+                if (p) {
+                    p.appendTo("body");
+                    p = null;
+                } else {
+                    p = $(".detach-1").detach();
+                }
+            });
+
+            // 
+            $("#btn-1").click(function() {
+                $("body").append($("#p1").detach());
+            });
+            $("#btn-2").click(function() {
+                $("body").append($("#p2").remove());
+            });
+            $("p").click(function() {
+                $(this).animate({
+                    fontSize: "+=1px"
+                })
+            });
+            // 
+            $(".scroll").click(function() {
+                alert($("#scroll").scrollTop() + " px");
+            });
+
+            // 
+            // $(".attr").click(function() {
+            //     $("a").attr("color", "green");
+            // })
+        })
+    </script>
+</body>
+
+</html>
