@@ -4,22 +4,27 @@ $(document).ready(function() {
 
     $("#next").click(function() {
         currentActive++;
-        if (currentActive > $(".circle").length) {
-            currentActive = $(".circle").length
-        } else if (currentActive === $(".circle").length) {
+        // if (currentActive > $(".circle").length) {
+        //     currentActive = $(".circle").length
+        // }
+
+        if (currentActive === $(".circle").length) {
             $("#next").attr("disabled", "disabled");
         }
-        $("#prev").removeAttr("disabled");
         update(currentActive)
+        $("#prev").removeAttr("disabled");
     });
     // 
     $("#prev").click(function() {
         currentActive--;
-        if (currentActive < 1) {
-            currentActive = 1
-        } else if (currentActive == 1) {
+        // if (currentActive < 1) {
+        //     currentActive = 1
+        //     console.log(currentActive)
+        // }
+        if (currentActive == 1) {
+            console.log(currentActive)
             $("#prev").attr("disabled", "disabled");
-        }
+        };
         $("#next").removeAttr("disabled", "disabled");
         update(currentActive)
     });
@@ -27,13 +32,17 @@ $(document).ready(function() {
 
     function update(currentActive) {
         $('.circle').each(function() {
-            if (parseInt($(this).html()) === currentActive) {
+
+            if (parseInt($(this).text()) === currentActive) {
                 $(this).addClass("active");
-                console.log(currentActive)
-            } else if (parseInt($(this).html()) >= currentActive) {
+
+                console.log(parseInt($(this).text()))
+            } else if (parseInt($(this).text()) > currentActive) {
+                console.log(parseInt($(this).text()))
                 $(this).removeClass("active");
-                console.log(currentActive)
+
             }
+            // console.log(parseInt($(this).text()))
         });
     }
 })
