@@ -1,5 +1,4 @@
 var currentActive = 1;
-
 $(document).ready(function() {
 
     $("#next").click(function() {
@@ -36,10 +35,10 @@ $(document).ready(function() {
             if (parseInt($(this).text()) === currentActive) {
                 $(this).addClass("active");
 
-                console.log(parseInt($(this).text()))
+                console.log('in if ----' + parseInt($(this).text()))
             } else if (parseInt($(this).text()) > currentActive) {
-                console.log(parseInt($(this).text()))
                 $(this).removeClass("active");
+                console.log(' in else if------' + parseInt($(this).text()))
 
             }
             // console.log(parseInt($(this).text()))
