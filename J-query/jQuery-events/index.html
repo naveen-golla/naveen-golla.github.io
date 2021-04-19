@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <style>
+        .blind {
+            background-color: yellow;
+            padding: 5px;
+            cursor: pointer;
+        }
+        
+        .blind.over {
+            background-color: rgb(212, 115, 115);
+            color: aliceblue;
+        }
+        
+        .un_bind_1 {
+            width: 100px;
+            height: 100px;
+            border: 5px solid gray;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .span {
+            display: none;
+        }
+        
+        div.out {
+            width: 40%;
+            height: 120px;
+            margin: 0 15px;
+            background-color: lightgreen;
+        }
+        
+        div.in {
+            width: 60%;
+            height: 60%;
+            background-color: red;
+            margin: 10px auto;
+        }
+    </style>
+
+    <script>
+        $(document).ready(function() {
+            $(".click").click(function() {
+                alert("This paragraph was clicked.");
+            });
+            $('.click_h1').click(function() {
+                $(this).hide();
+            });
+            // ////////
+            $('.blind').bind('click', function(event) {
+                var str = "(" + event.pageX + "," + event.pageY + ")";
+                $("span").text("This is a single click! " + str);
+            });
+            $(".blind").bind("dblclick", function() {
+                $("span").text("This is a double click on " + this.nodeName);
+            });
+            $(".blind").bind("mouseenter mouseleave", function(event) {
+                $(this).toggleClass('over');
+            });
+
+            // un-bind
+            $('.un-bind').bind('mouseover', function() {
+                $(this).css({
+                    "background-color": "red",
+                    "font-size": "30px"
+                }).text("Hovered");
+            });
+            $("#btn").click(function() {
+                $('.un-bind').unbind('mouseover');
+            });
+            // 
+            var i = 0,
+                j = 1;
+            $('.un_bind_1').click(function(e) {
+                $('.un_bind_1').animate({
+                    height: "+=25px",
+                    width: "+=25px",
+                    fontSize: "+=10px"
+                }).text(j + " times").css({
+                    "color": "red",
+                    "background-color": "yellow"
+                });
+                i++;
+                j++;
+                if (i >= 3) {
+                    $(this).unbind(e);
+                };
+            });
+            // 
+            $("#input").blur(function() {
+                alert("this text box has lost the focus.")
+            });
+            // 
+            $('.focus').focus(function() {
+                $(this).next(".span").css("display", "inline").fadeOut(3000);
+            });
+            $('#input-text').focus(function() {
+                $(this).blur();
+            });
+            // select
+            $(':input').select(function() {
+                $(".select").text("some Text Detected").show().fadeOut(2000);
+            });
+            $('select').change(function() {
+                document.getElementById("loc").innerHTML = "You selected: " + document.getElementById("se").value;
+            });
+
+
+            $("#sel")
+                .change(function() {
+                    var strr = "";
+                    $("#sel option:selected").each(function() {
+                        strr += $(this).text() + " ";
+                    });
+                    $("#loca").text(strr);
+                }).change();
+            // 
+            $("form").submit(function() {
+                if ($("#text").val() === "javatpoint") {
+                    $(".span-1").text("Submitted Successfully.").show();
+                    return;
+                }
+                $('.span-1').text("Not Valid!").show().fadeOut(2000);
+                event.preventDefault();
+            });
+
+            // 
+            $("#type").keydown(function() {
+                $("#type").css({
+                    "background-color": "green",
+                    "color": "white"
+                });
+                $("#type").keyup(function() {
+                    $("#type").css({
+                        "background-color": "violet",
+
+                    });
+                });
+            });
+            // 
+            var i = 0;
+            $("#type-1").keypress(function() {
+                $("#type-1").css({
+                    "background-color": "green",
+                    "color": "white"
+                });
+                $(".span_1").text(i += 1);
+
+            });
+            // 
+            $('#h1').mouseenter(function() {
+                $('.mouseenter').text("Mouse Entered On Heading").show().fadeOut(2000);
+            });
+            // 
+            $('.mouseover').mouseenter(function() {
+                $('.mouseover').css("background-color", "red")
+            });
+            $(".mouseover").mouseleave(function() {
+                $('.mouseover').css("background", "yellow")
+            });
+            // 
+            $('.mouseleave').mouseleave(function() {
+                $('.span_2').text("Bye Bye Leaving This paragraph").show().fadeOut(2000)
+            });
+            // 
+            $('.hover').hover(function() {
+                $(this).css("background-color", "violet")
+            }, function() {
+                $(this).css("background-color", "skyblue");
+            });
+            // 
+            $('li').hover(function() {
+                $(this).append($("<span class='span_3'>***<span>"));
+            }, function() {
+                $(this).find("$('.span_3')").remove();
+            });
+            $("li.fade").hover(function() {
+                $(this).fadeOut(1000);
+                $(this).fadeIn(5000);
+            });
+            // 
+            $('.mouse-down').mousedown(function() {
+                $('#mouse-down').text("Mouse down event triggered").show().fadeOut(2000);
+            });
+            $('.mouse-up').mouseup(function() {
+                $('#mouse-up').text("Mouse up event triggered").show().fadeOut(2000);
+            });
+            // 
+            $('.mouse-event').mousedown(function() {
+                $('.mouse-event').css("background-color", "red")
+            });
+            $('.mouse-event').mouseup(function() {
+                $('.mouse-event').css("background-color", "green")
+            });
+            $("div.out")
+                .mouseover(function() {
+                    $(this).find("#span_6").text("mouse over ");
+                })
+                .mouseout(function() {
+                    $(this).find("#span_6").text("mouse out ");
+                });
+            $("#img").load(function() {
+                alert("Image loaded.");
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+    <p class="click">Click on the statement.</p>
+
+    <h1 class="click_h1">This Heading will disappear if you click on this.</h1>
+    <h2 class="click_h1">Lorem ipsum dolor sit amet.</h2>
+
+    <div>
+        <p class="blind">Click Or Double Click On the Statement</p>
+        <span></span>
+    </div>
+    <div style="background-color: yellow; opacity: 0.4; width: 400px;">
+        <h3 class="un-bind">Hover me</h3>
+        <button id="btn">Remove event</button>
+        <h3 class="un-bind">Hover me</h3>
+    </div>
+    <div>
+        <h2>It is an example of using the jQuery unbind() method.</h2>
+        <div class="un_bind_1"> Click me </div>
+    </div>
+    <div>
+        Enter Your Name : <input type="text" id="input">
+    </div>
+    <div>
+        <p><input class="focus" type="text"> <span class="span">Focus starts .. Write your Name</span></p>
+        <p><input class="focus" type="password"><span class="span">Focus starts .. Write your Password</span></p>
+    </div>
+    <div>
+        <input type="text" value="You can't write" id="input-text">
+        <input type="password">
+    </div>
+    <div>
+        <p>select the text and click or drag the text</p>
+        <input type="text" value="javaTpoint">
+        <input type="text" value="CssTpoint">
+        <p class="select"></p>
+    </div>
+
+    <div>
+        <select id="se" name="actors">  
+            <option selected="selected">Deva Sena</option>    
+            <option>Uthappa</option>    
+            <option>Kattapa</option>    
+            <option>Veerappa</option>    
+            <option>Bahubali</option>    
+            <option>Bhallal Dev</option>    
+            <option>Awantika</option>    
+          </select>
+        <div id="loc"></div>
+    </div>
+
+    <div>
+        <select id="sel" name="actors" multiple="multiple">  
+            <option selected="selected">Deva Sena</option>    
+            <option>Uthappa</option>    
+            <option>Kattapa</option>    
+            <option>Veerappa</option>    
+            <option>Bahubali</option>    
+            <option>Bhallal Dev</option>    
+            <option>Awantika</option>    
+          </select>
+        <div id="loca"></div>
+
+    </div>
+    <div>
+        <form action="javascript:alert('success!');">
+            <p>Type 'javatpoint' to submit this form finally.</p>
+            <input type="text" id="text">
+            <input type="submit" id="submit">
+        </form>
+        <span class="span-1"></span>
+    </div>
+    <div>
+        Write Something : <input type="text" id="type">
+    </div>
+    <div>
+        Write Something : <input type="text" id="type-1">
+        <span>Key Press :  <span class="span_1">0</span></span>
+    </div>
+    <div>
+        <h1 id="h1">This is Heading</h1>
+        <p class="mouseenter"></p>
+    </div>
+    <div>
+        <p class="mouseover">Om mouse Over</p>
+        <p class="mouseover">On mouse over</p>
+    </div>
+    <div>
+        <p class="mouseleave">This is a paragraph leaving</p>
+        <span class="span_2"></span>
+    </div>
+    <div>
+        <p class="hover">Mouse Hover in this Paragraph and see the effects</p>
+    </div>
+    <div>
+        <ul>
+            <li>Java</li>
+            <li>Css</li>
+            <li class="fade">html</li>
+            <li class="fade">Android</li>
+        </ul>
+    </div>
+    <div>
+        <h1 class="mouse-down">Press the Mouse button and see what happens</h1>
+        <p id="mouse-down"></p>
+        <h1 class="mouse-up">Press the Mouse button and see what happens</h1>
+        <p id="mouse-up"></p>
+    </div>
+    <div>
+        <div class="mouse-event" style="background-color: violet; color: white; width: 300px; height: 300px;">Click on this div And see the effects</div>
+    </div>
+
+    <div class="out">
+        <span id="span_6" style="padding:20px">move your mouse</span>
+        <div class="in"></div>
+    </div>
+    </div>
+    <div>
+        <img id="img" src="https://images-na.ssl-images-amazon.com/images/I/91EmIYaUFQL.jpg" alt="pubg">
+        <p><b>Note:</b> On some browsers, the load event did not trigger if the image is cached.</p>
+    </div>
+    <div style="margin: 50px 0 0 0; "></div>
+
+    <p>When you click <a href="http://www.javatpoint.com/">this link</a>, or close the window, unload event will be triggered.</p>
+    <div>
+        <p class="deligate">This is a single paragraph. Click me for next.</p>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $(window).unload(function() {
+                alert("Goodbye!");
+            });
+            // 
+            $("body").delegate(".deligate", "click", function() {
+                $(this).after("<p>Click me for another paragraph.</p>");
+            });
+        });
+    </script>
+</body>
+
+</html>

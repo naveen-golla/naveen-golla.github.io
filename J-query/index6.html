@@ -88,6 +88,15 @@
             });
         });
     </script>
+    <p>When you click <a href="http://www.javatpoint.com/">this link</a>, or close the window, unload event will be triggered.</p>
+
+    <script>
+        $(document).ready(function() {
+            $(window).unload(function() {
+                alert("Goodbye!");
+            });
+        });
+    </script>
 </body>
 
 </html>

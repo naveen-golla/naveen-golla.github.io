@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#wrap").click(function() {
+                $(".wrap").wrap("<div class='div0'></div>");
+            });
+            $(".div").click(function() {
+                var content = '<div class="div"></div>';
+                $("#destination").wrap(content);
+            });
+            $("#inner-wrap").click(function() {
+                $(".inner-wrap").wrapInner("<em><b><marquee></marquee></b></em>");
+            });
+            $(".div2").click(function() {
+                var content = "<marquee><b></b></marquee>";
+                $(this).wrapInner(content);
+            });
+            $('#wrap-all').click(function() {
+                $(".wrap-all").wrapAll("<div class='div3'><div>")
+            });
+
+            $(".div4").click(function() {
+                var content = "<div class='div4'></div>"
+                $(".div4").wrapAll(content)
+            });
+            $('#btn-1').click(function() {
+                $('.un-wrap').wrapAll("<div class='div-2'> </div>'")
+            });
+            $('#btn-2').click(function() {
+                $('.un-wrap').unwrap();
+            });
+        });
+    </script>
+    <style>
+        .div0 {
+            background-color: pink;
+        }
+        
+        .div {
+            width: 80px;
+            padding: 2px;
+            /* border: 1px solid black; */
+            border-radius: 3px;
+            box-shadow: 0 0 10px gray;
+            margin: 10px;
+        }
+        
+        .inner-wrap {
+            background-color: red;
+            color: blanchedalmond;
+            font-weight: 600;
+            height: 50px;
+        }
+        
+        .div2 {
+            margin: 12px;
+            padding: 12px;
+            border: 2px solid #666;
+            width: 100px;
+        }
+        
+        .div-2 {
+            background-color: rgb(173, 34, 166);
+        }
+        
+        .div3 {
+            background: linear-gradient(#8b4444, #000000);
+            color: white;
+        }
+        
+        .div4 {
+            margin: 5px;
+            padding: 2px;
+            border: 2px solid #666;
+            width: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="wrap">Hello Guys!</p>
+    <p class="wrap">This is javatpoint.com</p>
+    <button id="wrap">Wrap a div element around each p element</button>
+    <div class="div0"></div>
+
+    <div class="div" id="destination" style="background-color: skyblue;">We are going to wrap this text</div>
+    <div class="div" style="background-color:orange;">ONE</div>
+    <div class="div" style="background-color:yellow;">TWO</div>
+    <div class="div" style="background-color:green;">THREE</div>
+
+    <!--  -->
+    <p class="inner-wrap">Hello Guys!</p>
+    <p class="inner-wrap">This is javaTpoint</p>
+    <button id="inner-wrap">Wrap the Content</button>
+
+    <p>Click on any square below to see the result:</p>
+    <div class="div2" id="destination-1">Javatpoint.com</div>
+    <div class="div2" style="background-color:lightpink;">JAVA</div>
+    <div class="div2" style="background-color:green;">SQL</div>
+    <div class="div2" style="background-color:lightyellow;">HTML</div>
+
+    <p class="wrap-all">Hello Guys!</p>
+    <p class="wrap-all">This is javatpoint.com</p>
+    <button id="wrap-all">Wrap a div element around all p elements</button>
+
+
+    <p>Click on any square to wrap the squares into a new square:</p>
+    <div class="div4" id="destination-2">We are going to wrap this text</div>
+    <div class="div4" style="background-color:orange;">ONE</div>
+    <div class="div4" style="background-color:yellow;">TWO</div>
+    <div class="div4" style="background-color:green;">THREE</div>
+
+
+    <p class="un-wrap">Hello Guys!</p>
+    <p class="un-wrap">This is javatpoint.com</p>
+    <button id="btn-1">Wrap a div element around all p element</button>
+    <button id="btn-2">Unwrap</button>
+</body>
+
+</html>
