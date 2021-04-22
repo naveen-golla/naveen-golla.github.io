@@ -22,7 +22,6 @@ $(document).ready(function() {
         console.log(currentActive)
         console.log($(".circle").length)
 
-
     });
 
     function update(currentActive) {
