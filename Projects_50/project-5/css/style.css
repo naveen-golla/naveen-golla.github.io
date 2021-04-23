@@ -29,7 +29,8 @@ body {
     filter: blur(30px);
 }
 
-.fade {
+
+/* .fade {
     background: url('https://i.ytimg.com/vi/p7TDpx0hsn4/maxresdefault.jpg') no-repeat center center/cover;
     position: absolute;
     top: -30px;
@@ -39,7 +40,7 @@ body {
     z-index: -1;
     filter: blur(0px);
     transform: filter 0.4s ease;
-}
+} */
 
 .loading-text {
     font-size: 50px;
