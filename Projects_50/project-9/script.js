@@ -42,6 +42,4 @@ $(function() {
             song.currentTime = 0;
         });
     };
-
-
 });
