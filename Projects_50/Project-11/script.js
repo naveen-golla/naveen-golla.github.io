@@ -26,8 +26,9 @@ $(function() {
              <small>event.keyCode</small>
          </div>
          <div class="key">
-             ${event.code}
+             ${event.originalEvent.code}
              <small>event.code</small>
-         </div>`)
-    })
-})
+         </div>`);
+        console.log(event)
+    });
+});
