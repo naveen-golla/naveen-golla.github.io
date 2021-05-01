@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <title>Day-3</title>
     <style>
         body {
@@ -13,6 +14,7 @@
             height: 100vh;
             overflow-y: hidden;
             display: flex;
+            flex-flow: column;
             align-items: center;
             justify-content: center;
         }
@@ -23,6 +25,29 @@
             width: 500px;
             text-align: center;
         }
+        
+        select {
+            background: #e67e22;
+            padding: 10px 40px;
+            color: #FFF;
+        }
+        
+        select option:first-of-type {
+            background: red;
+        }
+        
+        select option:nth-child(2) {
+            background: green;
+        }
+        
+        select option:nth-child(3) {
+            background: yellow;
+            color: red;
+        }
+        
+        select option:nth-child(4) {
+            background: blue;
+        }
     </style>
 </head>
 
@@ -30,7 +55,16 @@
 
     <h1>JavaScript Project</h1>
 
+    <select id="edit">
+        <option value="select">Select</option>
+        <option value="Volko">Volko</option>
+        <option value="Tech">Tech</option>
+        <option value="Solution">Solution</option>
+    </select>
+
     <script src="./script.js"></script>
+
+
 </body>
 
 </html>
