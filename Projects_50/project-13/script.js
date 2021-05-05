@@ -31,7 +31,6 @@ function randomSelect() {
 
     const interval = setInterval(() => {
         const randomTag = PickRandomTag()
-
         highlightTag(randomTag)
         setTimeout(() => {
             unHighlightTag(randomTag)
@@ -42,7 +41,6 @@ function randomSelect() {
         clearInterval(interval)
         setTimeout(() => {
             const randomTag = PickRandomTag()
-
             highlightTag(randomTag)
         }, 100)
     }, times * 100)
@@ -60,3 +58,25 @@ function highlightTag(tag) {
 function unHighlightTag(tag) {
     tag.classList.remove('highlight')
 }
+
+// $(function() {
+//     $('.textarea').focus();
+
+//     $('#textarea').keyup(function(e) {
+//         createTags(e.target().val())
+
+//     });
+
+
+//     function createTagsa(input) {
+//         const tags = input.split(',').filter(tag => tag.trim() !== '').map(tag => tag.trim())
+
+//         $('#textarea').html('');
+
+//         $(tags).each(function(tag) {
+//             const tagEl = $('#tags').append('<span class="tag"></span>')
+//             $(tagEl).text(`tag`)
+//         })
+//     }
+
+// })
