@@ -38,12 +38,14 @@ spinBtn.addEventListener('click', () => {
 
 btnAdd.addEventListener('click', () => {
     addItem()
+
 })
 
 
 function select() {
     if (document.getElementById('val1').selected) {
         currentBet += Number(betMoney.value)
+        console.log(currentBet)
     } else if (document.getElementById('val2').selected) {
         currentBet1 += Number(betMoney.value)
     }
@@ -79,7 +81,6 @@ function listItems() {
     for (var i = 0; i < items.length; i++) {
         list += "<li>"
         list += items[i].value + " "
-
 
     }
     document.getElementById('list').innerHTML = ''
