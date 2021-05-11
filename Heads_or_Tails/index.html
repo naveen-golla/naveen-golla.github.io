@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <section class="section-main">
+        <div class="start-btn">
+            <a href="#" id="start--new" class="start--new">Start New</a>
+        </div>
+        <div class="d-flex">
+            <div class="card-header">
+                <p id="coin-spin">Heads or Tails</p>
+                <!-- <img src="./head-or-tails.jpeg" alt="" class="change-coin"> -->
+                <button id="spin" class="spin">Spin</button>
+                <p class="progress"></p>
+            </div>
+
+            <div class="winner" id="winner">
+                <h3>Winners</h3>
+                <div class="content-box">
+                    <div class="contest-body" id="contest-body">
+                        <p id="contest">Contest not started yet</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="local-storage">
+            <label> Player-Name</label>
+            <input type="text" id="player-name" required>
+            <label>Bet-Money </label>
+            <input type="number" id="bet-money" required>
+            <label>Choice</label>
+            <select id="select" class="select">
+                <option id="val1" value=""></option>
+                <option id="val1" value="H">H</option>
+                <option id="val2" value="T">T</option>
+            </select>
+            <button class="btn-add" id="btn-add">Add</button>
+        </div>
+        <div class="current-bets">
+            <h3>Current Bets</h3>
+            <div class="list-add">
+                <p id="list" class="list">No bets added yet</p>
+            </div>
+            <div class="total-bet">
+                <p class="heads-total"></p>
+                <p class="tails-total"></p>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
