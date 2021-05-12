@@ -16,30 +16,40 @@ let headOrTails = JSON.parse(localStorage.getItem('selectOption')) || []
 var currentBet = 0;
 var currentBet1 = 0;
 var betMoneyV = Number(betMoney.value)
-var totalMoney = 0;
-var wonMoney = 0;
 
 spinBtn.addEventListener('click', () => {
-    winnerlist()
-    spinningCoin()
-    addChoice()
-        // calc()
+    winnerList()
+    spinCoin()
     document.querySelector('.progress').innerHTML = 'Spinning in progress... Wait for 3 seconds'
+    document.querySelector('.contest-1').innerHTML = 'Game is in Progess....'
 
 });
 
 btnAdd.addEventListener('click', () => {
-    // winnerlist()
     addBet()
+
 })
+
+function spinCoin() {
+    setTimeout(() => {
+        let spinRes = coinArray[Math.floor(Math.random() * coinArray.length)]
+        localStorage.setItem('spinRes', spinRes)
+        document.getElementById('coin-spin').innerHTML = spinRes
+        winnerList()
+        distibute()
+        document.querySelector('.progress').innerHTML = ''
+        document.querySelector('.contest-1').innerHTML = ''
+
+    }, 3000)
+}
 
 // Local Storage function
 function addBet() {
+    let items = getBets();
     let inputBox = document.getElementById('player-name')
     let item = inputBox.value;
     let item1 = betMoney.value
     let item2 = selectOption.value
-        // winner()
 
     if (item === '' && item1 === '' && item2 === '') {
         return document.getElementById('list').innerHTML = "you need to add name , bet and choice";
@@ -49,29 +59,52 @@ function addBet() {
         betMoney: item1,
         selectOption: item2
     })
-    localStorage.setItem('head-or-tails', JSON.stringify(items));
+    localStorage.setItem('bets', JSON.stringify(items));
     listItems()
+
     inputBox.value = ''
     betMoney.value = ''
     selectOption.value = ''
 }
 
-function listItems() {
+function getBets() {
+    return JSON.parse(localStorage.getItem('bets')) || []
+}
 
-    var list = ''
-    for (var i = 0; i < items.length; i++) {
-        list += "<li>"
-        list += items[i].value + " "
-        list += "</li>";
-    }
-    // document.querySelector('list-add').innerHTML = list
-    document.getElementById('list').innerHTML = ''
-    const add = document.createElement('li')
-    add.innerHTML = `${playerName.value} , ${betMoney.value} : ${selectOption.value}`
-    listAdd.appendChild(add);
+function getSpinResult() {
+    return localStorage.getItem('spinRes') || '';
+}
+
+function listItems() {
+    let items = getBets()
+    let resBetUl = "<ul>"
+    items.forEach(item => {
+        resBetUl += "<li>" + item.playerName + "," + item.betMoney + ":" + item.selectOption + "</li>"
+    })
+    resBetUl += "</ul>"
+    document.getElementById('list').innerHTML = resBetUl;
     selectChoice()
     document.querySelector('.heads-total').innerHTML = `Total bets in heads ${currentBet}`
     document.querySelector('.tails-total').innerHTML = `Total bets in tails ${currentBet1}`
+
+}
+
+function winnerList() {
+    let bets = getBets()
+    let spinRes = getSpinResult()
+    const result = bets.filter(bet => bet.selectOption === spinRes)
+
+    var sum = 0;
+    var resDiv = "<div class='li-style'><ul>"
+    result.forEach(ResVal);
+
+    function ResVal(item, index) {
+        sum = sum + Number(item.betMoney);
+        resDiv += "<li>" + item.playerName + " : " + (Number(item.betMoney)) * 2 + " Won ( " + Number(item.betMoney) + " )" + "</li>";
+    }
+    resDiv += "</ul></div>"
+    document.getElementById('contest').innerHTML = resDiv
+
 }
 
 // Dropdown select head or tails function
@@ -82,58 +115,25 @@ function selectChoice() {
         currentBet1 += Number(betMoney.value)
     }
 }
-// Coin spin function
-function spinningCoin() {
-    setTimeout(() => {
-            let coinSpinEl = coinArray[Math.floor(Math.random() * coinArray.length)]
-            coinSpin.innerHTML = coinSpinEl
-            document.querySelector('.progress').innerHTML = ''
-        }, 3000)
-        // addChoice(coinSpinEl)
-}
-// localStorage function 2
-function addChoice() {
-    let coinSpinEl = coinArray[Math.floor(Math.random() * coinArray.length)]
-    let item3 = coinSpinEl
-    if (item3 === '') {
-        return document.getElementById('list').innerHTML = "you need to add name , bet and choice";
-    }
-    headOrTails.push({
-        selectOption1: coinSpinEl
-    })
-    console.log(coinSpinEl)
-    localStorage.setItem('selectedValue', JSON.stringify(headOrTails));
-    list1Items()
+let total0 = 0;
+let total1 = 0;
+let total2 = 0
 
+function distibute() {
+    document.querySelector('.heads-total-1').innerHTML = `Total Paid to Winners ${total0 = currentBet * 2}`
+    document.querySelector('.tails-total-2').innerHTML = `Total amount recived ${total1 += currentBet1 + currentBet}`
+
+    document.querySelector('.tails-total-3').innerHTML = ` ${total2 = total1 - total0} is Company gain`
 }
 
-function list1Items() {
-    var list1 = ''
-    for (var i = 0; i < headOrTails.length; i++) {
-        list1 += "<li>"
-        list1 += headOrTails[i].value + " "
-        list1 += "<span></span></li>"
-    }
-}
-
-// winnerlist FUnction  
-function winnerlist() {
-    addBet()
-    let items = JSON.parse(localStorage.getItem('head-or-tails')) || [];
-    let headOrTails = JSON.parse(localStorage.getItem('selectedValue')) || [];
-    // debugger;
-    for (let i = 0; i < items.length; i++) {
-
-        if (items[i].selectOption === 'H') {
-
-            document.getElementById('contest-body').innerHTML = ''
-            document.getElementById('list').innerHTML = ''
-            const add = document.createElement('li')
-            add.innerHTML = `${playerName.value} , ${totalMoney += currentBet * 2} Won(${wonMoney += currentBet})`
-            document.getElementById('contest-body').appendChild(add);
-
-        } else {
-            console.log('hhh')
-        }
-    }
-}
+startNew.addEventListener('click', () => {
+    window.localStorage.clear()
+    document.querySelector('.heads-total').innerHTML = ''
+    document.querySelector('.tails-total').innerHTML = ''
+    document.querySelector('.heads-total-1').innerHTML = ''
+    document.querySelector('.tails-total-2').innerHTML = ''
+    document.querySelector('.tails-total-3').innerHTML = ''
+    document.getElementById('list').innerHTML = 'No bets addes yet';
+    document.getElementById('contest').innerHTML = 'Contest not started yet'
+    document.getElementById('coin-spin').innerHTML = 'Heads or Tails'
+})
