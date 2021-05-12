@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <section class="section-main">
+        <div class="start-btn">
+            <a href="#" id="start--new" class="start--new">Start New</a>
+        </div>
+        <div class="d-flex">
+            <div class="card-header">
+                <p id="coin-spin">Heads or Tails</p>
+                <button id="spin" class="spin">Spin</button>
+            </div>
+
+            <div class="winner" id="winner">
+                <h3>Winners</h3>
+                <div class="content-box">
+                    <div class="contest-body" id="contest-body">
+                        <p id="contest">Contest not started yet</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="progress"></p>
+        <div class="local-storage">
+            <label> Player-Name</label>
+            <input type="text" id="player-name" required>
+            <label>Bet-Money </label>
+            <input type="number" id="bet-money" required>
+            <label>Choice</label>
+            <select id="select" class="select">
+                <option value=""></option>
+                <option id="val1" value="H">H</option>
+                <option id="val2" value="T">T</option>
+            </select>
+            <button class="btn-add" id="btn-add">Add</button>
+        </div>
+        <div class="current-bets">
+            <h3>Current Bets</h3>
+            <div class="list-add">
+                <p id="list" class="list">No bets added yet</p>
+            </div>
+            <div class="columns ">
+                <ul id="list-items">
+                </ul>
+            </div>
+            <div class="total-bet">
+                <p class="heads-total"></p>
+                <p class="tails-total"></p>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="./script_1.js"></script>
+</body>
+
+</html>
+
+<!-- 'use strict'
+
+const startNew = document.getElementById('start--new');
+const coinSpin = document.getElementById('coin-spin');
+const spinBtn = document.getElementById('spin');
+
+const playerName = document.getElementById('player-name');
+const betMoney = document.getElementById('bet-money');
+const selectOption = document.getElementById('select');
+const btnAdd = document.getElementById('btn-add');
+const listAdd = document.querySelector('.list-add');
+
+var currentBet = 0;
+var currentBet1 = 0;
+var betMoneyV = Number(betMoney.value)
+var totalMoney = 0;
+var wonMoney = 0;
+
+spinBtn.addEventListener('click', () => {
+    let coinArray = ['H', 'T'];
+    let coinSpinEl = coinArray[Math.floor(Math.random() * items.length)]
+}) -->
