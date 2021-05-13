@@ -127,7 +127,8 @@ function distibute() {
 }
 
 startNew.addEventListener('click', () => {
-    window.localStorage.clear()
+    // refreshThePage()
+    localStorage.clear('bets')
     document.querySelector('.heads-total').innerHTML = ''
     document.querySelector('.tails-total').innerHTML = ''
     document.querySelector('.heads-total-1').innerHTML = ''
@@ -137,3 +138,14 @@ startNew.addEventListener('click', () => {
     document.getElementById('contest').innerHTML = 'Contest not started yet'
     document.getElementById('coin-spin').innerHTML = 'Heads or Tails'
 })
+
+function refreshThePage() {
+    location.reload()
+}
+
+
+(function() {
+    listItems();
+    document.querySelector('.heads-total').innerHTML = ''
+    document.querySelector('.tails-total').innerHTML = ''
+})();
