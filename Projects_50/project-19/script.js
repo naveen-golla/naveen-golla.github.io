@@ -56,10 +56,6 @@
 
 $(function() {
 
-
-            const hourEl = document.querySelector('.hour')
-            const minuteEl = document.querySelector('.minute')
-            const secondEl = document.querySelector('.second')
             const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thrusday', 'Friday', 'Saturday'];
 
             const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Sunday', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
