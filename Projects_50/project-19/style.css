@@ -56,8 +56,14 @@ body {
 
 .clock {
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-image: url('./images/pubg.jpg'), url('https://i.pinimg.com/originals/f9/36/c5/f936c5a35c35c3f4d7c498fb8edad0f1.png');
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    /* border: 3px solid #e67e22; */
 }
 
 .needle {
@@ -65,24 +71,25 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    height: 65px;
-    width: 3px;
+    height: 150px;
+    width: 7px;
     transform-origin: bottom center;
     transition: all 0.5s ease-in;
 }
 
 .needle.hour {
     transform: translate(-50%, -100%) rotate(0deg);
+    background-color: #26b9e6;
 }
 
 .needle.minute {
     transform: translate(-50%, -100%) rotate(0deg);
-    height: 100px;
+    height: 180px;
 }
 
 .needle.second {
     transform: translate(-50%, -100%) rotate(0deg);
-    height: 100px;
+    height: 200px;
     background-color: #e74c3c;
 }
 
@@ -132,4 +139,35 @@ body {
     line-height: 18px;
     transition: all 0.5s ease-in;
     font-size: 12px;
+}
+
+
+/* experinment */
+
+.tweleve {
+    position: absolute;
+    font-size: 20px;
+    top: 5px;
+    left: 50%;
+}
+
+.three {
+    position: absolute;
+    font-size: 20px;
+    top: 50%;
+    right: 5px;
+}
+
+.six {
+    position: absolute;
+    font-size: 20px;
+    bottom: 5px;
+    left: 50%;
+}
+
+.nine {
+    position: absolute;
+    font-size: 20px;
+    top: 50%;
+    left: 5px;
 }

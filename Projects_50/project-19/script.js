@@ -84,7 +84,7 @@ $(function() {
                 const ampm = hours >= 12 ? 'PM' : 'AM'
 
                 $('.hour').css({
-                    "transform": `translate(-50%, -100%) rotate(${scale(hoursForClock, 0, 59, 0 ,360)}deg)`
+                    "transform": `translate(-50%, -100%) rotate(${scale(hoursForClock, 0, 11, 0 ,360)}deg)`
                 })
 
                 $('.minute').css({
@@ -94,9 +94,9 @@ $(function() {
                     "transform": `translate(-50%, -100%) rotate(${scale(seconds, 0, 59, 0 ,360)}deg)`
                 })
 
-                $('.time').html(`${hoursForClock}:${minutes < 10 ? `0${minutes}` : minutes} : <span class="seconds">${seconds < 10 ? `0${seconds}` : seconds}</span> ${ampm}`)
+                $('.time').html(`${hoursForClock} : ${minutes < 10 ? `0${minutes}` : minutes} : <span class="seconds">${seconds < 10 ? `0${seconds}` : seconds}</span> ${ampm}`)
 
-                 $('.date').html(`${days[day]} , ${months[month]} <span class='circle'> ${date}</span>`)
+                 $('.date').html(`${days[day]} , ${months[month]} <span class='circle'>${date}</span>`)
 
              }
 
