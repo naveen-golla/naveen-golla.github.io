@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0
+        }
+        
+        body {
+            max-width: 70%;
+            margin: auto;
+        }
+        
+        h1 {
+            margin: 10px 0;
+            font-size: 40px;
+        }
+        
+        h4 {
+            margin-top: 10px;
+            font-size: 20px;
+        }
+        
+        .heading {
+            margin: 40px 0 15px;
+            font-size: 30px;
+        }
+        
+        #list-items {
+            margin-top: 30px;
+        }
+        
+        #list-items li {
+            font-size: 1.1em;
+            text-transform: capitalize;
+            margin: 10px auto;
+            padding: 10px 30px;
+            display: flex;
+            justify-content: space-between;
+            background: #C8E1BF;
+            align-items: center;
+            border-radius: 3px;
+        }
+        
+        #list-items li.done {
+            text-decoration: line-through
+        }
+        
+        input {
+            width: 100%;
+            margin: 20px 0;
+            padding: 13px;
+            font-size: 20px;
+            text-indent: 10px;
+        }
+        
+        .label-1 {
+            font-size: 16px;
+            border: 1px solid gray;
+            padding: 5px 20px;
+            background: #5B8136;
+            color: #ffffff;
+            cursor: pointer;
+        }
+        
+        .columns-1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: auto;
+        }
+        
+        .columns-2 {
+            flex: 0 0 80%;
+            max-width: 80%;
+        }
+        
+        .columns-3 {
+            flex: 0 0 15%;
+            max-width: 20%;
+        }
+        
+        button {
+            padding: 14px 40px;
+            width: 200px;
+            font-size: 20px;
+            background: #555252;
+            color: #ffffff;
+        }
+        
+        #para {
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 class="heading">Task 5</h2>
+    <h1>My Todo's</h1>
+    <h4>Add new TODO</h4>
+
+
+    <div class="row">
+        <div class="columns-1 large-8 large-offset-2">
+            <div class="columns-2 medium-8">
+                <input id="todo-input" type="text" placeholder="Check today's team progress at 12pm" />
+            </div>
+            <div class="columns-3">
+                <button onclick="addItem()" class="button expanded"><b>ADD</b></button>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="">
+        <div class="columns ">
+            <ul id="list-items">
+            </ul>
+        </div>
+    </div>
+    <p><b id="para"></b></p>
+
+    <script>
+        // 1
+        var items = JSON.parse(localStorage.getItem('todo-list')) || [];
+
+        //   2
+        function addItem() {
+            // 3
+            var inputBox = document.querySelector('#todo-input');
+            var item = inputBox.value
+
+            // 4
+            if (item === "")
+                return document.getElementById('para').innerHTML = "You need to put in a number";
+
+            // 5
+            items.push({
+                value: item,
+
+
+
+            })
+
+            // 6
+            localStorage.setItem('todo-list', JSON.stringify(items));
+
+            // 7
+            listItems();
+
+
+            inputBox.value = "";
+        }
+
+
+        function deleteItem(index) {
+            items.splice(index, 1);
+            localStorage.setItem('todo-list', JSON.stringify(items))
+            listItems();
+        }
+
+        function markAsDone(index) {
+            items[index].done = !items[index].done;
+            localStorage.setItem('todo-list', JSON.stringify(items));
+            listItems();
+        }
+
+
+        // function that generates list of items and populates the html
+        function listItems() {
+            var list = "";
+            for (var i = 0; i < items.length; i++) {
+                list += "<li>";
+                list += items[i].value + " ";
+                // list += "<small title='click me to mark as done' class='label' onclick='markAsDone(" + i + ")'>" + items[i].time + "</small> ";
+                list += "<span class='label label-1 alert' onclick='deleteItem(" + i + ")'>Remove</span></li>";
+
+            }
+            document.querySelector("#list-items").innerHTML = list;
+        }
+
+        // function to run when page loads
+        (function() {
+            listItems();
+        })();
+    </script>
+
+</body>
+
+</html>
