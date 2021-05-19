@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-4</title>
+    <style>
+        body {
+            max-width: 80%;
+            margin: auto;
+        }
+        
+        form {
+            display: flex;
+            flex-flow: column;
+        }
+        
+        input[type=date] {
+            padding: 10px;
+            font-size: 18px;
+            max-width: 300px;
+            text-transform: uppercase;
+            text-indent: 10px;
+            background: #EDEDED;
+        }
+        
+        input[type=button] {
+            padding: 10px 30px;
+            font-size: 20px;
+            margin: 10px 0 0 0;
+            max-width: 200px;
+            background: #555252;
+            color: #ffffff;
+        }
+        
+        form p {
+            font-size: 20px;
+            font-weight: 600;
+        }
+        
+        .para {
+            font-size: 25px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Task 4</h1>
+    <form>
+
+        <p>Date of birth(DD/MM/YYYY)</p>
+        <input type="date" id="age">
+        <input type="button" value="Find" onclick="findAge()">
+    </form>
+
+    <p class="para">Results :</p>
+    <p id="result" class="para"></p>
+    <p id="result1" class="para"></p>
+
+    <h3 id="error" class="para"></h3>
+
+    <script>
+        function findAge() {
+
+            age = document.getElementById('age').value;
+            var userDob = new Date(age);
+            var today = new Date();
+            var ageCalc = today - userDob;
+            var ageInMinutes = Math.floor(ageCalc / (60 * 1000))
+            var ageInSeconds = Math.floor(ageCalc / (1000))
+
+            if (age == null || age == '') {
+                document.getElementById('error').style.color = "blue";
+                document.getElementById('error').innerHTML = "Please enter your Age";
+            } else {
+                document.getElementById('result').innerHTML = "Age in Minutes : " + ageInMinutes;
+                document.getElementById('result1').innerHTML = "Age in seconds : " + ageInSeconds;
+                document.getElementById('error').style.color = '';
+                document.getElementById('error').innerHTML = '';
+            }
+            return
+        }
+    </script>
+
+</body>
+
+</html>
