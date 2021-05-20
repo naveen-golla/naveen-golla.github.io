@@ -22,7 +22,6 @@ spinBtn.addEventListener('click', () => {
     spinCoin()
     document.querySelector('.progress').innerHTML = 'Spinning in progress... Wait for 3 seconds'
     document.querySelector('.contest-1').innerHTML = 'Game is in Progess....'
-
 });
 
 btnAdd.addEventListener('click', () => {
@@ -35,11 +34,10 @@ function spinCoin() {
         let spinRes = coinArray[Math.floor(Math.random() * coinArray.length)]
         localStorage.setItem('spinRes', spinRes)
         document.getElementById('coin-spin').innerHTML = spinRes
-        winnerList()
-        distibute()
         document.querySelector('.progress').innerHTML = ''
         document.querySelector('.contest-1').innerHTML = ''
-
+        winnerList()
+        distibute()
     }, 3000)
 }
 
@@ -120,10 +118,11 @@ let total1 = 0;
 let total2 = 0
 
 function distibute() {
-    document.querySelector('.heads-total-1').innerHTML = `Total Paid to Winners ${total0 = currentBet * 2}`
+    document.querySelector('.heads-total-1').innerHTML = `Total Paid to Winners ${total0 = currentBet *2 }`
     document.querySelector('.tails-total-2').innerHTML = `Total amount recived ${total1 += currentBet1 + currentBet}`
 
     document.querySelector('.tails-total-3').innerHTML = ` ${total2 = total1 - total0} is Company gain`
+
 }
 
 startNew.addEventListener('click', () => {
@@ -146,6 +145,13 @@ function refreshThePage() {
 
 (function() {
     listItems();
+    winnerList();
+    distibute();
     document.querySelector('.heads-total').innerHTML = ''
     document.querySelector('.tails-total').innerHTML = ''
+    document.querySelector('.heads-total-1').innerHTML = ''
+    document.querySelector('.tails-total-2').innerHTML = ''
+    document.querySelector('.tails-total-3').innerHTML = ''
 })();
+document.getElementById('list').innerHTML = 'No bets addes yet';
+document.getElementById('contest').innerHTML = 'Contest not started yet'
