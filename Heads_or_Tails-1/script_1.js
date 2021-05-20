@@ -16,6 +16,9 @@ let headOrTails = JSON.parse(localStorage.getItem('selectOption')) || []
 var currentBet = 0;
 var currentBet1 = 0;
 var betMoneyV = Number(betMoney.value)
+let total0 = 0;
+let total1 = 0;
+let total2 = 0;
 
 spinBtn.addEventListener('click', () => {
     winnerList()
@@ -109,20 +112,25 @@ function winnerList() {
 function selectChoice() {
     if (document.getElementById('val1').selected) {
         currentBet += Number(betMoney.value)
+        localStorage.setItem('currentBet', currentBet);
     } else if (document.getElementById('val2').selected) {
         currentBet1 += Number(betMoney.value)
+        localStorage.setItem('currentBet1', currentBet1);
     }
 }
-let total0 = 0;
-let total1 = 0;
-let total2 = 0
 
 function distibute() {
-    document.querySelector('.heads-total-1').innerHTML = `Total Paid to Winners ${total0 = currentBet *2 }`
-    document.querySelector('.tails-total-2').innerHTML = `Total amount recived ${total1 += currentBet1 + currentBet}`
+    let spinRes1 = getSpinResult();
 
-    document.querySelector('.tails-total-3').innerHTML = ` ${total2 = total1 - total0} is Company gain`
+    if (spinRes1 === currentBet) {
 
+        document.querySelector('.heads-total-1').innerHTML = `Total Paid to Winners ${total0 = currentBet *2 }`
+    } else {
+        document.querySelector('.heads-total-1').innerHTML = `Total Paid to Winners ${ total0 = (currentBet1 * 2) }`
+    }
+
+    document.querySelector('.tails-total-2').innerHTML = `Total amount recived ${ total1 += currentBet1 + currentBet }`
+    document.querySelector('.tails-total-3').innerHTML = `${ total2 = total1 - total0 } is Company loss`
 }
 
 startNew.addEventListener('click', () => {
@@ -153,5 +161,6 @@ function refreshThePage() {
     document.querySelector('.tails-total-2').innerHTML = ''
     document.querySelector('.tails-total-3').innerHTML = ''
 })();
-document.getElementById('list').innerHTML = 'No bets addes yet';
-document.getElementById('contest').innerHTML = 'Contest not started yet'
+
+// document.getElementById('list').innerHTML = 'No bets addes yet';
+// document.getElementById('contest').innerHTML = 'Contest not started yet'
