@@ -103,7 +103,7 @@
 </head>
 
 <body>
-    <h2 class="heading">Task 5</h2>
+    <h2 class="heading">local Storage</h2>
     <h1>My Todo's</h1>
     <h4>Add new TODO</h4>
 
@@ -130,37 +130,20 @@
     <p><b id="para"></b></p>
 
     <script>
-        // 1
         var items = JSON.parse(localStorage.getItem('todo-list')) || [];
 
-        //   2
         function addItem() {
-            // 3
             var inputBox = document.querySelector('#todo-input');
             var item = inputBox.value
-
-            // 4
             if (item === "")
                 return document.getElementById('para').innerHTML = "You need to put in a number";
-
-            // 5
             items.push({
                 value: item,
-
-
-
             })
-
-            // 6
             localStorage.setItem('todo-list', JSON.stringify(items));
-
-            // 7
             listItems();
-
-
             inputBox.value = "";
         }
-
 
         function deleteItem(index) {
             items.splice(index, 1);
@@ -168,27 +151,17 @@
             listItems();
         }
 
-        function markAsDone(index) {
-            items[index].done = !items[index].done;
-            localStorage.setItem('todo-list', JSON.stringify(items));
-            listItems();
-        }
 
-
-        // function that generates list of items and populates the html
         function listItems() {
             var list = "";
             for (var i = 0; i < items.length; i++) {
                 list += "<li>";
                 list += items[i].value + " ";
-                // list += "<small title='click me to mark as done' class='label' onclick='markAsDone(" + i + ")'>" + items[i].time + "</small> ";
                 list += "<span class='label label-1 alert' onclick='deleteItem(" + i + ")'>Remove</span></li>";
 
             }
             document.querySelector("#list-items").innerHTML = list;
         }
-
-        // function to run when page loads
         (function() {
             listItems();
         })();
