@@ -1,0 +1,10 @@
+Algorithm
+
+step-1 : Start.
+step-2 : Create variables and store values into that variables.
+step-3 : If user selected the seats in that data store in local storage.
+step-4 : We can show the booked seats and available seats after that.
+step-5 : If the user select the seats show the price of seat and calculate price each seat
+step-6 : We can show the user to select the user wanted movie in select option
+step-7 : We can display user selected seats and how many seats selected and the price of selectd seats.
+step-8 : stop.
