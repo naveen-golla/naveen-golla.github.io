@@ -1,0 +1,10 @@
+Custom video player
+
+Step-1 : Start.
+Step-2 : Take one video and store in your local.
+step-3 : If user click on video it will pause and play.
+step-4 :  if user click on play button it will play
+step-5 : if user click on stop button it will stop the video.
+step-6 : if user click on progress bar the video will play where the user wants to start the video.
+step-7 : we can also show the video duration .
+step-8 :
