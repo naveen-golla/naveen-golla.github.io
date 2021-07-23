@@ -16,8 +16,17 @@ Dark green: #28b485
 @import "base/utilities";
 // Component folder
 @import "components/button";
+@import "components/composition";
+@import "components/feature-box";
+@import "components/cards";
+@import "components/story";
+@import "components/bg-video";
+@import "components/form";
+@import "components/popup";
 // layout folder
 @import "layout/header";
 @import "layout/grid";
+@import "layout/footer";
+@import "layout/navigation";
 // pages folder
 @import "pages/home";
